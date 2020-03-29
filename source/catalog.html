@@ -6,14 +6,53 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="150" height="30" alt="Логотип «Погнали»">
-      </a>
       <nav class="main-nav">
-        <div class="main-nav__wrapper--closed">
-          <button class="main-nav__toggle" type="buton">Открыть меню</button>
-          <b class="main-nav__title--active">Попутчики</b>
-      </div>
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="150" height="30" alt="Логотип «Погнали»">
+        </a>
+        <div class="main-nav__wrapper">
+          <h1 class="visually-hidden">В путешествии с крутыми попутчиками</h1>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a>Попутчики</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__authorization">Авторизация</a>
+            </li>
+          </ul>
+          <div class="main-nav__contact contact">
+            <ul class="contact__list">
+              <li class="contact__item">
+                <a class="contact__call"></a>
+              </li>
+              <li class="contact__item">
+                <a class="contact__mail"></a>
+              </li>
+            </ul>
+          </div>
+          <div class="main-nav__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">Facebook</a>
+              </li>
+              <li class="social__item">
+                <a class="ocial__link social__link--vkontakte" href="#">Vkontakte</a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">Instagram</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="page-main">
       <div class="page-main__wrapper people">
@@ -24,27 +63,27 @@
                 <img class="people__image"></img>
               </p>
               <p class="people__name">Таня Фирсова</p>
-              <p >1,5 М</p>
+              <p class="people__like">1,5 М</p>
+              <span class="people__status"></span>
             </div>
-            <p class="people__hashtags">#ЗОЖ #ПП #Фитнес #пляж
-              #авокадо #смузи</p>
+            <p class="people__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
             <div class="people__visit country">
               <p>хочу посетить</p>
               <ul class="country__list">
                 <li class="country__item">
                   <div class="country__wrapper">
-                    <p class="country__flag">
-                      <img></img>
+                    <p class="country__image">
+                      <img class="country__flag" aria-label="Шри Ланка"></img>
                     </p>
                     <p class="country__name">
-                      ШРИ ЛАНКА
+                      Шри Ланка
                     </p>
                   </div>
                 </li>
                 <li class="country__item">
                   <div class="country__wrapper">
-                    <p class="country__flag">
-                      <img></img>
+                    <p class="country__image">
+                      <img class="country__flag" aria-label="Тайланд"></img>
                     </p>
                     <p class="country__name">
                       Тайланд
@@ -53,14 +92,15 @@
                 </li>
                 <li class="country__item">
                   <div class="country__wrapper">
-                    <p class="country__flag">
-                      <img></img>
+                    <p class="country__image">
+                      <img class="country__flag" aria-label="Сейшелы"></img>
                     </p>
                     <p class="country__name">
                       Сейшелы
                     </p>
                   </div>
                 </li>
+              </ul>
             </div>
             <div class="people__way-of-travelling way-of-travelling">
               <p>Транспорт</p>
@@ -79,23 +119,198 @@
                 </li>
               </ul>
             </div>
-      </div>
-    </main>
-    <footer class="page-footer">
-      <b class="page-footer__title">Погнали?</b>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Facebook</a>
+            <button class="people_call" type="button">Позвать!</button>
           </li>
-          <li class="social__item">
-            <a class="ocial__link social__link--vkontakte" href="#">Vkontakte</a>
+          <li class="people__item">
+            <div class="people__stats">
+              <p class="people__picture">
+                <img class="people__image"></img>
+              </p>
+              <p class="people__name">Петя Демин</p>
+              <p class="people__like">150</p>
+              <span class="people__status"></span>
+            </div>
+            <p class="people__hashtags">#бургер #бар #футбол #концерт #крафт</p>
+            <div class="people__visit country">
+              <p>хочу посетить</p>
+              <ul class="country__list">
+                <li class="country__item">
+                  <div class="country__wrapper">
+                    <p class="country__image">
+                      <img class="country__flag" aria-label="Бельгия"></img>
+                    </p>
+                    <p class="country__name">
+                      Бельгия
+                    </p>
+                  </div>
+                </li>
+                <li class="country__item">
+                  <div class="country__wrapper">
+                    <p class="country__image">
+                      <img class="country__flag" aria-label="Чехия"></img>
+                    </p>
+                    <p class="country__name">
+                      Чехия
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="people__way-of-travelling way-of-travelling">
+              <p>Транспорт</p>
+              <ul class="way-of-travelling__list">
+                <li class="way-of-travelling__item">
+                  <a class="way-of-travelling__item--plane way-of-travelling__item--active"></a>
+                </li>
+                <li class="way-of-travelling__item">
+                  <a class="way-of-travelling__item--bus way-of-travelling__item--active"></a>
+                </li>
+                <li class="way-of-travelling__item">
+                  <a class="way-of-travelling__item--bike"></a>
+                </li>
+                <li class="way-of-travelling__item">
+                  <a class="way-of-travelling__item--foot way-of-travelling__item--active"></a>
+                </li>
+              </ul>
+            </div>
+            <button class="people_call" type="button">Позвать!</button>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Instagram</a>
+          <li class="people__item">
+            <div class="people__stats">
+              <p class="people__picture">
+                <img class="people__image"></img>
+              </p>
+              <p class="people__name">Марк Смолов</p>
+              <p class="people__like">1700</p>
+              <span class="people__status"></span>
+            </div>
+            <p class="people__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+            <div class="people__visit country">
+              <p>хочу посетить</p>
+              <ul class="country__list">
+                <li class="country__item">
+                  <div class="country__wrapper">
+                    <p class="country__image">
+                      <img class="country__flag" aria-label="США"></img>
+                    </p>
+                    <p class="country__name">
+                      США
+                    </p>
+                  </div>
+                </li>
+                <li class="country__item">
+                  <div class="country__wrapper">
+                    <p class="country__image">
+                      <img class="country__flag" aria-label="Австралия"></img>
+                    </p>
+                    <p class="country__name">
+                      Австралия
+                    </p>
+                  </div>
+                </li>
+                <li class="country__item">
+                  <div class="country__wrapper">
+                    <p class="country__image">
+                      <img class="country__flag" aria-label="Доминикана"></img>
+                    </p>
+                    <p class="country__name">
+                      Доминикана
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="people__way-of-travelling way-of-travelling">
+              <p>Транспорт</p>
+              <ul class="way-of-travelling__list">
+                <li class="way-of-travelling__item">
+                  <a class="way-of-travelling__item--plane way-of-travelling__item--active"></a>
+                </li>
+                <li class="way-of-travelling__item">
+                  <a class="way-of-travelling__item--bus"></a>
+                </li>
+                <li class="way-of-travelling__item">
+                  <a class="way-of-travelling__item--bike way-of-travelling__item--active"></a>
+                </li>
+                <li class="way-of-travelling__item">
+                  <a class="way-of-travelling__item--foot"></a>
+                </li>
+              </ul>
+            </div>
+            <button class="people_call" type="button">Позвать!</button>
+          </li>
+          <li class="people__item">
+            <div class="people__stats">
+              <p class="people__picture">
+                <img class="people__image"></img>
+              </p>
+              <p class="people__name">Лариса Роговая</p>
+              <p class="people__like">23</p>
+              <span class="people__status--active"></span>
+            </div>
+            <p class="people__hashtags">#Образование #карьера #учеба #линкедин</p>
+            <div class="people__visit country">
+              <p>хочу посетить</p>
+              <ul class="country__list">
+                <li class="country__item">
+                  <div class="country__wrapper">
+                    <p class="country__image">
+                      <img class="country__flag" aria-label="Великобритания"></img>
+                    </p>
+                    <p class="country__name">
+                      Великобритания
+                    </p>
+                  </div>
+                </li>
+                <li class="country__item">
+                  <div class="country__wrapper">
+                    <p class="country__image">
+                      <img class="country__flag" aria-label="Германия"></img>
+                    </p>
+                    <p class="country__name">
+                      Германия
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="people__way-of-travelling way-of-travelling">
+              <p>Транспорт</p>
+              <ul class="way-of-travelling__list">
+                <li class="way-of-travelling__item">
+                  <a class="way-of-travelling__item--plane way-of-travelling__item--active"></a>
+                </li>
+                <li class="way-of-travelling__item">
+                  <a class="way-of-travelling__item--bus way-of-travelling__item--active"></a>
+                </li>
+                <li class="way-of-travelling__item">
+                  <a class="way-of-travelling__item--bike"></a>
+                </li>
+                <li class="way-of-travelling__item">
+                  <a class="way-of-travelling__item--foot"></a>
+                </li>
+              </ul>
+            </div>
+            <button class="people_call" type="button">Позвать!</button>
           </li>
         </ul>
       </div>
+    </main>
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" alt="Логотип «Погнали»"></img>
+      </a>
+      <ul class="page-footer__social social__list">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="ocial__link social__link--vkontakte" href="#">Vkontakte</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">Instagram</a>
+        </li>
+      </ul>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy-logo">HTML Academy</a>
