@@ -1,6 +1,6 @@
 .menu {
-  background-color:#161c36;
-  background-image: url('../img/globe-back-mobile@1x.jpg');
+  background-color: #161c36;
+  background-image: url("../img/globe-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 320px 569px;
 }
@@ -11,10 +11,7 @@
   font-weight: 700;
   text-align: center;
 
-  color:#ffffff;
-}
-
-.menu__wrapper {
+  color: #ffffff;
 }
 
 .menu__communication {
