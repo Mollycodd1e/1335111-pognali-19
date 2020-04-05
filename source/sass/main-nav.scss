@@ -3,20 +3,45 @@
   text-transform: uppercase;
 }
 
+.main-nav__logo {
+  padding: 27px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-nav__wrapper {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
 }
 
 .main-nav__list {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 58px;
   text-align: center;
   list-style: none;
 }
 
 .main-nav__contact {
-  color: #192144;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 58px;
   list-style: none;
+
+  color: #192144;
 }
 
 .main-nav__social {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__contact {
+    display: none;
+  }
 }
