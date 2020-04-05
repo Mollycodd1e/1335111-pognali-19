@@ -1,0 +1,20 @@
+.people__wrapper {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.people__country-list,
+.people__hashtags-list,
+.people__way-of-travelling {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.people__name {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+
+  color: #1d2e5b;
+}

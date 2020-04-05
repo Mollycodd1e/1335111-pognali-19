@@ -1,0 +1,26 @@
+body {
+  font-weight: 400;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  background-color: white;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  background-position: 0 0;
+}
+
+@import "main-nav.scss", "site-list.scss", "user-list.scss", "contact.scss", "social.scss", "menu.scss",
+  "communication.scss", "reviews.scss", "recommendation.scss", "information.scss", "block-title.scss",
+  "destinations.scss", "country.scss", "companion.scss", "people.scss", "hashtags-list.scss", "profile.scss",
+  "page-footer.scss", "copyright.scss"
