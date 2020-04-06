@@ -9,3 +9,9 @@
   color: #161c35;
   background-color: #ffd74b;
 }
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    display: none;
+  }
+}

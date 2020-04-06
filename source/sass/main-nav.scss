@@ -21,7 +21,6 @@
   margin: 0;
   padding: 0;
   margin-bottom: 58px;
-  text-align: center;
   list-style: none;
 }
 
@@ -40,8 +39,36 @@
   list-style: none;
 }
 
+.main-nav__logo-tablet {
+  display: none;
+}
+
+.main-nav__logo-desktop {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .main-nav__contact {
+  .main-nav__logo-mobile {
+    display: none;
+  }
+
+  .main-nav__logo-tablet {
+    display: block;
+  }
+
+  .main-nav__wrapper {
+    padding-left: 100px;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__logo-tablet {
+    width: 200px;
+    height: 52px;
+  }
+
+  .main-nav__wrapper {
     display: none;
   }
 }

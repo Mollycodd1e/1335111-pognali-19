@@ -1,6 +1,8 @@
 .menu {
   background-color: #161c36;
-  background-image: url("../img/globe-back-mobile@1x.jpg");
+  background-image: url("../img/globe-back-mobile@1x.jpg"),
+    url("../img/traveller-illustration-mobile@1x.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 320px 569px;
 }
@@ -22,4 +24,10 @@
 
 .menu__user-list {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .menu__user-list {
+    display: none;
+  }
 }
