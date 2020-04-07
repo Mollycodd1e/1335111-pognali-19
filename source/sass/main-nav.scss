@@ -1,12 +1,82 @@
 .main-nav {
-  background-color: #161c36;
+  position: relative;
+  background-color: $background-mobile;
   text-transform: uppercase;
 }
 
 .main-nav__logo {
-  padding: 27px 25px;
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  width: 100px;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 23px;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 26px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 35px;
+  height: 21px;
+
+  background-color: $background-mobile;
+
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  right: 5px;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 26px;
+  right: 16px;
+  width: 29px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    right: 4px;
+
+    width: 19px;
+    height: 2px;
+
+    background-color: #cccccc;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-nav__user-list {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  list-style: none;
+  width: 188px;
 }
 
 .main-nav__wrapper {
@@ -47,7 +117,23 @@
   display: none;
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-nav__user-list {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .main-nav {
+    background-color: $background-tablet;
+  }
+
+  .main-nav__logo {
+    width: 166px;
+    padding-top: 43px;
+    padding-bottom: 41px;
+  }
+
   .main-nav__logo-mobile {
     display: none;
   }
@@ -57,8 +143,32 @@
   }
 
   .main-nav__wrapper {
-    padding-left: 100px;
+    padding-left: 99px;
     align-items: flex-start;
+  }
+
+  .main-nav__toggle {
+    top: 56px;
+    right: 372px;
+
+    background-color: $background-tablet;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 56px;
+    right: 368px;
+  }
+
+  .main-nav__contact {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+
+@media (max-width: $tablet-width-only) {
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
   }
 }
 
@@ -68,7 +178,7 @@
     height: 52px;
   }
 
-  .main-nav__wrapper {
+  .main-nav--closed .main-nav__wrapper {
     display: none;
   }
 }
