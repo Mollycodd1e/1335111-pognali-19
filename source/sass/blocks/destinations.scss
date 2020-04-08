@@ -1,25 +1,31 @@
 .destinations {
+  height: 888px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 132px;
+  padding-bottom: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   background-color: #edeff6;
 }
 
-.destinations__to-all {
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-
-  color: #1d2e5b;
-  background-color: #ffd74b;
+.destinations__title {
+  padding-left: 25px;
 }
 
 .destinations__text {
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
+  margin-bottom: 66px;
+  padding-right: 53px;
+  padding-left: 25px;
 
   color: #4f4f50;
 }
 
 .destinations__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }

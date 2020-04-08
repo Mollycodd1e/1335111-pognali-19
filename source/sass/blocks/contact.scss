@@ -1,6 +1,5 @@
 .contact__link {
-  font-weight: 700;
-
+  font-weight: bold;
   color: #192144;
   text-decoration: none;
 }
@@ -8,5 +7,11 @@
 .contact__link svg {
   margin-right: 29px;
   fill: #ffd74b;
-  background-color: #121936;
+  background-color:#121936;
+}
+
+@media (min-width: $tablet-width) {
+  .contact__link {
+    margin-bottom: 45px;
+  }
 }

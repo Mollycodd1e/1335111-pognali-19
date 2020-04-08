@@ -1,6 +1,6 @@
 .menu {
   padding-top: 24px;
-  height: 405px;
+  height: 381px;
   background-color: $background-mobile;
   background-image: url("../img/traveller-illustration-mobile@1x.png"),
     url("../img/globe-back-mobile@1x.jpg");
@@ -12,7 +12,7 @@
   margin: 0 auto;
   width: 270px;
 
-  margin-bottom: 260px;
+  margin-bottom: 235px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
@@ -23,8 +23,6 @@
 
 .menu__communication {
   margin: 0;
-  padding-top: 15px;
-  padding-left: 26px;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -32,8 +30,8 @@
 
 .menu__user-list {
   margin: 0;
-  padding: 0;
   width: 189px;
+  list-style: none;
 }
 
 .menu__wrapper {
@@ -59,5 +57,9 @@
     width: 446px;
     font-size: 60px;
     line-height: 70px;
+  }
+
+  .menu__user-list {
+    display: none;
   }
 }

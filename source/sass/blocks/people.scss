@@ -1,17 +1,35 @@
 .people__wrapper {
+  margin-top: -7px;
+  margin-bottom: 10px;
+  height: 157px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
+  padding-left: 46px;
+  padding-right: 47px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
   background-color: #ffffff;
+}
+
+.people__item img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .people__country-list,
 .people__hashtags-list,
 .people__way-of-travelling {
+  padding: 0;
   display: flex;
   justify-content: center;
   list-style: none;
 }
 
 .people__name {
+  margin: 0;
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;

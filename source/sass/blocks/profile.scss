@@ -1,5 +1,16 @@
 .profile {
+  padding-right: 26px;
+  padding-left: 50px;
+  padding-top: 82px;
+  padding-bottom: 33px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
   background-color: #edeff6;
+  background-image: url("../img/rates@1x.png");
+  background-size: 99px 99px;
+  background-repeat: no-repeat;
+  background-position: top 67px right 26px;
 }
 
 .profile a {
@@ -7,14 +18,48 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
+  padding: 5px;
 
   color: #192144;
 }
 
+.profile__title {
+  padding-right: 169px;
+  margin-bottom: 44px;
+}
+
+.profile__list {
+  padding: 0;
+  margin: 0;
+  width: 238px;
+  margin-bottom: 26px;
+}
+
+
 .profile__text {
+  border-top: 2px solid #e1e3e9;
+  padding-top: 14px;
+  padding-bottom: 7px;
+
+  & p {
+    margin: 0;
+  }
+
   color: #717273;
 }
 
 .profile__counter {
-  color: #ffffff;
+  width: 34px;
+  line-height: 14px;
+  text-align: center;
+
+  & p {
+    margin: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+
+    color: #ffffff;
+    background-color: #ffa530;
+  }
 }

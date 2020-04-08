@@ -1,4 +1,18 @@
+.page-footer {
+  padding-top: 38px;
+  padding-bottom: 14px;
+  padding-left: 26px;
+  padding-right: 25px;
+  height: 239px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .page-footer__logo {
+
   text-align: center;
 }
 
@@ -11,4 +25,14 @@
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
+}
+
+.copyright__text {
+  font-weight: 400;
+
+  color: #444444;
+}
+
+.copyright__link svg {
+  fill: #192144;
 }
