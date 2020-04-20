@@ -1,16 +1,46 @@
 .button {
-  display: block;
-
+  position: relative;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  width: 270px;
-  height: 42px;
-  padding-top: 20px;
-  text-align: center;
+  width: auto;
+  padding-top: 23px;
+  padding-bottom: 21px;
+  padding-left: 23px;
+  text-align: left;
   text-decoration: none;
   border-radius: 10px;
 
   color: #1d2e5b;
   background-color: #ffd74b;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+
+  top: 24px;
+  right: 23px;
+
+  width: 10px;
+  height: 14px;
+
+  background-image: url("../img/triangle-arrow-right.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 29px;
+    padding-bottom: 28px;
+    padding-left: 34px;
+    border-radius: 20px;
+  }
+
+  .button::before {
+    top: 34px;
+    right: 36px;
+  }
 }

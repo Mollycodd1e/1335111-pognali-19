@@ -1,3 +1,8 @@
+.hashtags-list {
+  line-height: 18px;
+  list-style: none;
+}
+
 .hashtags-list__item {
   margin-right: 5px;
 }
@@ -5,4 +10,11 @@
 .hashtags-list__item a {
   text-decoration: none;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .hashtags-list {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

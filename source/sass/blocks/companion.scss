@@ -1,21 +1,25 @@
 .companion {
-  padding-top: 120px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
+  margin-top: -60px;
+  padding-top: 67px;
+  padding-bottom: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   text-align: left;
 
   background-color: #192144;
-  background-image: url("../img/smolov-back-desktop@1x.png"),
-    url("../img/rogovaya-back-mobile@1x.png");
+}
+
+.companion__wrapper {
+  padding-top: 65px;
+  background-image: url("../img/smolov-back-desktop@1x.png");
   background-repeat: no-repeat;
-  background-position: top 86px right 25px, top 340px left -10px;
+  background-position: right 25px top 32px;
 }
 
 .companion__title {
-  padding-left: 25px;
+  margin: 0;
+  margin-bottom: 19px;
+  padding-left: 24px;
 }
 
 .companion__text {
@@ -26,21 +30,112 @@
   font-weight: 300;
   padding-left: 25px;
   padding-right: 30px;
-  margin-bottom: 27px;
+  margin-bottom: 21px;
 
   color: #ffffff;
 }
 
 .companion__text--bold {
   font-weight: 700;
+  margin-bottom: 56px;
 }
 
 .companion__list {
   padding: 0;
   margin: 0;
-  list-style: none;
 }
 
 .companion__to-all {
+  display: block;
   margin-top: 20px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .companion {
+    background-image: url("../img/blue-back-half-mobile.png");
+    background-repeat: no-repeat;
+    background-position: left 0% top 99px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .companion {
+    padding-top: 136px;
+    padding-bottom: 88px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+
+  .companion__wrapper {
+    background-image: url("../img/blue-back-tablet-x1.png");
+    background-repeat: no-repeat;
+    background-position: top 4px right 75px;
+  }
+
+  .companion__title {
+    padding-left: 32px;
+    margin-bottom: 57px;
+  }
+
+  .companion__text {
+    padding-left: 35px;
+    padding-right: 200px;
+    margin-bottom: 39px;
+    font-size: 28px;
+    line-height: 33px;
+    white-space: pre-line;
+  }
+
+  .companion__text--bold {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 58px;
+  }
+
+  .companion__list {
+    display: flex;
+  }
+
+  .companion__to-all {
+    display: block;
+    margin-top: 70px;
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companion {
+    padding-top: 123px;
+  }
+
+  .companion__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background-image: url("../img/blue-back-desktop.png");
+    background-repeat: no-repeat;
+    background-position: left 60px top 3px;
+  }
+
+  .companion__wrap {
+    width: 500px;
+    padding-right: 120px;
+  }
+
+  .companion__text {
+    padding-left: 69px;
+    padding-right: 0;
+  }
+
+  .companion__title {
+    padding-left: 69px;
+  }
+
+  .companion__to-all {
+    width: 274px;
+    margin-top: -81px;
+    margin-left: 65px;
+  }
 }

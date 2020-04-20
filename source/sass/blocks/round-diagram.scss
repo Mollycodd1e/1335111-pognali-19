@@ -1,0 +1,57 @@
+.round-diagram {
+  position: relative;
+}
+
+.round-diagram__progress-pie {
+  position: absolute;
+
+  top: -5px;
+  left: 15px;
+
+  stroke-width: 1px;
+  transform: rotate(-90deg);
+  z-index: 4;
+
+  stroke: #ff8d30;
+  fill: #000000;
+  fill-opacity: 0.7;
+}
+
+.round-diagram__level {
+  position: absolute;
+
+  top: 30px;
+  left: 34px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  z-index: 5;
+
+  color: #ffffff;
+}
+
+.round-diagram__text {
+  position: absolute;
+
+  top: 56px;
+  left: 35px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  z-index: 5;
+
+  color: #ffffff;
+}
+
+.round-diagram::before {
+  content: "";
+  position: absolute;
+
+  top: 52px;
+  left: 32px;
+  width: 29px;
+  height: 1px;
+  z-index: 5;
+
+  background-color: #ffffff;
+}
