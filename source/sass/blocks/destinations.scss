@@ -81,7 +81,7 @@
 @media (min-width: $desktop-width) {
   .destinations {
     padding-top: 131px;
-    padding-bottom: 12px;
+    padding-bottom: 92px;
   }
 
   .destinations__wrapper {
@@ -105,8 +105,11 @@
   }
 
   .destinations__to-all {
-    width: 274px;
-    margin-left: auto;
+    position: absolute;
+    padding-left: 32px;
+    padding-right: 103px;
+    bottom: 140px;
+    right: 266px;
     order: 3;
   }
 }

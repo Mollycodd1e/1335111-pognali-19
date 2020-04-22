@@ -1,4 +1,5 @@
 .companion {
+  position: relative;
   margin-top: -60px;
   padding-top: 67px;
   padding-bottom: 30px;
@@ -107,12 +108,14 @@
 @media (min-width: $desktop-width) {
   .companion {
     padding-top: 123px;
+    padding-bottom: 124px;
   }
 
   .companion__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 67px;
 
     background-image: url("../img/blue-back-desktop.png");
     background-repeat: no-repeat;
@@ -130,12 +133,21 @@
   }
 
   .companion__title {
-    padding-left: 69px;
+    padding-left: 67px;
+    margin-bottom: 56px;
+  }
+
+  .companion__list {
+    padding-top: 3px;
   }
 
   .companion__to-all {
-    width: 274px;
-    margin-top: -81px;
-    margin-left: 65px;
+    position: absolute;
+
+    bottom: 134px;
+    left: 96px;
+
+    padding-left: 33px;
+    padding-right: 95px;
   }
 }
