@@ -1,0 +1,13 @@
+.world-part {
+  font-weight: 700;
+  list-style: none;
+}
+
+.world-part__item {
+  opacity: 0.3;
+  color: #192144;
+}
+
+.world-part__item--active {
+  opacity: 1;
+}

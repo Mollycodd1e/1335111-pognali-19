@@ -6,7 +6,7 @@
 }
 
 .tooltip::before {
-  content: attr(data-tooltip); /* Главная часть кода, определяющая содержимое всплывающей подсказки */
+  content: attr(data-tooltip);
   visibility: hidden;
   position: absolute;
 
