@@ -4,7 +4,7 @@
   padding-bottom: 16px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  z-index: 2;
+  z-index: 4;
 
   background-color: #edeff6;
 }
@@ -126,12 +126,13 @@ tr:nth-child(3) .profile__text::after {
 
 @media (min-width: $tablet-width) {
   .profile {
-    padding-bottom: 43px;
+    padding-bottom: 23px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
 
   .profile__wrapper {
+    padding-bottom: 63px;
     background-image: url("../img/rates-tablet-x1.png");
     background-repeat: no-repeat;
     background-position: top 117px right 40px;
@@ -151,7 +152,7 @@ tr:nth-child(3) .profile__text::after {
   .profile__list {
     padding-left: 87px;
     padding-right: 31px;
-    margin-bottom: 35px;
+    margin-bottom: 56px;
   }
 
   .profile__list tr {

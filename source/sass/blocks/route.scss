@@ -1,9 +1,117 @@
 .route {
+  position: relative;
   margin-top: -30px;
-  height: 236px;
-  margin-bottom: 272px;
+  padding-top: 64px;
+  padding-bottom: 35px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-
+  z-index: 2;
   background-color: #ffd74b;
+}
+
+.route__link {
+  display: block;
+  position: relative;
+  font-weight: 700;
+  padding-left: 61px;
+  padding-right: 30px;
+  margin-bottom: 31px;
+  text-transform: uppercase;
+
+  color: #192144;
+}
+
+.route__link::before {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  background-color: #121936;
+}
+
+.route__link::after {
+  content: "";
+
+  position: absolute;
+  top: 11px;
+  left: 16px;
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../img/contacts-location.svg");
+  background-repeat: no-repeat;
+}
+
+.route__button {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;;
+  padding-left: 21px;
+  font-size: 18px;
+  padding-top: 21px;
+  padding-bottom: 17px;
+  border: 3px solid #192144;
+}
+
+.route__button::before {
+  top: 20px;
+  right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .route {
+    padding-top: 100px;
+    padding-left: 76px;
+    padding-right: 75px;
+    padding-bottom: 85px;
+  }
+
+  .route__link {
+    font-size: 28px;
+    line-height: 28px;
+    padding-left: 92px;
+    margin-bottom: 61px;
+  }
+
+  .route__link::before {
+    content: "";
+
+    position: absolute;
+    top: -22px;
+    left: 0;
+
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+
+    background-color: #121936;
+  }
+
+  .route__link::after {
+    width: 21px;
+    height: 31px;
+
+    top: -3px;
+    left: 22px;
+  }
+
+  .route__button {
+    font-size: 24px;
+    line-height: 24px;
+    padding-top: 26px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+  }
+
+  .route__button::before {
+    top: 31px;
+    right: 33px;
+  }
 }

@@ -1,4 +1,6 @@
 .page-footer {
+  position: relative;
+  margin-top: -119px;
   padding-right: 25px;
   padding-left: 26px;
   padding-top: 38px;
@@ -6,6 +8,7 @@
   border-top-right-radius: 30px;
   display: flex;
   flex-direction: column;
+  z-index: 4;
 
   background-color: #ffffff;
 }
@@ -21,12 +24,40 @@
 }
 
 .page-footer__social {
+  position: relative;
   padding: 0;
   margin: 0 auto;
   padding-left: 18px;
   margin-bottom: 53px;
   list-style: none;
   display: flex;
+}
+
+.page-footer__social li::before {
+  content: "";
+  position: absolute;
+
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  z-index: -1;
+
+  background-color: #ffd74b;
+}
+
+.page-footer__social li:nth-child(2n)::before {
+  top: -13px;
+  left: 0;
+}
+
+.page-footer__social li:nth-child(3n)::before {
+  top: -13px;
+  left: 46px;
+}
+
+.page-footer__social li:nth-child(4n)::before {
+  top: -13px;
+  left: 90px;
 }
 
 .page-footer__social li:nth-child(2) {
