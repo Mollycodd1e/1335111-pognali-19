@@ -451,10 +451,20 @@
             </td>
           </tr>
         </table>
-        <a class="profile__button" href="modal-open">Показать тарифы для бизнеса</a>
+        <a class="profile__button" type="button">Показать тарифы для бизнеса</a>
         </div>
       </section>
-      <section class="interested">
+      <section class="interested container">
+        <h2 class="interested__title block-title">Заинтересовались?</h2>
+        <p class="interested__text"> Зарегистрируйтесь,
+          это быстро и бесплатно!
+          Уже зарегистрированы? Тогда скорее <a href="authorization.html">авторизуйтесь.</a></p>
+        <form class="interested__form">
+          <input type="text" name="E-mail" class="email" id="email" placeholder="E-mail">
+          <button class="interested__button" type="submit"></button>
+        </form>
+        <p class="interested__contact-text">Остались вопросы?
+          Мы с радостью на них ответим! </p>
       </section>
       <section class="route">
       </section>
@@ -505,9 +515,9 @@
         </a>
       </div>
     </footer>
-    <section class="modal visually-hidden">
-      <h2>Бизнес-тарифы</h2>
-      <table class="modal__list">
+    <section class="modal modal-info">
+      <h2 class="modal__title block-title">Бизнес-тарифы</h2>
+      <table class="modal__list  container">
         <tr>
           <td class="modal__text">
             <p>Рекламау у блоггера</p>
@@ -533,7 +543,9 @@
           </td>
         </tr>
       </table>
+      <button class="modal__button" type="button">Закрыть окно</button>
     </section>
   <script src="js/menu-button.js"></script>
+  <script src="js/modal-show.js"></script>
   </body>
 </html>

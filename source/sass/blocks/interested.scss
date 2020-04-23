@@ -1,9 +1,79 @@
 .interested {
   position: relative;
   margin-top: -54px;
-  height: 557px;
+  padding-top: 126px;
+  padding-bottom: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 
   background-color: #192144;
+}
+
+.interested__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.interested__text {
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 28px;
+  text-align: center;
+  white-space: pre-line;
+
+  color: #ffffff;
+}
+
+.interested__text a {
+  color: #ffd74b;
+}
+
+.interested__form {
+  position: relative;
+}
+
+.interested input {
+  width: 246px;
+  height: 60px;
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 24px;
+  border: 1px;
+  border-radius: 10px;
+}
+
+.interested__button {
+  position: absolute;
+
+  top: 0;
+  right: -1px;
+
+  width: 60px;
+  height: 62px;
+  border-radius: 10px;
+
+  background-color: #ffd74b;
+}
+
+.interested__form::before {
+  content: "";
+
+  position: absolute;
+
+  top: 23px;
+  right: 17px;
+
+  z-index: 5;
+
+  border-width: 8px;
+  border-style: solid;
+  border-color: transparent transparent transparent #1d2e5b;
+}
+
+.interested__contact-text {
+  font-weight: 300;
+
+  color: #ffffff;
 }
