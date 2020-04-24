@@ -145,3 +145,40 @@
     margin-right: 0;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    padding-top: 60px;
+    padding-right: 61px;
+    padding-left: 59px;
+  }
+
+  .page-footer__logo {
+    margin-top: -9px;
+  }
+
+  .page-footer__logo img {
+    width: 198px;
+    height: 52px;
+  }
+
+  .page-footer__social li:nth-child(2n)::before {
+    top: -12px;
+    left: -18px;
+  }
+
+  .page-footer__social li:nth-child(3n)::before {
+    top: -12px;
+    left: 42px;
+  }
+
+  .page-footer__social li:nth-child(4n)::before {
+    top: -12px;
+    left: 102px;
+  }
+
+  .page-footer__social {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+}
