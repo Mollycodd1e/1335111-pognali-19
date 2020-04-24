@@ -1,7 +1,7 @@
 .route {
   position: relative;
-  margin-top: -30px;
-  padding-top: 64px;
+  margin-top: -45px;
+  padding-top: 79px;
   padding-bottom: 35px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -67,12 +67,15 @@
 
 @media (min-width: $tablet-width) {
   .route {
-    padding-top: 100px;
-    padding-left: 76px;
-    padding-right: 75px;
+    padding-top: 115px;
     padding-bottom: 85px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+  }
+
+  .route__wrapper {
+    padding-left: 76px;
+    padding-right: 75px;
   }
 
   .route__link {
@@ -121,12 +124,15 @@
 
 @media (min-width: $desktop-width) {
   .route {
+    padding-top: 104px;
+    padding-bottom: 60px;
+  }
+
+  .route__wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 89px;
     padding-left: 312px;
     padding-right: 134px;
-    padding-bottom: 60px;
   }
 
   .route__button {

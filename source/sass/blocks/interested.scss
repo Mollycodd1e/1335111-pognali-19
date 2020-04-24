@@ -116,12 +116,15 @@
 
 @media (min-width: $tablet-width) {
   .interested {
-    padding-left: 75px;
-    padding-right: 75px;
     padding-top: 129px;
     padding-bottom: 39px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+  }
+
+  .interested__wrapper {
+    padding-left: 75px;
+    padding-right: 75px;
   }
 
   .interested__title {
@@ -170,10 +173,13 @@
 
 @media (min-width: $desktop-width) {
   .interested {
-    padding-left: 132px;
-    padding-right: 132px;
     padding-top: 161px;
     padding-bottom: 95px;
+  }
+
+  .interested__wrapper {
+    padding-left: 132px;
+    padding-right: 132px;
   }
 
   .interested__title {
