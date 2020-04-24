@@ -62,6 +62,10 @@
   background-color: #ffd74b;
 }
 
+.interested__registration {
+  display: none;
+}
+
 .interested__form::before {
   content: "";
 
@@ -160,6 +164,60 @@
     font-size: 28px;
     line-height: 33px;
     white-space: normal;
-    margin-bottom: 63px;
+    margin-bottom: 62px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .interested {
+    padding-left: 132px;
+    padding-right: 132px;
+    padding-top: 161px;
+    padding-bottom: 95px;
+  }
+
+  .interested__title {
+    margin-bottom: 56px;
+  }
+
+  .interested__text {
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-bottom: 59px;
+  }
+
+  .interested__button {
+    width: 328px;
+    padding-left: 34px;
+  }
+
+  .interested__registration {
+    display: block;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .interested input {
+    margin-bottom: 64px;
+  }
+
+  .interested__contact-text {
+    padding-left: 3px;
+    margin-bottom: 71px;
+  }
+
+  .interested__text-part {
+    font-size: 29.5px;
+    line-height: 40.5px;
+  }
+
+  .interested__contact {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-left: 182px;
+    padding-right: 126px;
   }
 }

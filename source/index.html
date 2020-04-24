@@ -21,6 +21,18 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
+          <div class="main-nav__menu">
+            <a class="main-nav__menu-logo" href="#">
+              <picture class="main-nav__menu-logo-image">
+                <source srcset="img/logo-desktop-blue@1x.png" media="(min-width: 1440px)">
+                <source srcset="img/logo-tablet-blue@1x.png" media="(min-width: 768px)">
+                <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип «Погнали»">
+              </picture>
+            </a>
+            <button class="main-nav__menu-toggle" type="button">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
+          </div>
           <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
               <a>О сервисе</a>
@@ -429,28 +441,20 @@
       <section class="profile">
         <div class="profile__wrapper container">
         <h2 class="profile__title block-title">Добавьте свой профиль</h2>
-        <table class="profile__list">
-          <tr>
-            <td class="profile__text">
-              <p>Базовое размещение</p>
-              <p>Бесплатно</p>
-            </td>
-          </tr>
-          <tr>
-            <td class="profile__text">
-              <p>Вывод на первых позициях</p>
-              <p>99 руб./мес</p>
-            </td>
-            </td>
-          </tr>
-          <tr>
-            <td class="profile__text">
-              <p>Кастомный цвет карточки</p>
-              <p>59 руб./мес</p>
-            </td>
-            </td>
-          </tr>
-        </table>
+        <ul class="profile__list">
+          <li class="profile__text">
+            <p>Базовое размещение</p>
+            <p>Бесплатно</p>
+          </li>
+          <li class="profile__text">
+            <p>Вывод на первых позициях</p>
+            <p>99 руб./мес</p>
+          </li>
+          <li class="profile__text">
+            <p>Кастомный цвет карточки</p>
+            <p>59 руб./мес</p>
+          </li>
+        </ul>
         <a class="profile__button" type="button">Показать тарифы для бизнеса</a>
         </div>
       </section>
@@ -461,10 +465,12 @@
           Уже зарегистрированы? Тогда скорее <a href="authorization.html">авторизуйтесь.</a></p>
         <form class="interested__form">
           <input type="text" name="E-mail" class="email" id="email" placeholder="E-mail">
-          <button class="interested__button" type="submit"></button>
+          <button class="interested__button" type="submit">
+            <span class="interested__registration">Регистрация</span>
+          </button>
         </form>
         <p class="interested__contact-text">Остались вопросы?
-          Мы с радостью на них ответим! </p>
+          <span class="interested__text-part">Мы с радостью на них ответим!</span> </p>
         <ul class="interested__contact contact">
           <li class="contact__item">
             <a class="contact__link contact__link--call" href="tel:88005558628" aria-label="Телефон для связи">
@@ -486,7 +492,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта для навигации</h2>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CSsXAU-E" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CSsXAU-E" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position: relative;"></iframe>
       </section>
     </main>
     <footer class="page-footer">

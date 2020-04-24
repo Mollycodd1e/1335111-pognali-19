@@ -50,17 +50,17 @@
 .profile__list {
   padding: 0;
   margin: 0;
-  width: 100%;
   margin-right: 0;
-  padding-left: 22px;
+  padding-left: 23px;
   padding-right: 40px;
-  margin-bottom: 27px;
+  margin-bottom: 31px;
+  list-style: none;
 }
 
 .profile__text {
   position: relative;
   border-top: 1px solid #e1e3e9;
-  padding-top: 11px;
+  padding-top: 13px;
   padding-bottom: 7px;
   color: #717273;
 }
@@ -69,31 +69,13 @@
   margin: 0;
 }
 
-tr:nth-child(2) .profile__text {
-  padding-top: 13px;
-
-  &::before {
-    background-color: #ffbd30;
-  }
-}
-
-tr:nth-child(3) .profile__text {
-  padding-top: 12px;
-
-  border-bottom: 1px solid #e1e3e9;
-
-  &::before {
-    background-color: #ffd74b;
-  }
-}
-
 .profile__text::before {
   content: "";
 
   position: absolute;
 
-  top: 3px;
-  right: -41px;
+  top: 5px;
+  right: -39px;
 
   width: 34px;
   height: 34px;
@@ -109,24 +91,46 @@ tr:nth-child(3) .profile__text {
 
   position: absolute;
 
-  top: 15px;
-  right: -28px;
+  top: 17px;
+  right: -26px;
   line-height: 14px;
 
   color: #ffffff;
 }
 
-tr:nth-child(2) .profile__text::after {
-  content: "2";
+.profile__text:nth-child(2) {
+  padding-top: 14px;
+
+  &::after {
+    content: "2";
+    top: 18px;
+  }
+
+  &::before {
+    top: 6px;
+    background-color: #ffbd30;
+  }
 }
 
-tr:nth-child(3) .profile__text::after {
-  content: "3";
+.profile__text:nth-child(3) {
+  padding-top: 14px;
+
+  border-bottom: 1px solid #e1e3e9;
+
+  &::after {
+    content: "3";
+    top: 19px;
+  }
+
+  &::before {
+    top: 7px;
+    background-color: #ffd74b;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .profile {
-    padding-bottom: 23px;
+    padding-bottom: 21px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -139,23 +143,22 @@ tr:nth-child(3) .profile__text::after {
   }
 
   .profile__text {
-    width: 100%;
+
     font-size: 28px;
     line-height: 33px;
-    padding-top: 17px;
+    padding-top: 19px;
     padding-bottom: 15px;
     display: flex;
-    justify-content: space-between;
     order: 3;
   }
 
   .profile__list {
-    padding-left: 87px;
-    padding-right: 31px;
-    margin-bottom: 56px;
+    padding-right: 33px;
+    padding-left: 88px;
+    margin-bottom: 59px;
   }
 
-  .profile__list tr {
+  .profile__list li {
     display: flex;
     justify-content: space-between;
   }
@@ -172,17 +175,9 @@ tr:nth-child(3) .profile__text::after {
     text-align: center;
   }
 
-  tr:nth-child(2) .profile__text {
-    padding-top: 17px;
-  }
-
-  tr:nth-child(3) .profile__text {
-    padding-top: 17px;
-  }
-
   .profile__text::before {
-    top: -2px;
-    right: 588px;
+    top: -1px;
+    left: -87px;
 
     width: 67px;
     height: 67px;
@@ -192,6 +187,36 @@ tr:nth-child(3) .profile__text::after {
     top: 20px;
     right: 614px;
     line-height: 28px;
+  }
+
+  .profile__text:nth-child(2) {
+    padding-top: 17px;
+
+    &::after {
+      content: "2";
+      top: 18px;
+    }
+
+    &::before {
+      top: 0;
+      background-color: #ffbd30;
+    }
+  }
+
+  .profile__text:nth-child(3) {
+    padding-top: 17px;
+
+    border-bottom: 1px solid #e1e3e9;
+
+    &::after {
+      content: "3";
+      top: 19px;
+    }
+
+    &::before {
+      top: 1px;
+      background-color: #ffd74b;
+    }
   }
 
   .profile a {
@@ -236,7 +261,7 @@ tr:nth-child(3) .profile__text::after {
 @media (min-width: $desktop-width) {
   .profile {
     padding-top: 65px;
-    padding-bottom: 145px;
+    padding-bottom: 123px;
   }
 
   .profile__title {
@@ -245,7 +270,7 @@ tr:nth-child(3) .profile__text::after {
 
   .profile__list {
     padding-left: 158px;
-    padding-right: 341px;
+    padding-right: 344px;
   }
 
   .profile__wrapper {

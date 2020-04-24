@@ -55,3 +55,47 @@
 
   background-color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .round-diagram__progress-pie {
+    top: -2px;
+    left: 19px;
+  }
+
+  .round-diagram__level {
+    top: 33px;
+    left: 36px;
+  }
+
+  .round-diagram__text {
+    top: 60px;
+    left: 37px;
+  }
+
+  .round-diagram::before {
+    top: 56px;
+    left: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .round-diagram__progress-pie {
+    top: 2px;
+    left: 22px;
+  }
+
+  .round-diagram__level {
+    top: 36px;
+    left: 39px;
+  }
+
+  .round-diagram__text {
+    top: 61px;
+    left: 39px;
+  }
+
+  .round-diagram::before {
+    top: 59px;
+    left: 37px;
+  }
+}

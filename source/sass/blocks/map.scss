@@ -1,3 +1,15 @@
 .map {
   margin-top: -20px;
 }
+
+@media (min-width: $tablet-width) {
+  iframe {
+    height: 589px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  iframe {
+    height: 524px;
+  }
+}
