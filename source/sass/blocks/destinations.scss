@@ -72,7 +72,6 @@
   }
 
   .destinations__to-all {
-    display: block;
     margin-left: 35px;
     margin-right: 35px;
   }
@@ -105,11 +104,11 @@
   }
 
   .destinations__to-all {
-    position: absolute;
+    height: 23px;
     padding-left: 32px;
     padding-right: 103px;
-    bottom: 140px;
-    right: 266px;
+    margin-left: 804px;
+    margin-top: -128px;
     order: 3;
   }
 }

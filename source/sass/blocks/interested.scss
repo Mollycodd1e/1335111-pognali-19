@@ -2,7 +2,7 @@
   position: relative;
   margin-top: -54px;
   padding-top: 126px;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   z-index: 3;
@@ -30,49 +30,75 @@
 
 .interested__text a {
   color: #ffd74b;
+
+  &:hover,
+  &:focus {
+    color: #ff8d30;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .interested__form {
   position: relative;
+  display: flex;
 }
 
 .interested input {
   box-sizing: border-box;
   width: 100%;
-  height: 60px;
+  height: 62px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   padding-left: 24px;
   margin-bottom: 29px;
   border: 1px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.interested input:hover,
+.interested input:focus {
+  background-color: #edeff6;
+
+  cursor: pointer;
+}
+
+.interested input:active {
+  border: 4px solid #ffffff;
+  background-color: #192144;
+  color: #ffffff;
 }
 
 .interested__button {
-  position: absolute;
-
-  top: -1px;
-  right: -1px;
-
-  width: 60px;
+  width: 75px;
   height: 62px;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: none;
 
   background-color: #ffd74b;
+}
+
+.interested__button:hover,
+.interested__button:focus {
+  cursor: pointer;
 }
 
 .interested__registration {
   display: none;
 }
 
-.interested__form::before {
+.interested__button::before {
   content: "";
 
   position: absolute;
 
-  top: 23px;
-  right: 17px;
+  top: 20px;
+  right: 16px;
 
   z-index: 5;
 
@@ -84,7 +110,7 @@
 .interested__contact-text {
   font-weight: 300;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   white-space: pre-line;
   text-align: center;
 
@@ -100,6 +126,33 @@
   text-align: center;
   text-transform: uppercase;
   color: #ffd74b;
+  padding-left: 14px;
+
+  &::after {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: #ffbd30;
+
+    & svg {
+      fill: #ffbd30;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.interested__contact svg {
+  position: relative;
+  z-index: 10;
+  padding-right: 24px;
+  vertical-align: middle;
+
+  fill: #ffd74b;
 }
 
 .interested__contact li {
@@ -117,7 +170,7 @@
 @media (min-width: $tablet-width) {
   .interested {
     padding-top: 129px;
-    padding-bottom: 39px;
+    padding-bottom: 41px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
   }
@@ -142,7 +195,8 @@
 
   .interested input {
     height: 81px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
     font-size: 24px;
     line-height: 24px;
     padding-left: 34px;
@@ -151,14 +205,24 @@
 
   .interested__button {
     top: 0;
-    width: 82px;
+    width: 92px;
     height: 81px;
     border-radius: 20px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
-  .interested__form::before {
+  .interested__contact a {
+    padding-left: 20px;
+  }
+
+  .interested__contact svg {
+    width: 27px;
+    height: 27px;
+    padding-right: 35px;
+  }
+
+  .interested__button::before {
     right: 29px;
     top: 32px;
   }
@@ -174,7 +238,7 @@
 @media (min-width: $desktop-width) {
   .interested {
     padding-top: 161px;
-    padding-bottom: 95px;
+    padding-bottom: 93px;
   }
 
   .interested__wrapper {
@@ -189,12 +253,22 @@
   .interested__text {
     padding-left: 250px;
     padding-right: 250px;
-    margin-bottom: 59px;
+    margin-bottom: 58px;
   }
 
   .interested__button {
-    width: 328px;
+    width: 440px;
     padding-left: 34px;
+  }
+
+  .interested__contact a {
+    padding-left: 0;
+  }
+
+  .interested__contact svg {
+    width: 36px;
+    height: 36px;
+    padding-right: 50px;
   }
 
   .interested__registration {
@@ -211,7 +285,7 @@
 
   .interested__contact-text {
     padding-left: 3px;
-    margin-bottom: 71px;
+    margin-bottom: 67px;
   }
 
   .interested__text-part {
@@ -223,7 +297,7 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    padding-left: 182px;
+    padding-left: 180px;
     padding-right: 126px;
   }
 }

@@ -230,10 +230,10 @@
               <button class="filter-form__button"></button>
                 <div class="filter-range__level-control">
                   <label class="filter-range__min-level" for="id-filter-range__min-level">
-                    от <input type="text" name="filter-range__min-level" id="id-filter-range__min-level"  value="0">
+                    <input type="text" name="filter-range__min-level" id="id-filter-range__min-level"  value="0">
                   </label>
                   <label class="filter-range__max-level" for="id-filter-range__max-level">
-                    до <input type="text" name="filter-range__max-level" id="id-filter-range__max-level" value="100">
+                    <input type="text" name="filter-range__max-level" id="id-filter-range__max-level" value="100">
                   </label>
                 </div>
                 <div class="filter-range__range-control">
@@ -246,95 +246,126 @@
                   <div class="filter-range__toggle filter-range__toggle--max">
                   </div>
                 </div>
+              </div>
+            </div>
           </div>
-          <button class="filter-form__submit-button" type="submit">Показать</button>
+          <a class="filter-form__submit-button" type="submit">Показать</a>
         </form>
       </section>
-      <section class="companions">
-        <ul class="companions__list people">
-          <li class="people__item">
-            <div class="people__stats">
-              <p class="people__picture">
-                <img class="people__image">
-              </p>
-              <p class="people__name">Таня Фирсова</p>
-              <p class="people__like">1,5 М</p>
-              <span class="people__status"></span>
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item people">
+            <div class="catalog__people people">
+              <div class="people__name-wrapper">
+                <span class="people__indicator"></span>
+                <h3 class="people__name">
+                  <a class="people__link">Таня Фирсова</a>
+                </h3>
+                <p class="people__like">1,5 М</p>
+              </div>
             </div>
-            <ul class="people__list hashtags">
-              <li class="hashtags__item">
+            <ul class="catalog__hashtags-list hashtags-list">
+              <li class="hashtags-list__item">
                 <a href="#">#ЗОЖ</a>
               </li>
-              <li class="hashtags__item">
+              <li class="hashtags-list__item">
                 <a href="#">#ПП</a>
               </li>
-              <li class="hashtags__item">
+              <li class="hashtags-list__item">
                 <a href="#">#Фитнес</a>
               </li>
-              <li class="hashtags__item">
+              <li class="hashtags-list__item">
                 <a href="#">#пляж</a>
               </li>
-              <li class="hashtags__item">
+              <li class="hashtags-list__item">
                 <a href="#">#авокадо</a>
               </li>
               </li>
-              <li class="hashtags__item">
+              <li class="hashtags-list__item">
                 <a href="#">#смузи</a>
               </li>
             </ul>
-            <div class="people__visit country">
-              <p>хочу посетить</p>
-              <ul class="country__list">
-                <li class="country__item">
-                  <div class="country__wrapper">
-                    <p class="country__image">
-                      <img class="country__flag" aria-label="Флаг Шри Ланки">
-                    </p>
-                    <p class="country__name">
+            <div class="catalog__country-list country-list">
+              <p>хочу посетить:</p>
+              <ul class="country-list">
+                <li class="country-list__item">
+                  <span class="tooltip" data-tooltip="Шри Ланка">
+                    <img class="country-list__flag" src="img/sri-lanka-flag-x1.png" width="35" heigth="24" alt="Шри Ланка">
+                    <p class="country-list__name">
                       Шри Ланка
                     </p>
-                  </div>
+                  </span>
                 </li>
-                <li class="country__item">
-                  <div class="country__wrapper">
-                    <p class="country__image">
-                      <img class="country__flag" aria-label="Флаг Тайланда">
-                    </p>
-                    <p class="country__name">
+                <li class="country-list__item">
+                  <span class="tooltip" data-tooltip="Тайланд">
+                    <img class="country-list__flag" src="img/thailand-flag-x1.png" width="35" heigth="24" alt="Тайланд">
+                    <p class="country-list__name">
                       Тайланд
                     </p>
-                  </div>
+                  </span>
                 </li>
-                <li class="country__item">
-                  <div class="country__wrapper">
-                    <p class="country__image">
-                      <img class="country__flag" aria-label="Флаг Сейшел">
-                    </p>
-                    <p class="country__name">
+                <li class="country-list__item">
+                  <span class="tooltip" data-tooltip="Сейшелы">
+                    <img class="country-list__flag" src="img/seychelles-flag-x1.png" width="35" heigth="24" alt="Сейшелы">
+                    <p class="country-list__name">
                       Сейшелы
                     </p>
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog__way-of-travelling way-of-travelling">
+              <div class="way-of-travelling__wrapper">
+                <p>Транспорт:</p>
+                <ul class="catalog__way-of-travelling-list way-of-travelling-list">
+                <li class="way-of-travelling-list__item way-of-travelling-list__item--plane way-of-travelling-list__item--active">
+                  <span class="tooltip" data-tooltip="Авиаперелет">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="21" viewBox="0 0 19 21">
+                      <path d="M18.9 18.9c-.1-.3-3.7-10.1-3.7-10.1-.1-.5.1-.7.3-1.1 0 0 2.1-3.5 2.8-4.6.7-1.2.6-2.3-.1-2.8s-1.7-.1-2.5 1-3 4.5-3 4.5c-.3.4-.4.7-.9.8-.1-.1-10.3.4-10.6.4-.3 0-.7.1-1 .6-.4.7-.2.9.2 1 0 0 8 2.6 8.3 2.7.3 0 .3.2.2.6-.2.4-1.4 2.3-1.6 2.6-.1.2-.2.2-.4.3l-2.8 1c-.1 0-.3.1-.4.3l-.4.6c-.2.3-.1.5.2.5.3.1 2.1.2 2.1.2s.3.1.4.1c.2.1.4.3.2.6-.3.6-.4 1.2-.2 1.3s.6-.2 1-.7c.2-.3.4-.2.6 0 .2-.1.4.1.4.1s.8 1.6 1 1.9c.2.3.4.3.6 0l.4-.6c.1-.1.1-.3.1-.5l-.3-3.1c0-.2 0-.2.1-.5.1-.2 1.4-2.2 1.6-2.5.2-.3.4-.3.6-.1.2.2 5.7 6.7 5.7 6.7.3.3.5.4.9-.2.4-.4.3-.8.2-1z"/>
+                    </svg>
+                  </span>
+                </li>
+                <li class="way-of-travelling-list__item way-of-travelling-list__item--bus">
+                  <span class="tooltip" data-tooltip=" Автотранспорт">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="21" viewBox="0 0 17 21">
+                      <path d="M16.2 3.1c-.2-1.2-1-1.6-2.1-2.1-1.1-.4-3.7-1-5.6-1C6.6 0 4 .6 2.9 1c-1.1.5-1.8.9-2.1 2.1L0 9.5v8.8h1.4v1.4c0 1.7 2.5 1.7 2.5 0v-1.4h9.2v1.4c0 1.7 2.5 1.7 2.5 0v-1.4H17V9.5l-.8-6.4zM5 1.6h7c.7 0 .7 1 0 1H5c-.7.1-.7-1 0-1zm-2.3 14c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2-.1.6-.6 1.2-1.2 1.2zm5.7-5.4H2.2c-.6 0-.7-.4-.7-.9l.6-4.7c.1-.6.3-.9 1-.9h10.7c.7 0 .9.4 1 .9l.6 4.7c.1.4-.1.9-.7.9H8.4zm5.9 5.4c-.6 0-1.2-.5-1.2-1.2s.5-1.2 1.2-1.2c.6 0 1.2.5 1.2 1.2 0 .6-.5 1.2-1.2 1.2z"/>
+                    </svg>
+                  </span>
+                </li>
+                <li class="way-of-travelling-list__item way-of-travelling-list__item--bike">
+                  <span class="tooltip" data-tooltip="Велосипед">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21">
+                      <path d="M16 3.6c1 0 1.8-.8 1.8-1.8S17 0 16 0s-1.8.8-1.8 1.8.8 1.8 1.8 1.8zm3 7.4c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zM14.8 8.9H19V7.1h-3.2l-1.9-3.3c-.3-.5-.8-.8-1.5-.8-.5 0-.9.2-1.2.5L7.5 7.2c-.3.3-.5.7-.5 1.2 0 .6.3 1.2.8 1.5l3.3 2v5H13v-6.5l-2.2-1.7 2.3-2.4 1.7 2.6zM5 11c-2.8 0-5 2.3-5 5s2.2 5 5 5 5-2.3 5-5-2.2-5-5-5zm0 8.6c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.5 3.5 3.5-1.6 3.5-3.5 3.5z"/>
+                    </svg>
+                  </span>
+                </li>
+                <li class="way-of-travelling-list__item way-of-travelling-list__item--run">
+                  <span class="tooltip" data-tooltip="Пешком">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21">
+                      <ellipse cx="14.3" cy="2" rx="2.1" ry="2"/><path d="M19.4 4.6c-.5-.2-1.2-.1-1.4.4l-.9 1.6L13 4.3c-.2-.1-.3-.1-.6-.1H7.9c-.4 0-.7.1-.9.5L5.3 7.6c-.3.5-.1 1.1.4 1.3.2.1.4.1.5.1.4 0 .8-.2 1-.5l1.4-2.4h1.6l-4.7 8.1H1.1c-.6 0-1.1.4-1.1 1s.5 1 1.1 1h5c.4 0 .7-.2.9-.5l1.9-3.2 3 2.6-.2 4.9c-.1.5.4 1 1 1h.1c.6 0 1-.4 1.1-.9l.3-5.4c0-.3-.1-.6-.3-.8l-2.6-2.2L14 7.1l3.1 1.8c0 .1.4.2.6.1.3-.1.5-.2.7-.5L19.9 6c.3-.5.1-1.1-.5-1.4z"/>
+                    </svg>
+                  </span>
+                </li>
+                </ul>
+              </div>
+              <div class="catalog__round-diagram round-diagram">
+                <p>Левел:</p>
+                <div class="round-diagram__progress">
+                  <div class="round-diagram__progress-inner">
+                    <svg class="round-diagram__progress-pie" width="100" height="100" stroke-dasharray="99 100" viewBox="-10 0 54 54" role="presentation" aria-hidden="true">
+                      <circle r="15.915" cx="16" cy="17"></circle>
+                    </svg>
+                    <div class="round-diagram__progress-content">
+                      <div class="round-diagram__count">
+                        <span class="round-diagram__level">99</span>
+                        <span class="round-diagram__text">level</span>
+                      </div>
+                    </div>
                   </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
-            <div class="people__way-of-travelling way-of-travelling">
-              <p>Транспорт</p>
-              <ul class="way-of-travelling__list">
-                <li class="way-of-travelling__item">
-                  <a class="way-of-travelling__link way-of-travelling__link--plane way-of-travelling__item--active"></a>
-                </li>
-                <li class="way-of-travelling__item">
-                  <a class="way-of-travelling__link way-of-travelling__link--bus"></a>
-                </li>
-                <li class="way-of-travelling__item">
-                  <a class="way-of-travelling__link way-of-travelling__link--bike"></a>
-                </li>
-                <li class="way-of-travelling__item">
-                  <a class="way-of-travelling__link way-of-travelling__link--foot"></a>
-                </li>
-              </ul>
-            </div>
-            <button class="people_call" type="button">Позвать!</button>
+            <a class="catalog__button" type="button">Позвать!</a>
           </li>
           <li class="people__item">
             <div class="people__stats">
@@ -557,24 +588,51 @@
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo">
-        <img class="page-footer__logo-image" alt="Логотип «Погнали»">
-      </a>
-      <ul class="page-footer__social social__list">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Facebook</a>
-        </li>
-        <li class="social__item">
-          <a class="ocial__link social__link--vkontakte" href="#">Vkontakte</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">Instagram</a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy-logo">HTML Academy</a>
+      <div class="page-footer__wrapper container">
+        <div class="page-footer__logo">
+          <a class="page-footer__link">
+            <picture class="main-nav__logo-image">
+              <source srcset="img/logo-desktop-blue@1x.png" media="(min-width: 1440px)">
+              <source srcset="img/logo-tablet-blue@1x.png" media="(min-width: 768px)">
+              <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип «Погнали»">
+            </picture>
+          </a>
+        </div>
+        <ul class="page-footer__social social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="21" viewBox="0 0 11 21">
+                <path d="M7.8 21H2.2v-9.8H0V6.4h2.1c-.1-2.2.3-3.8 1.3-4.9C4.2.6 5.5.1 7.1 0H11v4.7H7.9c-.1.2-.2.8-.2 1.7H11v4.8H7.8V21zm-4.4-1.1h3.1v-9.8h3.2V7.5H6.5v-.6c0-1.5 0-2.9.8-3.4l.2-.1h2.3V1.1H7.1c-1.2.1-2.2.5-2.8 1.2-.8.9-1.1 2.5-.9 4.6l.1.6H1.2v2.6h2.2v9.8z"/>
+              </svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="23" height="12" viewBox="0 0 30 15.8">
+                <path d="M23.9 15.8c-.4 0-1.2-.1-2.1-.6-.6-.4-1.2-1-1.8-1.5-.4-.4-1.2-1.2-1.4-1.2-.3.1-.5.9-.5 1.6 0 .1 0 .8-.5 1.2-.4.4-1.1.5-1.2.5h-1.9c-1 0-4.4-.2-7.4-3C3.4 9.4.3 3 .1 2.7 0 2.2-.1 1.5.3 1.1.7.7 1.4.6 1.7.6h4.2c.1 0 .6.1 1 .3.4.2.6.7.6.7S8.1 3 9 4.3c1.3 2 1.9 2.5 2.1 2.6.2-.4.3-1.7.2-2.9 0-.5-.1-1.1-.3-1.3-.1-.1-.4-.3-.8-.3l-.7-.6c-.1-.7.6-1.2 1.1-1.4.7-.3 1.8-.4 3.1-.4h.7c1.2 0 1.6.1 2.1.2 1.7.4 1.6 1.7 1.6 3.3v2.1c0 .4 0 1 .1 1.3.2-.1.9-.7 2.1-2.5.8-1.2 1.4-2.5 1.5-2.8.2-.4.6-.9 1.6-.9h4.7c1 0 1.6.3 1.8.9.3.6.2 1.7-2.4 4.6-.4.4-.7.8-1 1.1-.6.7-1.2 1.4-1.2 1.6.1.1.7.6 1.3 1.1 1.5 1.2 2.5 2.3 3 3.1.5.8.4 1.3.3 1.7-.4.9-1.6 1-1.9 1h-4.1zm-5.3-4.9c.9 0 1.7.8 2.5 1.6.5.5 1 1 1.5 1.3.7.4 1.3.4 1.4.4h3.9c.2 0 .4-.1.5-.1 0 0 0-.1-.1-.2-.4-.7-1.4-1.7-2.7-2.7-1.2-1-1.8-1.5-1.9-2.2-.1-.8.5-1.4 1.6-2.7.3-.3.6-.7 1-1.1 1.6-1.8 2-2.6 2.1-3h-5.3c-.2.4-.8 1.8-1.6 3-1.9 2.8-2.8 3.2-3.4 3.2-.2 0-.4 0-.6-.1-1-.6-1-1.8-.9-2.8V3.4c.1-1.7 0-1.7-.4-1.8-.4-.1-.7-.1-1.9-.2h-.7c-.6 0-1.3 0-1.9.1l.3.3c.6.7.6 2 .6 2.2.1 1.6.1 3.8-1 4.3-.2.1-.4.1-.6.1-.9 0-1.9-.9-3.4-3.3-.8-1.2-1.5-2.7-1.5-2.8L6 2.2c-.1 0-.2-.1-.3-.1H1.6c.6 1.2 3.4 6.6 6.5 9.5 2.7 2.5 5.8 2.6 6.4 2.6h1.9s.2-.1.3-.1V14c0-.3 0-2.6 1.6-3 .1-.1.2-.1.3-.1z"/>
+              </svg>
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="18" height="18" viewBox="0 0 23 23" xml:space="preserve">
+                <path class="st0" d="M17 1.5c2.5 0 4.5 2 4.5 4.5v11c0 2.5-2 4.5-4.5 4.5H6c-2.5 0-4.5-2-4.5-4.5V6c0-2.5 2-4.5 4.5-4.5h11M17 0H6C2.7 0 0 2.7 0 6v11c0 3.3 2.7 6 6 6h11c3.3 0 6-2.7 6-6V6c0-3.3-2.7-6-6-6z"/><path class="st0" d="M11.5 7.1c2.4 0 4.4 2 4.4 4.4 0 2.4-2 4.4-4.4 4.4-2.4 0-4.4-2-4.4-4.4 0-2.4 2-4.4 4.4-4.4m0-1.5c-3.3 0-5.9 2.7-5.9 5.9s2.7 5.9 5.9 5.9 5.9-2.7 5.9-5.9-2.6-5.9-5.9-5.9z"/><circle class="st0" cx="17.6" cy="5.4" r="1.3"/>
+              </svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 27 34">
+              <path d="M13.6 0h-.2L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm5.7 16.8l-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8L25 13.5l-4.5 2.6-7.1-4.2v1.4l5.9 3.5zM1.9 15.1l11.4 6.8v1l-8-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.9V17l3.4-2v10l-11.6 6.9-11.4-7v-9.8zm0-3v-9l11.6-1.2 11.6 1.2v9L13.5 5.3v-.1h-.2v.1L1.9 12.1z" fill="#231f20"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </footer>
     <script src="js/menu-button.js"></script>

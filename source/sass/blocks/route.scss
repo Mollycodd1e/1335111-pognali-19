@@ -42,8 +42,8 @@
   top: 11px;
   left: 16px;
 
-  width: 18px;
-  height: 18px;
+  width: 14px;
+  height: 22px;
 
   background-image: url("../img/contacts-location.svg");
   background-repeat: no-repeat;
@@ -58,11 +58,38 @@
   padding-top: 21px;
   padding-bottom: 17px;
   border: 3px solid #192144;
+
+  &:hover,
+  &:focus {
+    background-color: #192144;
+    color: #ffffff;
+
+    &::before {
+      border-color: transparent transparent transparent #ffffff;
+    }
+  }
+
+  &:active {
+    color: transparentize($color: #ffffff, $amount: 0.3);
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .route__button::before {
-  top: 20px;
-  right: 20px;
+  top: 19px;
+  right: 11px;
+
+  width: 4px;
+  height: 2px;
+
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent transparent transparent #1d2e5b;
+
+  background-image: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -117,8 +144,8 @@
   }
 
   .route__button::before {
-    top: 31px;
-    right: 33px;
+    top: 30px;
+    right: 25px;
   }
 }
 

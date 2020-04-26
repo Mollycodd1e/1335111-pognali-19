@@ -1,0 +1,41 @@
+.catalog__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  width: 270px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  border-radius: 20px;
+  margin: 0 auto;
+
+  background-color: #ffffff;
+}
+
+.catalog__hashtags-list {
+  display: flex;
+}
+
+.catalog__way-of-travelling {
+  display: flex;
+}
+
+.catalog__button {
+  display: block;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  width: 230px;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #161c35;
+  background-color: #ffd74b;
+}

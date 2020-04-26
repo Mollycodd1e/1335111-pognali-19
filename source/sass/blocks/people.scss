@@ -57,6 +57,11 @@
   margin-bottom: 13px;
 }
 
+.people__wrapper:hover,
+.people__wrapper:focus {
+  box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
+}
+
 .people__name {
   margin: 0;
   font-size: 21px;
