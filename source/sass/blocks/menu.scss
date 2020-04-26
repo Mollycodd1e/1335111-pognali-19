@@ -1,4 +1,5 @@
 .menu {
+  margin-top: 73px;
   position: relative;
   padding-top: 22px;
   background-color: $background-mobile;
@@ -13,7 +14,7 @@
 .menu__title {
   padding-left: 17px;
   padding-right: 16px;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 243px;
   font-size: 36px;
   line-height: 40px;
@@ -46,15 +47,17 @@
 
 @media (max-width: $mobile-width-only) {
   .menu {
-    background-image: url("../img/globe-back-mobile@1x.jpg");
+    background-image: url("../img/globe-back-mobile-cut.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 569px;
-    background-position: center top -72px;
+    background-size: 100% 380px;
+    background-position: center top 25px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .menu {
+    left: 0;
+    margin-top: 133px;
     padding-top: 30px;
     padding-bottom: 48px;
     background-color: $background-tablet;
@@ -91,6 +94,7 @@
 
 @media (min-width: $desktop-width) {
   .menu {
+    margin-top: 107px;
     padding-bottom: 0;
     padding-top: 0;
     background-color: $background-desktop;

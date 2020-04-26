@@ -21,11 +21,23 @@
   background-color: #ffffff;
 }
 
+.people__image {
+  display: block;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
 .people__image img {
   position: relative;
   display: block;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  transition: 1s;
+
+  &:hover {
+    transform: scale(1.3);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 }
 
 .people__country-list,
@@ -57,8 +69,8 @@
   margin-bottom: 13px;
 }
 
-.people__wrapper:hover,
-.people__wrapper:focus {
+.people__item:hover,
+.people__item:focus {
   box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -71,13 +83,13 @@
   color: #1d2e5b;
 }
 
-.people__name:hover,
-.people__name:focus {
-  color: transparentize($color: #1d2e5b, $amount: 0.1);
+.people__name-wrapper:hover,
+.people__name-wrapper:focus {
+  opacity: 0.7;
 }
 
-.people__name:active {
-  color: transparentize($color: #1d2e5b, $amount: 0.3);
+.people__name-wrapper:active {
+  opacity: 0.3;
 }
 
 .people__indicator {
@@ -94,6 +106,11 @@
 
 .people__indicator--active {
   background-color: #81e31e;
+}
+
+.people__link {
+  text-decoration: none;
+  color: #1d2e5b;
 }
 
 @media (min-width: $tablet-width) {

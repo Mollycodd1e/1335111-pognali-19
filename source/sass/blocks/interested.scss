@@ -42,7 +42,6 @@
 }
 
 .interested__form {
-  position: relative;
   display: flex;
 }
 
@@ -60,24 +59,23 @@
   border-bottom-left-radius: 10px;
 }
 
-.interested input:hover,
-.interested input:focus {
+.interested input:hover {
   background-color: #edeff6;
 
   cursor: pointer;
 }
 
-.interested input:active {
+.interested input:focus {
   border: 4px solid #ffffff;
   background-color: #192144;
   color: #ffffff;
 }
 
 .interested__button {
-  width: 75px;
+  position: relative;
+  width: 66px;
   height: 62px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  margin-left: -10px;
   border: none;
 
   background-color: #ffd74b;
@@ -90,21 +88,6 @@
 
 .interested__registration {
   display: none;
-}
-
-.interested__button::before {
-  content: "";
-
-  position: absolute;
-
-  top: 20px;
-  right: 16px;
-
-  z-index: 5;
-
-  border-width: 8px;
-  border-style: solid;
-  border-color: transparent transparent transparent #1d2e5b;
 }
 
 .interested__contact-text {
@@ -205,7 +188,7 @@
 
   .interested__button {
     top: 0;
-    width: 92px;
+    width: 88px;
     height: 81px;
     border-radius: 20px;
     border-top-left-radius: 0;
@@ -223,8 +206,8 @@
   }
 
   .interested__button::before {
-    right: 29px;
-    top: 32px;
+    right: 36px;
+    top: 35px;
   }
 
   .interested__contact-text {
@@ -257,18 +240,21 @@
   }
 
   .interested__button {
-    width: 440px;
+    width: 435px;
     padding-left: 34px;
   }
 
   .interested__contact a {
     padding-left: 0;
+    top: 2px;
   }
 
   .interested__contact svg {
     width: 36px;
     height: 36px;
-    padding-right: 50px;
+    padding-right: 49px;
+    margin-left: -1px;
+    margin-top: -2px;
   }
 
   .interested__registration {

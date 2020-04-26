@@ -164,14 +164,14 @@
       <section class="filter container">
         <form class="filter-form"  action="https://echo.htmlacademy.ru" method="post">
           <h2>Подберите идеального попутчика</h2>
-          <div class="filter-form__hobby">
+          <div class="filter-form__hobby-list">
             <p>Хобби</p>
-            <button class="filter-form__button" type="button"></button>
+            <button class="filter-form__toggle" type="button"></button>
           </div>
-          <fieldset class="filter-form__music">
+          <fieldset class="filter-form__music filter-form__music--closed">
             <legend class="legend">Музыка</legend>
-            <button class="filter-form__button" type="button"></button>
-              <ul class="filter-form__list music-list">
+            <button class="filter-form__toggle filter-form__toggle--music" type="button"></button>
+              <ul class="filter-form__music-list music-list">
                 <li class="music-list__item">
                   <input class="visually-hidden music-list__input music-list__input-ckeckbox" type="checkbox" name="pool" id="id-rock" checked>
                   <label for="id-rock">Тяжелый рок</label>
@@ -186,13 +186,13 @@
                 </li>
               </ul>
           </fieldset>
-          <div class="filter-form__food">
+          <div class="filter-form__food-list">
             <p>Еда</p>
-            <button class="filter-form__button"></button>
+            <button class="filter-form__toggle"></button>
           </div>
-          <div class="filter-form__transport">
+          <div class="filter-form__transport-list filter-form__transport-list--closed">
             <p>Транспорт</p>
-            <button class="filter-form__button"></button>
+            <button class="filter-form__toggle filter-form__toggle--transport" type="button"></button>
             <ul class="filter-form__way-of-travelling way-of-travelling-list">
               <li class="way-of-travelling-list__item way-of-travelling-list__item--plane way-of-travelling-list__item--active">
                 <span class="tooltip" data-tooltip="Авиаперелет">
@@ -227,10 +227,10 @@
           <div class="filter-form__level filter-range">
             <div class="filter-range__wrapper">
               <div class="filter-range__title">Левел:</div>
-              <button class="filter-form__button"></button>
+              <button class="filter-form__toggle"></button>
                 <div class="filter-range__level-control">
                   <label class="filter-range__min-level" for="id-filter-range__min-level">
-                    <input type="text" name="filter-range__min-level" id="id-filter-range__min-level"  value="0">
+                    <input type="text" name="filter-range__min-level" id="id-filter-range__min-level"  value="30">
                   </label>
                   <label class="filter-range__max-level" for="id-filter-range__max-level">
                     <input type="text" name="filter-range__max-level" id="id-filter-range__max-level" value="100">
@@ -637,5 +637,7 @@
     </footer>
     <script src="js/menu-button.js"></script>
     <script src="js/filter-button.js"></script>
+    <script src="js/filter-transport.js"></script>
+    <script src="js/filter-music.js"></script>
   </body>
 </html>

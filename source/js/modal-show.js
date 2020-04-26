@@ -1,12 +1,12 @@
-var link = document.querySelector('.profile__button');
-var popup = document.querySelector('.modal-info');
-var close = document.querySelecetor('.modal__button');
+var popupMain = document.querySelector('.modal');
+var popup = document.querySelector('.profile__button');
+var close = document.querySelector('.modal__button');
 
-link.addEventListener('click', function() {
+popup.addEventListener('click', function() {
   evt.preventDefault();
-  popup.classList.add("modal-show");
+  popupMain.classList.add("modal-show");
 });
 
 close.addEventListener('click', function() {
-   popup.classList.remove("modal-show");
+   popupMain.classList.remove("modal-show");
   });

@@ -30,6 +30,11 @@
   color: transparentize($color: #161c35, $amount: 0.5);
 }
 
+.user-list__authorization {
+  text-decoration: none;
+  color: #161c35;
+}
+
 @media (min-width: $tablet-width) {
   .user-list {
     width: 188px;

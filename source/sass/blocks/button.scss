@@ -13,6 +13,19 @@
 
   color: #1d2e5b;
   background-color: #ffd74b;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: transparentize($color: #1d2e5b, $amount: 0.3);
+
+    &.button::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .button::before {
