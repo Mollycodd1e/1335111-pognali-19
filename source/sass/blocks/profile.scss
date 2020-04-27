@@ -34,10 +34,18 @@
 .profile__button:hover,
 .profile__button:focus {
   color: transparentize($color: #1d2e5b, $amount: 0.1);
+
+  &::after {
+    opacity: 0.6;
+  }
 }
 
 .profile__button:active {
   color: transparentize($color: #1d2e5b, $amount: 0.3);
+
+  &::after {
+    opacity: 0.3;
+  }
 }
 
 .profile__title {

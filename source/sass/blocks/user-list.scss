@@ -26,7 +26,7 @@
   cursor: pointer;
 }
 
-.user-list__item:active {
+.user-list__item:active .user-list__authorization {
   color: transparentize($color: #161c35, $amount: 0.5);
 }
 

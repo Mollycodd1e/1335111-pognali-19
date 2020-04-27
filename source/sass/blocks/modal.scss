@@ -1,14 +1,16 @@
 .modal {
+  display: none;
   position: absolute;
   top: 3700px;
-  left: 25px;
+  left: 50%;
+  margin-left: -135px;
   width: 270px;
-  margin: 0 auto;
   padding-top: 33px;
   border-radius: 20px;
   z-index: 11;
 
   background-color: #ffffff;
+  box-shadow: 0 20px 50px 0 rgba(29, 46, 91, 0.1);
 }
 
 .modal__title {
@@ -58,4 +60,23 @@
 
   color: #1d2e5b;
   background-color: #f3f4f8;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    position: absolute;
+    top: 4850px;
+    width: 688px;
+    margin-left: -344px;
+    padding-top: 33px;
+    border-radius: 30px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .modal__text {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+  }
 }
