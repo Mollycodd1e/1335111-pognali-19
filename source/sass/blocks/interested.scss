@@ -197,6 +197,10 @@
 
   .interested__contact a {
     padding-left: 20px;
+
+    &::before {
+      top: 4px;
+    }
   }
 
   .interested__contact svg {
@@ -247,6 +251,10 @@
   .interested__contact a {
     padding-left: 0;
     top: 2px;
+
+    &::before {
+      top: -7px;
+    }
   }
 
   .interested__contact svg {

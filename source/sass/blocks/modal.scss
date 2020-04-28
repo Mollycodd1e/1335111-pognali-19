@@ -31,13 +31,13 @@
 }
 
 .modal__list li:last-child {
-  border-bottom: 1px solid #e1e3e9;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .modal__text {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-top: 1px solid #e1e3e9;
+  border-top: 1px solid #f2f2f2;
 }
 
 .modal__text p {
@@ -64,19 +64,50 @@
 
 @media (min-width: $tablet-width) {
   .modal {
-    position: absolute;
-    top: 4850px;
+    top: 4880px;
     width: 688px;
     margin-left: -344px;
-    padding-top: 33px;
+    padding-top: 51px;
     border-radius: 30px;
     font-size: 22px;
     line-height: 28px;
   }
 
+  .modal__list {
+    padding-left: 92px;
+    padding-right: 91px;
+    margin-bottom: 52px;
+  }
+
+  .modal__title {
+    margin-bottom: 49px;
+  }
+
   .modal__text {
+    padding-top: 13px;
+    padding-bottom: 13px;
     display: flex;
     justify-content: space-between;
-    border: none;
+  }
+
+  .modal__button {
+    font-size: 24px;
+    padding-top: 43px;
+    padding-bottom: 41px;
+    text-transform: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal {
+    top: 3105px;
+    width: 750px;
+    margin-left: -369px;
+  }
+
+  .modal__list {
+    padding-left: 59px;
+    padding-right: 59px;
+    margin-bottom: 52px;
   }
 }

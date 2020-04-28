@@ -9,9 +9,8 @@
 
 .main-nav__menu {
   position: relative;
-  padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 63px;
+  padding-left: 25px;
 }
 
 .main-nav__menu-toggle {
@@ -76,6 +75,7 @@
   top: 0;
   right: 21px;
   width: 29px;
+  display: block;
 
   &::before,
   &::after {
@@ -186,6 +186,39 @@
 
 .main-nav__communication {
   display: none;
+}
+
+.main-nav--scrolled {
+  background-color: #ffffff;
+
+  & .main-nav__logo {
+    display: none;
+  }
+
+  & .main-nav__menu {
+    display: block;
+    background-color: #ffffff;
+    padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  & .main-nav__menu-toggle {
+    display: none;
+  }
+
+  & .main-nav__toggle::before {
+    background-color: #cccccc;
+    box-shadow: 0 8px 0 0 #cccccc;
+  }
+}
+
+.main-nav--opened .main-nav__menu-toggle {
+  display: block;
+}
+
+.main-nav--opened .main-nav__menu {
+  padding-bottom: 63px;
+  padding-left: 23px;
 }
 
 @media (max-width: $mobile-width-only) {
