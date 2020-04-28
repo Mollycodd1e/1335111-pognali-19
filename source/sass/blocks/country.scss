@@ -21,6 +21,16 @@
   background-color: #ffffff;
 }
 
+.country__item:last-child .country__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 272px;
+  height: 100px;
+  background: linear-gradient(transparent,#edeff6 75%);
+}
+
 .country__wrapper::after {
   content: "";
 

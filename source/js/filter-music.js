@@ -13,4 +13,3 @@ var musicToggle = document.querySelector('.filter-form__toggle--music');
       musicMain.classList.add('filter-form__music--closed');
     }
   });
-

@@ -164,16 +164,30 @@
       <section class="filter container">
         <form class="filter-form"  action="https://echo.htmlacademy.ru" method="post">
           <h2>Подберите идеального попутчика</h2>
-          <div class="filter-form__hobby-list">
-            <p>Хобби</p>
-            <button class="filter-form__toggle" type="button"></button>
-          </div>
+          <fieldset class="filter-form__hobby filter-form__hobby--closed">
+            <legend class="legend">Хобби</legend>
+            <button class="filter-form__toggle filter-form__toggle--hobby" type="button"></button>
+              <ul class="filter-form__hobby-list hobby-list">
+                <li class="hobby-list__item">
+                  <input class="visually-hidden hobby-list__input hobby-list__input-ckeckbox" type="checkbox" name="rock" id="id-sport" checked>
+                  <label for="id-sport">Спорт зал</label>
+                </li>
+                <li class="hobby-list__item">
+                  <input class="visually-hidden hobby-list__input hobby-list__input-ckeckbox" type="checkbox" name="hookah" id="id-hookah">
+                  <label for="id-hookah">Кальян</label>
+                </li>
+                <li class="hobby-list__item">
+                  <input class="visually-hidden hobby-list__input hobby-list__input-ckeckbox" type="checkbox" name="sofa" id="id-sofa">
+                  <label for="id-sofa">Диван</label>
+                </li>
+              </ul>
+          </fieldset>
           <fieldset class="filter-form__music filter-form__music--closed">
             <legend class="legend">Музыка</legend>
             <button class="filter-form__toggle filter-form__toggle--music" type="button"></button>
               <ul class="filter-form__music-list music-list">
                 <li class="music-list__item">
-                  <input class="visually-hidden music-list__input music-list__input-ckeckbox" type="checkbox" name="pool" id="id-rock" checked>
+                  <input class="visually-hidden music-list__input music-list__input-ckeckbox" type="checkbox" name="rock" id="id-rock" checked>
                   <label for="id-rock">Тяжелый рок</label>
                 </li>
                 <li class="music-list__item">
@@ -186,10 +200,24 @@
                 </li>
               </ul>
           </fieldset>
-          <div class="filter-form__food-list">
-            <p>Еда</p>
-            <button class="filter-form__toggle"></button>
-          </div>
+          <fieldset class="filter-form__food filter-form__food--closed">
+            <legend class="legend">Еда</legend>
+            <button class="filter-form__toggle filter-form__toggle--food" type="button"></button>
+              <ul class="filter-form__food-list food-list">
+                <li class="food-list__item">
+                  <input class="visually-hidden food-list__input food-list__input-ckeckbox" type="checkbox" name="meat" id="id-meat" checked>
+                  <label for="id-meat">Мясоед</label>
+                </li>
+                <li class="music-list__item">
+                  <input class="visually-hidden food-list__input food-list__input-ckeckbox" type="checkbox" name="diet" id="id-diet">
+                  <label for="id-diet">Сидит на ПП</label>
+                </li>
+                <li class="music-list__item">
+                  <input class="visually-hidden food-list__input food-list__input-ckeckbox" type="checkbox" name="vegan" id="id-vegan">
+                  <label for="id-vegan">Веган-сыроед</label>
+                </li>
+              </ul>
+          </fieldset>
           <div class="filter-form__transport-list filter-form__transport-list--closed">
             <p>Транспорт</p>
             <button class="filter-form__toggle filter-form__toggle--transport" type="button"></button>
@@ -639,5 +667,7 @@
     <script src="js/filter-button.js"></script>
     <script src="js/filter-transport.js"></script>
     <script src="js/filter-music.js"></script>
+    <script src="js/filter-hobby.js"></script>
+    <script src="js/filter-food.js"></script>
   </body>
 </html>

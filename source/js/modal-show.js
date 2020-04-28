@@ -8,5 +8,5 @@ popup.addEventListener('click', function(evt) {
 });
 
 close.addEventListener('click', function() {
-   popupMain.classList.remove("modal-show");
-  });
+  popupMain.classList.remove("modal-show");
+});

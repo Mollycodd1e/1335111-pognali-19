@@ -31,9 +31,9 @@
   margin-bottom: 25px;
 }
 
-.filter-form__hobby-list,
+.filter-form__hobby,
 .filter-form__music,
-.filter-form__food-list,
+.filter-form__food,
 .filter-form__transport-list {
   position: relative;
   display: flex;
@@ -47,8 +47,10 @@
   position: absolute;
 
   display: block;
-  top: 3px;
+  top: 0;
   right: 25px;
+  width: 15px;
+  height: 15px;
 
   background-color: transparent;
 
@@ -56,50 +58,68 @@
   border: none;
 }
 
-.filter-form__toggle::before {
+.filter-form__hobby--closed .filter-form__toggle::before,
+.filter-form__music--closed .filter-form__toggle::before,
+.filter-form__food--closed .filter-form__toggle::before {
   content: "";
 
   position: absolute;
-  top: 6px;
-  right: 0;
+  top: 5px;
+  right: 3px;
+  z-index: 2;
 
   border-width: 4px;
   border-style: solid;
   border-color: #192144 transparent transparent transparent;
 }
 
-.filter-form__music--closed .filter-form__music-list {
+.filter-form__hobby--opened .filter-form__toggle::after,
+.filter-form__music--opened .filter-form__toggle::after,
+.filter-form__food--opened .filter-form__toggle::after {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  z-index: 2;
+
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent transparent #192144 transparent;
+}
+
+.filter-form__hobby--closed .filter-form__hobby-list,
+.filter-form__music--closed .filter-form__music-list,
+.filter-form__transport-list--closed .filter-form__way-of-travelling,
+.filter-form__food--closed .filter-form__food-list {
   display: none;
 }
 
-.filter-form__music--opened .filter-form__music-list {
+.filter-form__hobby--opened .filter-form__hobby-list,
+.filter-form__music--opened .filter-form__music-list,
+.filter-form__transport-list--opened .filter-form__way-of-travelling,
+.filter-form__food--opened .filter-form__food-list {
   display: block;
 }
 
-.filter-form__transport-list--closed .filter-form__way-of-travelling {
-  display: none;
-}
-
-.filter-form__transport-list--opened .filter-form__way-of-travelling {
-  display: flex;
-}
-
-.filter-form__music {
+.filter-form__hobby,
+.filter-form__music,
+.filter-form__food {
   border: none;
   margin: 0;
   padding-left: 25px;
 }
 
-.filter-form__music legend {
+.filter-form__hobby legend,
+.filter-form__music legend,
+.filter-form__food legend {
   padding: 0;
   margin-bottom: 15px;
 }
 
-.filter-form__music .filter-form__toggle::before {
-  top: 5px;
-}
-
-.filter-form__music-list {
+.filter-form__hobby-list,
+.filter-form__music-list,
+.filter-form__food-list {
   padding: 0;
   margin: 0;
 }
