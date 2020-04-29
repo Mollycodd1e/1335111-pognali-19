@@ -1,5 +1,4 @@
 .menu {
-  margin-top: 73px;
   position: relative;
   padding-top: 22px;
   background-color: $background-mobile;
@@ -57,7 +56,6 @@
 @media (min-width: $tablet-width) {
   .menu {
     left: 0;
-    margin-top: 133px;
     padding-top: 30px;
     padding-bottom: 48px;
     background-color: $background-tablet;
@@ -94,7 +92,6 @@
 
 @media (min-width: $desktop-width) {
   .menu {
-    margin-top: 107px;
     padding-bottom: 0;
     padding-top: 0;
     background-color: $background-desktop;

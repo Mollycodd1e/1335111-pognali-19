@@ -1,9 +1,11 @@
-.page-header {
+.page-header--scrolled {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 10;
+
+  background-color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
@@ -14,7 +16,11 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    left: -2px;
+    left: 0;
     background-color: $background-desktop;
+  }
+
+  .page-header--scrolled {
+    background-color: #ffffff;
   }
 }

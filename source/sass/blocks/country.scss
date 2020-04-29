@@ -28,7 +28,7 @@
   left: 0;
   width: 272px;
   height: 100px;
-  background: linear-gradient(transparent,#edeff6 75%);
+  background: linear-gradient(rgba(255, 255, 255, 0), #edeff6 75%);
 }
 
 .country__wrapper::after {
@@ -172,6 +172,11 @@
     line-height: 24px;
   }
 
+  .country__item:last-child .country__wrapper::after {
+    top: 50px;
+    left: 560px;
+  }
+
   .country__companion-counter::before {
     top: 2px;
 
@@ -195,5 +200,11 @@
   .country__text {
     margin-top: -25px;
     margin-bottom: 15px;
+  }
+
+  .country__item:last-child .country__wrapper::after {
+    width: 559px;
+    top: 60px;
+    left: 0;
   }
 }

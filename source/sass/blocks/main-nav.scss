@@ -3,6 +3,7 @@
   background-color: $background-mobile;
   text-transform: uppercase;
   padding-left: 25px;
+  padding-right: 25px;
   padding-top: 27px;
   padding-bottom: 20px;
 }
@@ -10,6 +11,10 @@
 .main-nav__logo {
   position: relative;
   z-index: 12;
+}
+
+.main-nav--scrolled {
+  background-color: #ffffff;
 }
 
 .main-nav__toggle {
@@ -42,6 +47,10 @@
   box-shadow: 0 8px 0 0 #ffffff;
 }
 
+.main-nav--scrolled .main-nav__toggle::before {
+  background-color: #cccccc;
+  box-shadow: 0 8px 0 0 #cccccc;
+}
 
 .main-nav--opened .main-nav__toggle {
   width: 29px;
@@ -155,10 +164,6 @@
   display: none;
 }
 
-.main-nav--scrolled {
-  background-color: #ffffff;
-}
-
 @media (max-width: $mobile-width-only) {
   .main-nav--nojs {
     padding-left: 0;
@@ -178,11 +183,6 @@
   .main-nav--nojs .contact__item,
   .main-nav--nojs .social__item {
     display: block;
-  }
-
-  .main-nav--scrolled .main-nav__toggle::before {
-    background-color: #cccccc;
-    box-shadow: 0 8px 0 0 #cccccc;
   }
 }
 
@@ -205,6 +205,10 @@
     width: 166px;
   }
 
+  .main-nav--scrolled {
+    background-color: #ffffff;
+  }
+
   .main-nav__toggle {
     top: 56px;
     right: 367px;
@@ -221,6 +225,12 @@
     display: block;
     margin: 0;
     margin-top: -5px;
+
+    background-color: $background-tablet;
+  }
+
+  .main-nav--scrolled .main-nav__user-list {
+    background-color: #ffffff;
   }
 
   .main-nav--opened .main-nav__user-list {
@@ -251,18 +261,6 @@
     padding-left: 99px;
     margin: 0;
   }
-}
-
-.main-nav--closed .main-nav__wrapper {
-  background-color: $background-tablet;
-}
-
-.main-nav--scrolled {
-  background-color: #ffffff;
-}
-
-.main-nav--scrolled .main-nav__wrapper {
-  background-color: #ffffff;
 }
 
 @media (max-width: $tablet-width-only) {
@@ -329,6 +327,21 @@
     background-color: $background-desktop;
   }
 
+  .main-nav--closed .main-nav {
+    padding-bottom: 100px;
+  }
+
+  .main-nav--scrolled {
+    padding-top: 16px;
+    padding-bottom: 15px;
+
+    background-color: #ffffff;
+  }
+
+  .main-nav--scrolled .main-nav__communication-list {
+    background-color: #ffffff;
+  }
+
   .main-nav__logo img {
     height: 52px;
     width: 200px;
@@ -342,26 +355,12 @@
     position: relative;
     padding: 0;
     display: flex;
-  }
 
-  .main-nav--closed .main-nav__wrapper {
     background-color: $background-desktop;
   }
 
-  .main-nav--closed .main-nav__site-list {
-    z-index: 3;
-    color: #ffffff;
-  }
-
-  .main-nav--scrolled {
-    background-color: #ffffff;
-  }
   .main-nav--scrolled .main-nav__wrapper {
     background-color: #ffffff;
-  }
-
-  .main-nav--scrolled .main-nav__site-list {
-    color: #192144;
   }
 
   .main-nav--closed .main-nav__site-list {
@@ -401,7 +400,6 @@
     background-color: #192144;
   }
 
-  .main
   .main-nav__communication {
     display: flex;
     padding: 0;

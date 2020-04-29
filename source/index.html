@@ -12,9 +12,9 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__logo" href="#">
           <picture class="main-nav__logo-image">
-            <source srcset="img/logo-desktop-white@1x.png" media="(min-width: 1440px)">
-            <source srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)">
-            <img src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип «Погнали»">
+            <source class="main-nav__logo-image--desktop" srcset="img/logo-desktop-white@1x.png" media="(min-width: 1440px)">
+            <source class="main-nav__logo-image--tablet" srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)">
+            <img class="main-nav__logo-image--mobile" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип «Погнали»">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button">
@@ -23,13 +23,19 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
-              <a>О сервисе</a>
+              <a class="site-list__link" href="#">
+                <span data-hover="О Сервисе">О сервисе<span>
+              </a>
             </li>
             <li class="site-list__item">
-              <a  href="form.html">Направления</a>
+              <a class="site-list__link" href="form.html">
+                <span data-hover="Направления">Направления</span>
+              </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">Попутчики</a>
+              <a class="site-list__link" href="catalog.html">
+                <span data-hover="Попутчики">Попутчики</span>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__communication communication">
@@ -523,6 +529,7 @@
       </ul>
       <a class="modal__button" type="button">Закрыть окно</a>
     </section>
+  <script src="js/logo-change.js"></script>
   <script src="js/menu-button.js"></script>
   <script src="js/modal-show.js"></script>
   <script src="js/scroll-menu.js"></script>
