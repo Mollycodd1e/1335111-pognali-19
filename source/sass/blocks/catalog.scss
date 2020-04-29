@@ -6,7 +6,7 @@
 
 .catalog__item {
   width: 270px;
-  padding-top: 20px;
+  padding-top: 22px;
   padding-bottom: 16px;
   border-radius: 20px;
   margin: 0 auto;
@@ -14,12 +14,147 @@
   background-color: #ffffff;
 }
 
+.catalog__people {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.catalog__people span {
+  margin-right: 0;
+  margin-left: 20px;
+  margin-top: 6px;
+  width: 6px;
+  height: 6px;
+  order: 2;
+}
+
+.catalog__people h3 {
+  width: 130px;
+}
+
+.catalog__people div {
+  display: flex;
+  padding-right: 0;
+  padding-left: 16px;
+}
+
+.catalog__people p {
+  position: relative;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  margin: 0;
+  margin-top: -20px;
+  margin-left: 85px;
+  order: 3;
+
+  color: #161c35;
+}
+
+.catalog__people p::before {
+  content: "";
+
+  position: absolute;
+
+  top: -10px;
+  left: -35px;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+
+  background-color: #f9eaea;
+}
+
+.catalog__people p::after {
+  content: "";
+
+  position: absolute;
+
+  top: 2px;
+  left: -25px;
+  width: 13px;
+  height: 11px;
+
+  background-image: url('../img/heart-active.svg');
+  background-repeat: no-repeat;
+}
+
+.catalog__people img {
+  border-radius: 50%;
+}
 .catalog__hashtags-list {
   display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  padding-left: 11px;
+  padding-right: 40px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.catalog__country-list {
+  font-size: 15px;
+  padding-left: 11px;
+}
+
+.catalog__country-list p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.catalog__country-list img {
+  width: 26px;
+  height: 18px;
+  padding-right: 15px;
+}
+
+.catalog__country-list ul {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+}
+
+.catalog__country-list li {
+  display: flex;
+  vertical-align: middle;
 }
 
 .catalog__way-of-travelling {
+  padding-left: 11px;
+  padding-right: 38px;
   display: flex;
+  justify-content: space-between;
+}
+
+.catalog__way-of-travelling p {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.catalog__wrapper ul {
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 24px;
+}
+
+.catalog__round-diagram svg {
+  top: -15px;
+  left: -10px;
+
+  fill: #ffffff;
+}
+
+.catalog__round-diagram span:nth-child(2) {
+  top: 5px;
+  left: 7px;
+  line-height: 18px;
+
+  color: #1d2e5b;
+}
+
+.catalog__round-diagram span:nth-child(3) {
+  display: none;
 }
 
 .catalog__button {

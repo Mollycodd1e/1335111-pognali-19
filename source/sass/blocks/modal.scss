@@ -57,9 +57,18 @@
   border: none;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 
   color: #1d2e5b;
   background-color: #f3f4f8;
+
+  &:hover {
+    background-color: #edeff6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

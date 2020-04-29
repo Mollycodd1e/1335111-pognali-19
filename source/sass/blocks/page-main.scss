@@ -1,0 +1,15 @@
+.page-main--scrolled {
+  margin-top:73px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main--scrolled {
+    margin-top: 133px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main--scrolled {
+    margin-top: 107px;
+  }
+}

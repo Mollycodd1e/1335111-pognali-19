@@ -3,20 +3,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
+  transition: 1s;
 
   background-color: #ffffff;
 }
 
-@media (min-width: $tablet-width) {
-  .page-header {
-    left: 0;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .page-header {
-    left: 0;
     background-color: $background-desktop;
   }
 

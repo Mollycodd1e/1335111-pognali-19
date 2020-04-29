@@ -4,6 +4,7 @@
   line-height: 18px;
   font-weight: 700;
   padding-bottom: 22px;
+  margin-bottom: 22px;
   border-radius: 20px;
   text-transform: uppercase;
 
@@ -60,7 +61,9 @@
 
 .filter-form__hobby--closed .filter-form__toggle::before,
 .filter-form__music--closed .filter-form__toggle::before,
-.filter-form__food--closed .filter-form__toggle::before {
+.filter-form__food--closed .filter-form__toggle::before,
+.filter-form__transport-list--closed .filter-form__toggle::before,
+.filter-form__level--closed .filter-form__toggle::before {
   content: "";
 
   position: absolute;
@@ -75,7 +78,9 @@
 
 .filter-form__hobby--opened .filter-form__toggle::after,
 .filter-form__music--opened .filter-form__toggle::after,
-.filter-form__food--opened .filter-form__toggle::after {
+.filter-form__food--opened .filter-form__toggle::after,
+.filter-form__transport-list--opened .filter-form__toggle::after,
+.filter-form__level--opened .filter-form__toggle::after {
   content: "";
 
   position: absolute;
@@ -91,15 +96,21 @@
 .filter-form__hobby--closed .filter-form__hobby-list,
 .filter-form__music--closed .filter-form__music-list,
 .filter-form__transport-list--closed .filter-form__way-of-travelling,
-.filter-form__food--closed .filter-form__food-list {
+.filter-form__food--closed .filter-form__food-list,
+.filter-form__level--closed .filter-range__wrapper  {
   display: none;
 }
 
 .filter-form__hobby--opened .filter-form__hobby-list,
 .filter-form__music--opened .filter-form__music-list,
-.filter-form__transport-list--opened .filter-form__way-of-travelling,
-.filter-form__food--opened .filter-form__food-list {
+.filter-form__food--opened .filter-form__food-list,
+.filter-form__level--opened .filter-range__wrapper {
   display: block;
+}
+
+.filter-form__transport-list--opened .filter-form__way-of-travelling {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filter-form__hobby,
@@ -117,6 +128,27 @@
   margin-bottom: 15px;
 }
 
+.filter-form__hobby legend,
+.filter-form__music legend,
+.filter-form__food legend,
+.filter-form__transport-list p,
+.filter-range__title {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    top: -13px;
+    left: 0;
+    width: 220px;
+    height: 1px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 .filter-form__hobby-list,
 .filter-form__music-list,
 .filter-form__food-list {
@@ -127,8 +159,6 @@
 .filter-form__way-of-travelling {
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
   padding-bottom: 15px;
 }
 

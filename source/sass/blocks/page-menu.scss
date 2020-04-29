@@ -1,0 +1,37 @@
+.page-menu {
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 2;
+
+  background-color: #161c35;
+}
+
+.page-menu__title {
+  position: relative;
+  margin: 0;
+  padding-left: 25px;
+  padding-top: 24px;
+  padding-bottom: 12px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.page-menu__title::after {
+  content: "";
+
+  position: absolute;
+  top: 72px;
+  left: 24px;
+  width: 173px;
+  height: 5px;
+  border-radius: 2.4px;
+
+  background-color: #ff8d30 ;
+}
+.page-menu__link {
+  display: none;
+}
