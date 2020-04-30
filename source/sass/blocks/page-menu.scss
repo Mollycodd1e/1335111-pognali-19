@@ -1,5 +1,8 @@
 .page-menu {
   position: relative;
+  padding-left: 25px;
+  padding-top: 24px;
+  padding-bottom: 12px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   z-index: 2;
@@ -10,9 +13,6 @@
 .page-menu__title {
   position: relative;
   margin: 0;
-  padding-left: 25px;
-  padding-top: 24px;
-  padding-bottom: 12px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 700;
@@ -24,14 +24,70 @@
   content: "";
 
   position: absolute;
-  top: 72px;
-  left: 24px;
+  top: 50px;
+  left: 0;
   width: 173px;
   height: 5px;
   border-radius: 2.4px;
 
   background-color: #ff8d30 ;
 }
+
 .page-menu__link {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-menu {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 77px;
+    padding-right: 75px;
+    padding-top: 93px;
+    padding-bottom: 65px;
+    align-items: center;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
+  .page-menu__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .page-menu__title::after {
+    top: 130px;
+    width: 287px;
+    height: 8px;
+    border-radius: 4px;
+  }
+
+  .page-menu__link {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    padding-right: 61px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+
+  .page-menu__link::before {
+    content: "";
+
+    position: absolute;
+
+    top: 6px;
+    right: 0;
+    width: 32px;
+    height: 16px;
+
+    background-image: url("../img/return.svg");
+    background-repeat: no-repeat;
+  }
 }

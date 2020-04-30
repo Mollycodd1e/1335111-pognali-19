@@ -41,10 +41,8 @@
     background-color: #ffbd30;
   }
 
-  &:active {
-    svg {
-      opacity: 0.3;
-    }
+  &:active svg {
+    opacity: 0.3;
   }
 }
 

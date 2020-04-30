@@ -23,7 +23,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__site-list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="#">
+              <a class="site-list__link" href="index.html">
                 <span data-hover="О Сервисе">О сервисе<span>
               </a>
             </li>
@@ -33,7 +33,7 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">
+              <a class="site-list__link" href="#">
                 <span data-hover="Попутчики">Попутчики</span>
               </a>
             </li>
@@ -110,9 +110,10 @@
       </section>
       <section class="country-filter country-filter--closed">
         <h2>Фильтрация по странам</h2>
-        <button class="country-filter__toggle" type="button">
-          <span class="visually-hidden">Открыть фильтр</span>
-        </button>
+        <a class="country-filter__toggle" href="#">
+          <span class="country-filter__toggle--open">Показать все</span>
+          <span class="country-filter__toggle--close">Свернуть</span>
+        </a>
         <div class="country-filter__wrapper">
           <ul class="country-filter__world-part world-part">
             <li class="world-part__item world-part__item--active">Европа</li>
@@ -120,7 +121,6 @@
             <li class="world-part__item">Америка</li>
             <li class="world-part__item">Острова</li>
           </ul>
-          <p class="country-filter__info">Свернуть</p>
           <table class="country-filter__alphabet">
             <tr>
               <td class="country-filter__alphabet--active">А</td><td>Б</td><td>В</td><td>Г</td><td>Д</td>

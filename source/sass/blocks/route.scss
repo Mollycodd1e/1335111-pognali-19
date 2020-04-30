@@ -64,18 +64,19 @@
   &:focus {
     background-color: #192144;
     color: #ffffff;
+  }
 
-    &::before {
-      border-color: transparent transparent transparent #ffffff;
-    }
+  &:hover::before,
+  &:focus::before {
+    border-color: transparent transparent transparent #ffffff;
   }
 
   &:active {
     color: transparentize($color: #ffffff, $amount: 0.3);
+  }
 
-    &::before {
-      opacity: 0.3;
-    }
+  &:active::before {
+    opacity: 0.3;
   }
 }
 

@@ -21,10 +21,10 @@
 
   &:active {
     color: transparentize($color: #1d2e5b, $amount: 0.3);
+  }
 
-    &.button::before {
-      opacity: 0.3;
-    }
+  &:active::before {
+    opacity: 0.3;
   }
 }
 
