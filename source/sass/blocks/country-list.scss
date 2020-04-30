@@ -7,7 +7,7 @@
   margin-right: 19px;
 }
 
-.country-list__item:last-child {
+.country-list__item:nth-child(3n) {
   margin-right: 0;
 }
 
