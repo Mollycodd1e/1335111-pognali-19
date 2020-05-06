@@ -1,15 +1,15 @@
-var hobbyMain = document.querySelector('.filter-form__hobby');
+var hobbyMain = document.querySelector('.filter-form__fieldset--hobby');
 var hobbyToggle = document.querySelector('.filter-form__toggle--hobby');
 
   hobbyMain.classList.remove('filter-form--nojs');
 
   hobbyToggle.addEventListener('click', function() {
-    if (hobbyMain.classList.contains('filter-form__hobby--closed')) {
-      hobbyMain.classList.remove('filter-form__hobby--closed');
-      hobbyMain.classList.add('filter-form__hobby--opened');
+    if (hobbyMain.classList.contains('filter-form__fieldset--closed')) {
+      hobbyMain.classList.remove('filter-form__fieldset--closed');
+      hobbyMain.classList.add('filter-form__fieldset--opened');
     }
     else {
-      hobbyMain.classList.remove('filter-form__hobby--opened');
-      hobbyMain.classList.add('filter-form__hobby--closed');
+      hobbyMain.classList.remove('filter-form__fieldset--opened');
+      hobbyMain.classList.add('filter-form__fieldset--closed');
     }
   });

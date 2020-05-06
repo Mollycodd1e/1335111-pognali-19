@@ -1,15 +1,15 @@
-var musicMain = document.querySelector('.filter-form__music');
+var musicMain = document.querySelector('.filter-form__fieldset--music');
 var musicToggle = document.querySelector('.filter-form__toggle--music');
 
   musicMain.classList.remove('filter-form--nojs');
 
   musicToggle.addEventListener('click', function() {
-    if (musicMain.classList.contains('filter-form__music--closed')) {
-      musicMain.classList.remove('filter-form__music--closed');
-      musicMain.classList.add('filter-form__music--opened');
+    if (musicMain.classList.contains('filter-form__fieldset--closed')) {
+      musicMain.classList.remove('filter-form__fieldset--closed');
+      musicMain.classList.add('filter-form__fieldset--opened');
     }
     else {
-      musicMain.classList.remove('filter-form__music--opened');
-      musicMain.classList.add('filter-form__music--closed');
+      musicMain.classList.remove('filter-form__fieldset--opened');
+      musicMain.classList.add('filter-form__fieldset--closed');
     }
   });

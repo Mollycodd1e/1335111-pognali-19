@@ -17,7 +17,7 @@
 }
 
 .recommendation__item {
-  padding-bottom: 32px;
+  padding-bottom: 30px;
   padding-top: 21px;
   padding-left: 25px;
   padding-right: 23px;
@@ -35,10 +35,6 @@
   padding-bottom: 18px;
 }
 
-.recommendation__item:nth-child(2) .recommendation__text {
-  padding-right: 58px;
-}
-
 .recommendation__item:nth-child(2) {
   margin-top: -8px;
 
@@ -51,30 +47,23 @@
   background-color: #ffbd30;
 }
 
-.recommendation__item:nth-child(3) .recommendation__text {
-  padding-right: 70px;
-}
-
 .recommendation__item:nth-child(4) {
   margin-top: -9px;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 
   background-color: #ffd74b;
 }
 
-.recommendation__item:nth-child(4) .recommendation__text {
-  padding-right: 28px;
-}
-
 .recommendation__text {
   margin: 0;
-  padding-right: 109px;
+  width: 140px;
+  margin-bottom: 2px;
 }
 
 .recommendation__number {
-  padding-bottom: 15px;
+  padding-bottom: 18px;
 
   color: #ffffff;
 }
@@ -134,7 +123,7 @@
 
   .recommendation__item:nth-child(3) .recommendation__number {
     padding-bottom: 0;
-    padding-top: 7px;
+    padding-top: 3px;
     padding-left: 1px;
   }
 
@@ -148,13 +137,17 @@
 
   .recommendation__item:nth-child(4) .recommendation__number {
     padding-bottom: 0;
-    padding-top: 7px;
     padding-left: 1px;
   }
 
   .recommendation__number {
     font-size: 30px;
     line-height: 36px;
+  }
+
+  .recommendation__text {
+    width: 241px;
+    padding-right: 70px;
   }
 }
 
@@ -240,5 +233,6 @@
 
   .recommendation__text {
     padding-right: 30px;
+    width: 190px;
   }
 }

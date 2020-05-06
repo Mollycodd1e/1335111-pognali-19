@@ -1,15 +1,15 @@
-var levelMain = document.querySelector('.filter-form__level');
+var levelMain = document.querySelector('.filter-range');
 var levelToggle = document.querySelector('.filter-form__toggle--level');
 
   levelMain.classList.remove('filter-form--nojs');
 
   levelToggle.addEventListener('click', function() {
-    if (levelMain.classList.contains('filter-form__level--closed')) {
-      levelMain.classList.remove('filter-form__level--closed');
-      levelMain.classList.add('filter-form__level--opened');
+    if (levelMain.classList.contains('filter-form__fieldset--closed')) {
+      levelMain.classList.remove('filter-form__fieldset--closed');
+      levelMain.classList.add('filter-form__fieldset--opened');
     }
     else {
-      levelMain.classList.remove('filter-form__level--opened');
-      levelMain.classList.add('filter-form__level--closed');
+      levelMain.classList.remove('filter-form__fieldset--opened');
+      levelMain.classList.add('filter-form__fieldset--closed');
     }
   });

@@ -5,179 +5,16 @@
 .catalog__list {
   padding: 0;
   margin: 0;
+  margin-bottom: 15px;
   list-style: none;
 }
 
 .catalog__item {
-  width: 270px;
-  padding-top: 22px;
-  padding-bottom: 16px;
-  border-radius: 20px;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 9px;
 
   background-color: #ffffff;
-}
-
-.catalog__people {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
-.catalog__people span {
-  margin-right: 0;
-  margin-left: 20px;
-  margin-top: 6px;
-  width: 6px;
-  height: 6px;
-  order: 2;
-}
-
-.catalog__people h3 {
-  width: 130px;
-}
-
-.catalog__people div {
-  display: flex;
-  padding-right: 0;
-  padding-left: 16px;
-}
-
-.catalog__people p {
-  position: relative;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  margin: 0;
-  margin-top: -20px;
-  margin-left: 85px;
-  order: 3;
-
-  color: #161c35;
-}
-
-.catalog__people p::before {
-  content: "";
-
-  position: absolute;
-
-  top: -10px;
-  left: -35px;
-  width: 31px;
-  height: 31px;
-  border-radius: 50%;
-
-  background-color: #f9eaea;
-}
-
-.catalog__people p::after {
-  content: "";
-
-  position: absolute;
-
-  top: 2px;
-  left: -25px;
-  width: 13px;
-  height: 11px;
-
-  background-image: url("../img/heart-active.svg");
-  background-repeat: no-repeat;
-}
-
-.catalog__people img {
-  border-radius: 50%;
-}
-
-.catalog__hashtags-list {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 15px;
-  padding-left: 11px;
-  padding-right: 40px;
-  text-align: left;
-  margin-bottom: 30px;
-}
-
-.catalog__country-list {
-  font-size: 15px;
-  padding-left: 11px;
-}
-
-.catalog__country-list p {
-  margin: 0;
-  margin-bottom: 20px;
-}
-
-.catalog__country-list img {
-  width: 26px;
-  height: 18px;
-  padding-right: 15px;
-}
-
-.catalog__country-list ul {
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 0;
-}
-
-.catalog__country-list li {
-  display: flex;
-  vertical-align: middle;
-}
-
-.catalog__way-of-travelling {
-  padding-left: 11px;
-  padding-right: 38px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.catalog__way-of-travelling p {
-  margin: 0;
-  margin-bottom: 24px;
-}
-
-.catalog__wrapper ul {
-  display: flex;
-  padding-left: 0;
-  margin-bottom: 24px;
-}
-
-.catalog__round-diagram svg {
-  top: -15px;
-  left: -10px;
-
-  fill: #ffffff;
-}
-
-.catalog__round-diagram span:nth-child(2) {
-  top: 5px;
-  left: 7px;
-  line-height: 18px;
-
-  color: #1d2e5b;
-}
-
-.catalog__round-diagram span:nth-child(3) {
-  display: none;
-}
-
-.catalog__button-card {
-  display: block;
-  font-size: 17px;
-  line-height: 30px;
-  font-weight: 700;
-  width: 230px;
-  padding-top: 7px;
-  padding-bottom: 3px;
-  margin: 0 auto;
-  border-radius: 20px;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #161c35;
-  background-color: #ffd74b;
 }
 
 .catalog__button-more {
@@ -192,7 +29,7 @@
   padding-bottom: 6px;
   padding-right: 5px;
   padding-left: 33px;
-  margin-bottom: 27px;
+  margin-bottom: 9px;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -203,6 +40,7 @@
     content: "";
 
     position: absolute;
+    border-radius: 4px;
 
     background-color: #1d2e5b;
   }
@@ -222,6 +60,15 @@
   }
 }
 
+.catalog__button-more:hover,
+.catalog__button-more:focus {
+  opacity: 0.6;
+}
+
+.catalog__button-more:active {
+  opacity: 0.3;
+}
+
 .catalog__button-wrapper {
   display: flex;
   justify-content: center;
@@ -231,8 +78,8 @@
   display: block;
   position: relative;
   margin: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 19px;
+  padding-bottom: 31px;
   width: 135px;
 
   background-color: #ffffff;
@@ -242,10 +89,10 @@
 
     position: absolute;
 
-    top: 15px;
-    left: 50px;
+    top: 17px;
+    left: 51px;
 
-    border-width: 12px;
+    border-width: 11px;
     border-style: solid;
   }
 }
@@ -266,6 +113,122 @@
   border-left: 1px solid #edeff6;
 
   &::before {
+    left: 62px;
+    border-color: transparent transparent transparent #192144;
+  }
+}
+
+.catalog__button--previous:hover::before,
+.catalog__button--previous:focus::before,
+.catalog__button--next:hover::before,
+.catalog__button--next:focus::before {
+  opacity: 0.6;
+}
+
+.catalog__button--previous:active::before,
+.catalog__button--next:active::before {
+  opacity: 0.3;
+}
+
+.catalog__page-lists {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    margin-bottom: 39px;
+  }
+
+  .catalog__button-more {
+    font-size: 20px;
+    width: 135px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 5px;
+    padding-left: 50px;
+    margin-bottom: 39px;
+
+    &::before {
+      top: 15px;
+      left: -2px;
+      width: 27px;
+      height: 3px;
+    }
+
+    &::after {
+      top: 4px;
+      left: 10px;
+      width: 3px;
+      height: 27px;
+    }
+  }
+
+  .catalog__page-link {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 50%;
+
+    color: #161c35;
+  }
+
+  .catalog__page-link:hover,
+  .catalog__page-link:focus {
+    opacity: 0.6;
+  }
+
+  .catalog__page-link:active {
+    opacity: 1;
+    background-color: #ffd74b;
+  }
+
+  .catalog__page-link--active {
+    background-color: #ffd74b;
+  }
+
+  .catalog__page-lists {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: auto;
+  }
+
+  .catalog__page-lists-item {
+    width: 50px;
+    text-align: center;
+  }
+
+  .catalog__button-wrapper {
+    width: 630px;
+    border-radius: 20px;
+    padding-left: 28px;
+    padding-right: 30px;
+    padding-top: 27px;
+    padding-bottom: 23px;
+    margin-bottom: 12px;
+
+    background-color: #ffffff;
+  }
+
+  .catalog__button {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 30px;
+    border: none;
+  }
+
+  .catalog__button--previous::before {
+    top: 12px;
+    left: -9px;
+  }
+
+  .catalog__button--next::before {
+    top: 12px;
+    left: 14px;
     border-color: transparent transparent transparent #192144;
   }
 }

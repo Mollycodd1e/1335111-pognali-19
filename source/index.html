@@ -9,12 +9,12 @@
   </head>
   <body>
     <header class="page-header">
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__logo" href="#">
           <picture class="main-nav__logo-image">
-            <source class="main-nav__logo-image--desktop" srcset="img/logo-desktop-white@1x.png" media="(min-width: 1440px)">
-            <source class="main-nav__logo-image--tablet" srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)">
-            <img class="main-nav__logo-image--mobile" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип «Погнали»">
+            <source class="main-nav__logo-image--desktop" srcset="img/logo-desktop-blue@1x.png" media="(min-width: 1440px)">
+            <source class="main-nav__logo-image--tablet" srcset="img/logo-tablet-blue@1x.png" media="(min-width: 768px)">
+            <img class="main-nav__logo-image--mobile" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип «Погнали»">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button">
@@ -195,7 +195,7 @@
               <div class="country__wrapper">
                   <img class="country__flag" src="img/thailand-flag-x1.png" width="35" height="24" alt="Флаг Тайланда">
                 <h3 class="country__name">
-                  <a href="#">Таиланд</a>
+                  <a href="#">Тайланд</a>
                 </h3>
                 <p class="country__text">Джунгли зовут!</p>
                 <p class="country__companion-counter">18321</p>
@@ -230,7 +230,7 @@
               </div>
             </li>
           </ul>
-          <a class="destinations__to-all button" href="form.html">Показать все </a>
+          <a class="destinations__to-all button" href="form.html">Показать все</a>
         </div>
       </section>
       <section class="companion">
@@ -456,14 +456,14 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта для навигации</h2>
-        <iframe src="https://yandex.ru/map-widget/v1/-/CSsXAU-E" style="position: relative;"></iframe>
+        <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/-/CSsXAU-E" style="position: relative;"></iframe>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <div class="page-footer__logo">
           <a class="page-footer__link">
-            <picture class="main-nav__logo-image">
+            <picture class="page-footer__logo-image">
               <source srcset="img/logo-desktop-blue@1x.png" media="(min-width: 1440px)">
               <source srcset="img/logo-tablet-blue@1x.png" media="(min-width: 768px)">
               <img src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип «Погнали»">

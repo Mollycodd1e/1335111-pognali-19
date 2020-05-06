@@ -1,5 +1,10 @@
 .round-diagram {
-  position: relative;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 16px;
+  left: 17px;
+  z-index: 1;
 }
 
 .round-diagram svg {
@@ -8,13 +13,7 @@
 }
 
 .round-diagram__progress-pie {
-  position: absolute;
-
-  top: 16px;
-  left: 17px;
-
   transform: rotate(-90deg);
-  z-index: 4;
 
   stroke: #ff8d30;
   fill: #000000;
@@ -24,12 +23,12 @@
 .round-diagram__level {
   position: absolute;
 
-  top: 30px;
-  left: 34px;
+  top: 14px;
+  left: 17px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-  z-index: 5;
+  z-index: 1;
 
   color: #ffffff;
 }
@@ -37,13 +36,13 @@
 .round-diagram__text {
   position: absolute;
 
-  top: 56px;
-  left: 35px;
+  top: 40px;
+  left: 18px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
   opacity: 0.9;
-  z-index: 5;
+  z-index: 1;
 
   color: #ffffff;
 }
@@ -52,9 +51,9 @@
   content: "";
   position: absolute;
 
-  top: 52px;
-  left: 32px;
-  width: 29px;
+  top: 36px;
+  left: 15px;
+  width: 30px;
   height: 1px;
   opacity: 0.3;
   z-index: 5;
@@ -63,45 +62,45 @@
 }
 
 @media (min-width: $tablet-width) {
-  .round-diagram__progress-pie {
-    top: 20px;
-    left: 20px;
+  .round-diagram {
+    top: 19px;
+    left: 19px;
   }
 
   .round-diagram__level {
-    top: 34px;
-    left: 36px;
+    top: 15px;
+    left: 17px;
   }
 
   .round-diagram__text {
-    top: 60px;
-    left: 37px;
+    top: 40px;
+    left: 19px;
   }
 
   .round-diagram::before {
-    top: 56px;
-    left: 35px;
+    top: 37px;
+    left: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .round-diagram__progress-pie {
+  .round-diagram {
     top: 23px;
     left: 23px;
   }
 
   .round-diagram__level {
-    top: 37px;
-    left: 39px;
+    top: 14px;
+    left: 17px;
   }
 
   .round-diagram__text {
-    top: 62px;
-    left: 38px;
+    top: 40px;
+    left: 17px;
   }
 
   .round-diagram::before {
-    top: 59px;
-    left: 37px;
+    top: 36px;
+    left: 15px;
   }
 }
