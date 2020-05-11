@@ -78,6 +78,10 @@
     white-space: normal;
   }
 
+  .information__text-inner {
+    white-space: pre-wrap;
+  }
+
   .information__text--bold {
     margin-bottom: 51px;
     font-size: 21px;
@@ -113,6 +117,10 @@
 
   .information__text {
     margin-bottom: 36px;
+  }
+
+  .information__text-inner {
+    white-space: normal;
   }
 
   .information__text--bold {

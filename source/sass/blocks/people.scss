@@ -50,6 +50,15 @@
   margin-bottom: 7px;
 }
 
+.people__item:nth-child(2) .people__country-list {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.people__item:nth-child(2) .people__hashtags-list {
+  padding-left: 12px;
+}
+
 .people__hashtags-list {
   padding-left: 5px;
   margin-bottom: 17px;

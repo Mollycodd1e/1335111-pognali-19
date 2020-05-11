@@ -163,46 +163,6 @@
   display: none;
 }
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
-}
-
-.main-nav--nojs {
-  display: block;
-  padding-bottom: 0;
-
-  background-color: #ffffff;
-}
-
-.main-nav--nojs .main-nav__site-list,
-.main-nav--nojs .main-nav__contact {
-  display: block;
-}
-
-.main-nav--nojs .main-nav__contact {
-  width: 320px;
-  margin: 0 auto;
-  margin-left: -25px;
-}
-
-.main-nav--nojs .main-nav__wrapper {
-  padding-top: 14px;
-  position: static;
-}
-
-.main-nav--nojs .main-nav__site-list {
-  padding-top: 50px;
-}
-
-.main-nav--nojs .main-nav__user-list {
-  top: 250px;
-  display: block;
-}
-
-.main-nav--nojs .main-nav__social {
-  display: flex;
-}
-
 .main-nav--catalog {
   background-color: #161c35;
 }
@@ -221,6 +181,48 @@
 
   .main-nav--catalog .main-nav__toggle {
     top: 19px;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    background-color: #ffffff;
+  }
+
+  .main-nav--nojs .main-nav__site-list,
+  .main-nav--nojs .main-nav__contact {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__contact {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 14px;
+    position: static;
+  }
+
+  .main-nav--nojs .main-nav__site-list {
+    padding-top: 50px;
+  }
+
+  .main-nav--nojs .main-nav__user-list {
+    top: 250px;
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__social {
+    display: flex;
   }
 }
 
@@ -309,6 +311,16 @@
     display: none;
   }
 
+  .main-nav--catalog {
+    background-color: #161c35;
+  }
+
+  .main-nav--scrolled {
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
@@ -332,6 +344,8 @@
   }
 
   .main-nav--nojs .main-nav__wrapper {
+    display: flex;
+    flex-direction: column;
     padding-top: 14px;
     position: static;
   }
@@ -352,14 +366,6 @@
   .main-nav--nojs .main-nav__social {
     display: flex;
     padding-left: 60px;
-  }
-
-  .main-nav--catalog {
-    background-color: #161c35;
-  }
-
-  .main-nav--scrolled {
-    background-color: #ffffff;
   }
 }
 
@@ -438,7 +444,7 @@
   }
 
   .main-nav__site-list {
-    padding-top: 10px;
+    padding-top: 13px;
     margin-right: 32px;
   }
 
@@ -471,7 +477,8 @@
     display: none;
   }
 
-  .main-nav--closed .main-nav__social {
-    display: none;
+
+  .main-nav--nojs .main-nav__logo-image {
+    display: block;
   }
 }

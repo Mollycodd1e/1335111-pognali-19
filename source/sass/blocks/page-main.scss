@@ -12,4 +12,11 @@
   .page-main--scrolled {
     margin-top: 107px;
   }
+
+  .page-main__desktop-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1440px;
+    margin: 0 auto;
+  }
 }

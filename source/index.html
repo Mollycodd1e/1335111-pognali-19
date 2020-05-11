@@ -12,7 +12,7 @@
       <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs">
         <a class="main-nav__logo" href="#">
           <picture class="main-nav__logo-image">
-            <source class="main-nav__logo-image--desktop" srcset="img/logo-desktop-blue@1x.png" media="(min-width: 1440px)">
+            <source class="main-nav__logo-image--desktop" srcset="img/logo-desktop-white@1x.png" media="(min-width: 1440px)">
             <source class="main-nav__logo-image--tablet" srcset="img/logo-tablet-blue@1x.png" media="(min-width: 768px)">
             <img class="main-nav__logo-image--mobile" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип «Погнали»">
           </picture>
@@ -171,7 +171,7 @@
         <div class="information__wrapper container">
           <h2 class="information__title block-title">О сервисе</h2>
           <p class="information__text">Любое путешествие веселее
-            c попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+            c попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий <span class="information__text-inner">      и</span> черпайте вдохновение в чужих.
           </p>
           <p class="information__text information__text--bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
           </p>
@@ -415,8 +415,8 @@
         <div class="interested__wrapper container">
           <h2 class="interested__title block-title">Заинтересовались?</h2>
           <p class="interested__text"> Зарегистрируйтесь,
-            это быстро и бесплатно!
-            Уже зарегистрированы? Тогда скорее <a href="authorization.html">авторизуйтесь.</a></p>
+            это быстро и бесплатно!</p>
+          <p class="interested__text-link"> Уже зарегистрированы? Тогда скорее <a href="authorization.html">авторизуйтесь.</a></p>
           <form class="interested__form" action="https://echo.htmlacademy.ru" method="post">
             <input type="text" name="E-mail" class="email" id="email" placeholder="E-mail">
             <button class="interested__button button" type="submit">
@@ -457,6 +457,11 @@
       <section class="map">
         <h2 class="visually-hidden">Карта для навигации</h2>
         <iframe class="map__interactive" src="https://yandex.ru/map-widget/v1/-/CSsXAU-E" style="position: relative;"></iframe>
+        <picture class="map__image">
+          <source srcset="img/map-desktop.png" media="(min-width: 1440px)">
+          <source srcset="img/map-tablet.png" media="(min-width: 768px)">
+          <img class="map__photo" src="img/map-mobile.png" width="320" height="546" alt="Место расположения">
+        </picture>
       </section>
     </main>
     <footer class="page-footer">

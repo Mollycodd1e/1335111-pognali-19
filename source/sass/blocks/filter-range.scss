@@ -12,6 +12,8 @@
 
 .filter-range__title {
   position: relative;
+  padding: 0;
+  margin: 0;
   font-weight: 700;
   font-size: 16px;
   padding-top: 1px;
@@ -82,7 +84,7 @@
   right: 103px;
   width: 10px;
   height: 11px;
-  z-index: 5;
+  z-index: 1;
   background-color: #ffffff;
 }
 
@@ -95,7 +97,7 @@
   right: 103px;
   width: 14px;
   height: 2px;
-  z-index: 5;
+  z-index: 1;
   background-color: #cbced9;
 }
 
@@ -172,13 +174,17 @@
 
   .filter-range__title::before {
     top: 11px;
-    left: 101%;
+    left: 102%;
     width: 3px;
     height: 3px;
     border-radius: 50%;
 
     background-color: #1d2e5b;
     box-shadow: 0 6px 0  0 #1d2e5b;
+  }
+
+  .filter-range__title--wrapper {
+    display: flex;
   }
 
   .filter-range__wrapper {
@@ -247,5 +253,79 @@
 
   .filter-range__toggle--max {
     right: 210px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-range__title {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-left: 46px;
+  }
+
+  .filter-range__wrapper {
+    padding-left: 47px;
+  }
+
+  .filter-range input {
+    width: 93px;
+    height: 43px;
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .filter-range__level-control::before {
+    top: 17px;
+    right: 120px;
+    width: 10px;
+    height: 13px;
+  }
+
+  .filter-range__level-control::after {
+    top: 23px;
+    right: 116px;
+    width: 20px;
+    height: 2px;
+  }
+
+  .filter-range__level-control {
+    position: relative;
+    display: flex;
+    margin-bottom: 48px;
+    height: 35px;
+  }
+
+  .filter-range__range-control .filter-range__scale {
+    width: 190px;
+    height: 3px;
+    border-radius: 1.5px;
+
+    background: rgba(29, 46, 91, 0.2);
+  }
+
+  .filter-range__range-control .filter-range__bar {
+    right: -65px;
+    width: 125px;
+    height: 3px;
+    border-radius: 1.5px;
+  }
+
+  .filter-range__range-control {
+    margin-bottom: 43px;
+  }
+
+  .filter-range__toggle {
+    width: 13px;
+    height: 13px;
+  }
+
+  .filter-range__toggle--min {
+    right: 29px;
+  }
+
+  .filter-range__toggle--max {
+    right: 148px;
   }
 }

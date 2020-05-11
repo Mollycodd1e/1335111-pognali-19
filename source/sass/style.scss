@@ -1,3 +1,4 @@
+@import "node_modules/normalize.sass/normalize.sass";
 @import "blocks/variables.scss";
 @import "blocks/scaffolding.scss";
 @import "blocks/country-filter.scss";
@@ -41,3 +42,7 @@
 @import "blocks/filter-range.scss";
 @import "blocks/catalog.scss";
 @import "blocks/companion-card.scss";
+@import "blocks/form-menu.scss";
+@import "blocks/companion-form.scss";
+@import "blocks/modal-country.scss";
+

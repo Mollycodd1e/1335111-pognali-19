@@ -18,17 +18,26 @@
 }
 
 .interested__text {
-  margin-top: 0;
+  margin: 0;
   padding-left: 35px;
   padding-right: 35px;
-  margin-bottom: 29px;
   text-align: center;
   white-space: pre-line;
 
   color: #ffffff;
 }
 
-.interested__text a {
+.interested__text-link {
+  margin: 0;
+  margin-bottom: 29px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.interested__text-link a {
   color: #ffd74b;
 
   &:hover,
@@ -164,7 +173,7 @@
   }
 
   .interested__title {
-    margin-bottom: 55px;
+    margin-bottom: 56px;
   }
 
   .interested__text {
@@ -173,6 +182,12 @@
     padding-left: 30px;
     padding-right: 27px;
     white-space: normal;
+  }
+
+  .interested__text-link {
+    font-size: 28px;
+    line-height: 33px;
+    padding: 0;
     margin-bottom: 65px;
   }
 
@@ -240,6 +255,9 @@
   .interested__text {
     padding-left: 250px;
     padding-right: 250px;
+  }
+
+  .interested__text-link {
     margin-bottom: 58px;
   }
 

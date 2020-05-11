@@ -42,7 +42,7 @@
   content: "";
 
   position: absolute;
-  top: 9px;
+  top: 6px;
   right: 0;
 
   border-width: 4px;
@@ -54,7 +54,7 @@
   content: "";
 
   position: absolute;
-  top: 5px;
+  top: 2px;
   right: 0;
 
   border-width: 4px;
@@ -102,7 +102,7 @@
     position: absolute;
 
     top: -13px;
-    left: 0;
+    left: 20px;
     width: 220px;
     height: 1px;
 
@@ -158,11 +158,11 @@
 
 .filter-form__list {
   margin: 0;
-  margin-top: 6px;
+  margin-top: 2px;
   font-size: 15px;
   line-height: 15px;
   padding-left: 47px;
-  padding-bottom: 2px;
+  padding-bottom: 6px;
   font-weight: 400;
   text-transform: none;
   list-style: none;
@@ -237,6 +237,7 @@
   }
 
   .filter-form__fieldset .filter-form__legend {
+    position: absolute;
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
@@ -277,9 +278,21 @@
   .filter-form__fieldset--closed .filter-form__transport-list,
   .filter-form__fieldset--closed .filter-range__wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
+  }
+
+  .filter-form__fieldset--closed:hover .filter-form__legend,
+  .filter-form__fieldset--closed:focus .filter-form__legend,
+  .filter-form__fieldset--closed:hover .filter-form__toggle,
+  .filter-form__fieldset--closed:focus .filter-form__toggle {
+    opacity: 1;
+  }
+
+  .filter-form__fieldset--closed:active .filter-form__legend,
+  .filter-form__fieldset--closed:active .filter-form__toggle {
+    opacity: 1;
   }
 
   .filter-form__toggle {
@@ -300,7 +313,7 @@
 
   .filter-form__fieldset .filter-form__list {
     padding-left: 92px;
-    padding-top: 7px;
+    padding-top: 8px;
   }
 
   .filter-form__list .filter-form__item {
@@ -315,12 +328,16 @@
     margin-right: 100px;
   }
 
+  .filter-form__list .filter-form__item:nth-child(3n + 2) {
+    margin-right: 100px;
+  }
+
   .filter-form__fieldset--music {
     padding-bottom: 9px;
   }
 
   .filter-form__fieldset--music .filter-form__list {
-    padding-left: 75px;
+    padding-left: 173px;
     padding-top: 5px;
     display: flex;
   }
@@ -332,6 +349,7 @@
   .filter-form__fieldset--hobby .filter-form__list {
     display: flex;
     margin: 0;
+    padding-left: 173px;
   }
 
   .filter-form__fieldset--music .filter-form__item {
@@ -342,13 +360,18 @@
     margin-right: 62px;
   }
 
+  .filter-form__fieldset--music .filter-form__item:nth-child(3n + 2) {
+    margin-right: 62px;
+  }
+
   .filter-form__fieldset--food {
     padding-bottom: 9px;
   }
 
   .filter-form__fieldset--food .filter-form__list {
     display: flex;
-    padding-left: 114px;
+    padding-top: 6px;
+    padding-left: 173px;
   }
 
   .filter-form__fieldset--food .filter-form__item {
@@ -359,6 +382,11 @@
     margin-right: 56px;
   }
 
+  .filter-form__fieldset--food .filter-form__item:nth-child(3n + 2) {
+    margin-right: 56px;
+  }
+
+
   .filter-form__fieldset--transport .filter-form__legend {
     padding-top: 9px;
   }
@@ -366,11 +394,12 @@
   .filter-form__fieldset .filter-form__transport-list {
     padding-bottom: 9px;
     padding-top: 0;
-    padding-left: 22px;
+    padding-left: 146px;
   }
 
   .filter-form__fieldset--closed .filter-range__wrapper {
     display: block;
+    margin-left: 415px;
   }
 
   .filter-form__submit-button {
@@ -397,5 +426,91 @@
 
   .filter-form__level {
     padding-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-form {
+    width: 260px;
+    padding-bottom: 47px;
+  }
+
+  .filter-form__toggle {
+    top: 5px;
+    right: 20px;
+  }
+
+  .filter-form__fieldset--closed .filter-form__toggle::before {
+    top: 5px;
+    right: 2px;
+
+    border-width: 5px;
+  }
+
+  .filter-form__fieldset--opened .filter-form__toggle::after {
+    top: 0;
+    right: 2px;
+
+    border-width: 5px;
+  }
+
+  .filter-form__fieldset .filter-form__legend {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-left: 46px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .filter-form__fieldset {
+    padding-bottom: 1px;
+  }
+
+  .filter-form__list {
+    padding-left: 70px;
+    margin-top: 7px;
+    padding-bottom: 8px;
+  }
+
+  .filter-form__list label {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 10px;
+  }
+
+  .filter-form__item {
+    margin-bottom: 20px;
+  }
+
+  .filter-form__list .filter-form__input-checkbox:not(:checked) + label::before {
+    left: -22px;
+    top: -2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+  }
+
+  .filter-form__list .filter-form__input-checkbox:checked + label::after {
+    left: -22px;
+    top: -2px;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+
+    background-size: 12px 12px;
+  }
+
+  .filter-form__submit-button {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    width: 196px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    border-radius: 25px;
+    margin-left: 48px;
   }
 }

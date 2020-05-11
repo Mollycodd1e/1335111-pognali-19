@@ -2,7 +2,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  padding-top: 8px;
+  padding-top: 4px;
   padding-left: 24px;
   padding-bottom: 15px;
   text-transform: none;
@@ -92,5 +92,38 @@
   .transport-list .transport-list__item svg {
     width: 24px;
     height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .transport-list {
+    padding-left: 45px;
+    padding-bottom: 30px;
+  }
+
+  .transport-list .transport-list__input-checkbox:not(:checked) + label::before {
+    left: 0;
+    top: 0;
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport-list .transport-list__input-checkbox:checked + label::after {
+    left: 0;
+    top: 0;
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport-list label {
+    padding: 0;
+    width: 43px;
+    height: 43px;
+  }
+
+  .transport-list .transport-list__item svg {
+    top: 11px;
+    width: 23px;
+    height: 23px;
   }
 }
