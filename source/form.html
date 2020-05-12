@@ -132,7 +132,7 @@
             </label>
             <p class="companion-form__hashtags">
               <label class="companion-form__hashtags-title">Тэги</label>
-              <textarea class="companion-form__hashtags-input">#бургер #бар #футбол #концерт #крафт
+              <textarea class="companion-form__hashtags-input" placeholder="Коротко о себе в виде 5-8 хештегов">#бургер #бар #футбол #концерт #крафт
               </textarea>
             </p>
             <fieldset class="companion-form__transport">
@@ -198,7 +198,7 @@
             <div class="companion-form__add-plans-wrapper container">
               <p class="companion-form__add-plans-title">Добавить план:</p>
               <div class="companion-form__step-wrapper">
-                <p class="companion-form__add-step-title">Шаг 1.
+                <p class="companion-form__add-step-title" id="step-one">Шаг 1.
                 Даты пребывания</p>
                 <p class="companion-form__add-date-text">Укажите предпочтительное количество попутчиков, которых
                       вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
@@ -307,7 +307,7 @@
                   <li class="companion-form__calendar-date companion-form__calendar-date--disabled">26</li>
                   <li class="companion-form__calendar-date companion-form__calendar-date--disabled">27</li>
                   <li class="companion-form__calendar-date companion-form__calendar-date--disabled">28</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">1</li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">1<span class="companion-form__calendar-date--desktop">мар</span></li>
                   <li class="companion-form__calendar-date companion-form__calendar-date--disabled">2</li>
                   <li class="companion-form__calendar-date companion-form__calendar-date--disabled">3</li>
                   <li class="companion-form__calendar-date companion-form__calendar-date--disabled">4</li>
@@ -332,22 +332,22 @@
                   <li class="companion-form__calendar-date companion-form__calendar-date--disabled">23</li>
                   <li class="companion-form__calendar-date companion-form__calendar-date--disabled">24</li>
                   <li class="companion-form__calendar-date companion-form__calendar-date--disabled">25</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--selected">26</li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--selected">26<p class="companion-form__calendar-arrival">Заезд</p></li>
                   <li class="companion-form__calendar-date companion-form__calendar-date--selected">27</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--selected">28</li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--selected">28<p class="companion-form__calendar-departure">Выезд</p></li>
                   <li class="companion-form__calendar-date">29</li>
                   <li class="companion-form__calendar-date">30</li>
                   <li class="companion-form__calendar-date">31</li>
-                  <li class="companion-form__calendar-date">1</li>
+                  <li class="companion-form__calendar-date">1<span class="companion-form__calendar-date--desktop">апр</span></li>
                   <li class="companion-form__calendar-date">2</li>
                   <li class="companion-form__calendar-date">3</li>
                   <li class="companion-form__calendar-date">4</li>
                   <li class="companion-form__calendar-date">5</li>
                 </ul>
-                <a class="companion-form__next-button" href="#step2">Следующий шаг</a>
+                <a class="companion-form__next-button" href="#step-two">Следующий шаг</a>
               </div>
               <div class="companion-form__step-wrapper companion-form__step-wrapper--two">
-                <p class="companion-form__add-step-title">Шаг 2.
+                <p class="companion-form__add-step-title" id="step-two">Шаг 2.
                   Маршрут</p>
                 <p class="companion-form__add-route-text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
                 <ul class="companion-form__paragraph-list companion-form__paragraph-list--step-two">
@@ -408,11 +408,11 @@
                     <span class="visually-hidden">Добавить страну</span>
                   </button>
                 </div>
-                <a class="companion-form__next-button" href="#step3">Следующий шаг</a>
-                <a class="companion-form__previous-button" href="#step1">На шаг назад</a>
+                <a class="companion-form__next-button" href="#step-three">Следующий шаг</a>
+                <a class="companion-form__previous-button" href="#step-one">На шаг назад</a>
               </div>
               <div class="companion-form__step-wrapper companion-form__step-wrapper--three">
-                <p class="companion-form__add-step-title">Шаг 3.
+                <p class="companion-form__add-step-title" id="step-three">Шаг 3.
                   Развлечения</p>
                 <p class="companion-form__add-entertainment-text">Наконец, расскажите о своих планах времяпровождения.
                   Можно писать в свободной форме и ставить тэги.</p>
@@ -429,10 +429,10 @@
                 </ul>
                 <fieldset class="companion-form__entertainment-fieldset">
                   <legend class="visually-hidden companion-form__entertainment-legend">Развлечения в странах</legend>
-                  <div class="companion-form__entertainment-wrapper">
+                  <div class="companion-form__entertainment-wrapper companion-form__entertainment-label--bosnia">
                     <label class="companion-form__entertainment-label">Босния и Герцеговина</label>
                     <img src="img/bosnia-and-herzegovina-flag-x1.png" width="35" height="24" alt="Флаг страны">
-                    <textarea class="companion-form__entertainment-input" placeholder="План действий"></textarea>
+                    <textarea class="companion-form__entertainment-input" placeholder="План действий" required></textarea>
                   </div>
                   <div class="companion-form__entertainment-wrapper companion-form__entertainment-wrapper--czech">
                     <label class="companion-form__entertainment-label">Чехия</label>
@@ -441,7 +441,7 @@
                   </div>
                 </fieldset>
                 <button class="companion-form_form-button" type="submit">Отправить</button>
-                <a class="companion-form__previous-button" href="#step1">На шаг назад</a>
+                <a class="companion-form__previous-button" href="#step-two">На шаг назад</a>
               </div>
             </div>
           </div>

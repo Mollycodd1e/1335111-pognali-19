@@ -67,6 +67,42 @@
   fill: #1d2e5b;
 }
 
+.transport-list__input-checkbox:checked + label:hover svg,
+.transport-list__input-checkbox:checked + label:focus svg {
+  fill: rgba(16, 30, 68, 0.7);
+}
+
+.transport-list__input-checkbox:checked + label:hover::after,
+.transport-list__input-checkbox:checked + label:focus::after {
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.transport-list__input-checkbox:checked + label:active svg {
+  fill: rgba(16, 30, 68, 0.3);
+}
+
+.transport-list__input-checkbox:checked + label:active::after {
+  background-color: #e2e5f1;
+}
+
+.transport-list__input-checkbox:not(:checked) + label:hover svg,
+.transport-list__input-checkbox:not(:checked) + label:focus svg {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.transport-list__input-checkbox:not(:checked) + label:hover::before,
+.transport-list__input-checkbox:not(:checked) + label:focus::before {
+  box-shadow: 0px 2px 10px 0 rgba(0, 0, 0, 0.08);
+}
+
+.transport-list__input-checkbox:not(:checked) + label:active svg {
+  fill: rgba(6, 5, 0, 0.15);
+}
+
+.transport-list__input-checkbox:not(:checked) + label:active::before {
+  background-color: #e2e5f1;
+}
+
 @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
   .transport-list label {
     padding: 0;

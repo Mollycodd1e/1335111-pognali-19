@@ -96,6 +96,15 @@
 
   background-color: #dfe3f0;
   color: #161c35;
+
+  &:hover,
+  &:focus {
+    background-color: #d1d7e9;
+  }
+
+  &:active {
+    color: transparentize($color: #161c35, $amount: 0.3);
+  }
 }
 
 .companion-form__hashtags {
@@ -137,6 +146,22 @@
 
   color: #444444;
   background-color: #edeff6;
+
+  &::placeholder {
+    font-size: 20px;
+    line-height: 24p;
+    font-weight: 400;
+
+    color: rgba(68, 68, 68, 0.6);
+  }
+
+  &:hover {
+    border: 1px solid #aeb4cb;
+  }
+
+  &:focus {
+    border: 1px solid #161c35;
+  }
 }
 
 .companion-form__transport {
@@ -145,6 +170,11 @@
   margin-bottom: 32px;
   border: 1px solid #cbced9;
   border-radius: 10px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #aeb4cb;
+  }
 }
 
 .companion-form__transport-title {
@@ -258,6 +288,15 @@
   text-decoration: none;
 
   color: rgba(0, 0, 0, 0.3);
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 .companion-form__add-plans {
@@ -451,6 +490,12 @@
   text-align: center;
 
   color: #1d2e5b;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    border: 1px solid #959bb2;
+  }
 }
 
 .companion-form__minus-button {
@@ -475,6 +520,15 @@
 
     background-color: #cbced9;
   }
+}
+
+.companion-form__minus-button:hover::before,
+.companion-form__minus-button:focus::before {
+  background-color: #999999;
+}
+
+.companion-form__minus-button:active::before {
+  opacity: 0.2;
 }
 
 .companion-form__plus-button {
@@ -507,6 +561,18 @@
   }
 }
 
+.companion-form__plus-button:hover::before,
+.companion-form__plus-button:focus::before,
+.companion-form__plus-button:hover::after,
+.companion-form__plus-button:focus::after {
+  background-color: #999999;
+}
+
+.companion-form__plus-button:active::before,
+.companion-form__plus-button:active::after {
+  opacity: 0.2;
+}
+
 .companion-form__children-title {
   position: relative;
   display: block;
@@ -517,6 +583,7 @@
   letter-spacing: 0.1px;
   padding-top: 10px;
   padding-left: 40px;
+  cursor: pointer;
 
   color: #444444;
 }
@@ -536,6 +603,18 @@
   background-color: #ffffff;
 }
 
+.companion-form__add-plans-checkbox:not(:checked) + .companion-form__children-title:hover::before,
+.companion-form__add-plans-checkbox:not(:checked) + .companion-form__children-title:focus::before {
+  cursor: pointer;
+  border: 1px solid #959bb2;
+}
+
+.companion-form__add-plans-checkbox:not(:checked) + .companion-form__children-title:active::before {
+  cursor: pointer;
+  background-color: #e2e5f1;
+  border: none;
+}
+
 .companion-form__add-plans-checkbox:checked + .companion-form__children-title::after {
   content: "";
 
@@ -553,6 +632,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 9px 9px;
+}
+
+.companion-form__add-plans-checkbox:checked + .companion-form__children-title:hover::after,
+.companion-form__add-plans-checkbox:checked + .companion-form__children-title:focus::after {
+  cursor: pointer;
+  border: 1px solid #959bb2;
+}
+
+.companion-form__add-plans-checkbox:checked + .companion-form__children-title:active::after {
+  cursor: pointer;
+  opacity: 0.3;
+  background-color: #e2e5f1;
+  border: none;
 }
 
 .companion-form__date-list {
@@ -620,12 +712,24 @@
   position: absolute;
 
   top: 11px;
-  left: 1px;
+  left: 0px;
   width: 10px;
   height: 2px;
 
-  background-color: #edeff6;
+  background-color: rgba(0, 0, 0, 0.3);
   transform: rotate(135deg);
+}
+
+.companion-form__previous-month-button:hover::before,
+.companion-form__previous-month-button:focus::before,
+.companion-form__previous-month-button:focus::after,
+.companion-form__previous-month-button:hover::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.companion-form__previous-month-button:active::after,
+.companion-form__previous-month-button:active::before {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .companion-form__previous-month-button::after {
@@ -633,12 +737,12 @@
 
   position: absolute;
 
-  top: 19px;
-  left: 0;
+  top: 18px;
+  left: -1px;
   width: 11px;
   height: 2px;
 
-  background-color: #edeff6;
+  background-color: rgba(0, 0, 0, 0.3);
   transform: rotate(45deg);
 }
 
@@ -673,7 +777,7 @@
   width: 11px;
   height: 2px;
 
-  background-color: #edeff6;
+  background-color: rgba(0, 0, 0, 0.3);
   transform: rotate(45deg);
 }
 
@@ -682,13 +786,25 @@
 
   position: absolute;
 
-  top: 20px;
+  top: 19px;
   left: 9px;
   width: 11px;
   height: 2px;
 
-  background-color: #edeff6;
+  background-color: rgba(0, 0, 0, 0.3);
   transform: rotate(135deg);
+}
+
+.companion-form__next-month-button:hover::before,
+.companion-form__next-month-button:focus::before,
+.companion-form__next-month-button:focus::after,
+.companion-form__next-month-button:hover::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.companion-form__next-month-button:active::after,
+.companion-form__next-month-button:active::before {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .companion-form__calendar {
@@ -732,6 +848,10 @@
 
   background-color: #edeff6;
   color: #444444;
+
+  &:hover {
+    box-shadow: inset 0 0 0 2px #ff5c23;
+  }
 }
 
 .companion-form__calendar-date:nth-child(-n + 14) {
@@ -759,6 +879,15 @@
   color: #ffffff;
 }
 
+.companion-form__calendar-date--desktop {
+  display: none;
+}
+
+.companion-form__calendar-arrival,
+.companion-form__calendar-departure {
+  display: none;
+}
+
 .companion-form__next-button {
   display: block;
   width: 230px;
@@ -776,6 +905,15 @@
 
   color: #161c35;
   background-color: #ffd74b;
+
+  &:hover,
+  &:focus {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    color: transparentize($color: #161c35, $amount: 0.7)
+  }
 }
 
 .companion-form__add-route-text {
@@ -934,12 +1072,24 @@
     height: 1px;
     transform: rotate(45deg);
 
-    background-color: #a5a7ac;
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
   &::after {
     transform: rotate(135deg);
   }
+}
+
+.companion-form__select-close-button:hover::before,
+.companion-form__select-close-button:focus::before,
+.companion-form__select-close-button:hover::after,
+.companion-form__select-close-button:focus::after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.companion-form__select-close-button:active::after,
+.companion-form__select-close-button:active::before {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .companion-form__select-wrapper--new .companion-form__flag-wrapper {
@@ -1028,7 +1178,7 @@
     width: 14px;
     height: 2px;
 
-    background-color: #cbced9;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   &::after {
@@ -1054,6 +1204,15 @@
 
   color: #161c35;
   background-color: #ffffff;
+}
+
+.companion-form__previous-button:hover,
+.companion-form__previous-button:focus {
+  color: transparentize($color: #161c35, $amount: 0.3);
+}
+
+.companion-form__previous-button:active {
+  color: transparentize($color: #161c35, $amount: 0.7);
 }
 
 .companion-form_form-button {
@@ -1140,7 +1299,21 @@
   }
 }
 
+.companion-form__entertainment-label--bosnia::before {
+  content: "";
+
+  position: absolute;
+  top: -10px;
+  right: 35px;
+  width: 100px;
+  height: 40px;
+  z-index: 2;
+
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 30%, #ffffff 75%);
+}
+
 .companion-form__entertainment-wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 27px;
@@ -1178,6 +1351,14 @@
 
     color: rgba(68, 68, 68, 0.3);
   }
+}
+
+.companion-form__entertainment-input:hover {
+  border: 1px solid #959bb2;
+}
+
+.companion-form__entertainment-input:focus {
+  border: 1px solid #161c35;
 }
 
 @media (min-width: $tablet-width) {
@@ -1655,6 +1836,10 @@
     letter-spacing: 2px;
     padding-top: 25px;
     padding-bottom: 25px;
+
+    &:hover {
+      box-shadow: inset 0 0 0 3px #ff5c23;
+    }
   }
 
   .companion-form__next-button {
@@ -1683,6 +1868,10 @@
 
     background-image: url("../img/triangle-arrow-right.svg");
     background-repeat: no-repeat;
+  }
+
+  .companion-form__next-button:active::before {
+    opacity: 0.3;
   }
 
   .companion-form__add-route-text {
@@ -1898,6 +2087,15 @@
     background-repeat: no-repeat;
   }
 
+  .companion-form__previous-button:hover::before,
+  .companion-form__previous-button:focus::before {
+    opacity: 0.7;
+  }
+
+  .companion-form__previous-button:active::before {
+    opacity: 0.3;
+  }
+
   .companion-form__add-entertainment-text {
     font-size: 20px;
     line-height: 24px;
@@ -1927,6 +2125,10 @@
     &::after {
       display: none;
     }
+  }
+
+  .companion-form__entertainment-label--bosnia::before {
+    display: none;
   }
 
   .companion-form__entertainment-wrapper {
@@ -1989,6 +2191,19 @@
 
       background-image: url("../img/triangle-arrow-right.svg");
       background-repeat: no-repeat;
+    }
+  }
+
+  .companion-form_form-button:hover,
+  .companion-form_form-button:focus {
+    background-color: #ffbd30;
+  }
+
+  .companion-form_form-button:active {
+    color: transparentize($color: #1d2e5b, $amount: 0.3);
+
+    &::before {
+      opacity: 0.3;
     }
   }
 }
@@ -2383,8 +2598,29 @@
     letter-spacing: 1.8px;
     padding-top: 9px;
     padding-left: 16px;
+    padding-right: 5px;
     padding-bottom: 31px;
     text-align: left;
+
+    &:hover {
+      box-shadow: inset 0 0 0 4px #ff5c23;
+    }
+  }
+
+  .companion-form__calendar-date--desktop {
+    display: inline;
+    padding-left: 5px;
+  }
+
+  .companion-form__calendar-arrival,
+  .companion-form__calendar-departure {
+    display: block;
+    margin: 0;
+    margin-top: -4px;
+  }
+
+  .companion-form__calendar-date--selected {
+    padding-bottom: 5px;
   }
 
   .companion-form__add-route-text {
