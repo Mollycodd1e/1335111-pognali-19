@@ -204,13 +204,13 @@
                       вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                 <ul class="companion-form__paragraph-list">
                   <li class="companion-form__paragraph-item companion-form__paragraph-item--active">
-                    <span class="companion-form__paragraph-text"><a href="#">Даты</a></span>
+                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link companion-form__paragraph-link--active" href="#">Даты</a></span>
                   </li>
                   <li class="companion-form__paragraph-item">
-                    <span class="companion-form__paragraph-text"><a href="#">Маршрут</a></span>
+                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link" href="#">Маршрут</a></span>
                   </li>
                   <li class="companion-form__paragraph-item">
-                    <span class="companion-form__paragraph-text"><a href="#">Развлечения</a></span>
+                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link" href="#">Развлечения</a></span>
                   </li>
                 </ul>
                 <fieldset class="companion-form__fieldset">
@@ -226,7 +226,7 @@
                     </button>
                   </div>
                   <label class="companion-form__input-title companion-form__input-title--days" for="id-days">Длительность:</label>
-                  <div class="companion-form__input-title">
+                  <div class="companion-form__input-wrapper">
                     <button class="companion-form__minus-button">
                       <span class="visually-hidden">Уменьшение количества дней</span>
                     </button>
@@ -297,9 +297,9 @@
                   </li>
                   <li class="companion-form__calendar-day">П<span class="companion-form__calendar-letter">т</span>
                   </li>
-                  <li class="companion-form__calendar-day">С<span class="companion-form__calendar-letter">б</span>
+                  <li class="companion-form__calendar-day companion-form__calendar-day--vacation">С<span class="companion-form__calendar-letter">б</span>
                   </li>
-                  <li class="companion-form__calendar-day">В<span class="companion-form__calendar-letter">с</span>
+                  <li class="companion-form__calendar-day companion-form__calendar-day--vacation">В<span class="companion-form__calendar-letter">с</span>
                   </li>
                   <li class="companion-form__calendar-date companion-form__calendar-date--disabled">23</li>
                   <li class="companion-form__calendar-date companion-form__calendar-date--disabled">24</li>
@@ -350,6 +350,17 @@
                 <p class="companion-form__add-step-title">Шаг 2.
                   Маршрут</p>
                 <p class="companion-form__add-route-text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+                <ul class="companion-form__paragraph-list companion-form__paragraph-list--step-two">
+                  <li class="companion-form__paragraph-item">
+                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link" href="#">Даты</a></span>
+                  </li>
+                  <li class="companion-form__paragraph-item companion-form__paragraph-item--active">
+                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link companion-form__paragraph-link--active" href="#">Маршрут</a></span>
+                  </li>
+                  <li class="companion-form__paragraph-item">
+                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link" href="#">Развлечения</a></span>
+                  </li>
+                </ul>
                 <div class="companion-form__select-wrapper">
                   <ul class="companion-form__select-list">
                     <li class="companion-form__select-item">Босния и Герцеговина</li>
@@ -400,21 +411,35 @@
                 <a class="companion-form__next-button" href="#step3">Следующий шаг</a>
                 <a class="companion-form__previous-button" href="#step1">На шаг назад</a>
               </div>
-              <div class="companion-form__step-wrapper">
-                <p class="companion-form__add-plans-title-step">Шаг 3.
+              <div class="companion-form__step-wrapper companion-form__step-wrapper--three">
+                <p class="companion-form__add-step-title">Шаг 3.
                   Развлечения</p>
-                <p class="companion-form__add-plans-title-text">Наконец, расскажите о своих планах времяпровождения.
+                <p class="companion-form__add-entertainment-text">Наконец, расскажите о своих планах времяпровождения.
                   Можно писать в свободной форме и ставить тэги.</p>
-                <div>
-                  <p></p>
-                  <img>
-                  <textarea></textarea>
-                </div>
-                <div>
-                  <p></p>
-                  <img>
-                  <textarea></textarea>
-                </div>
+                <ul class="companion-form__paragraph-list companion-form__paragraph-list--step-three">
+                  <li class="companion-form__paragraph-item">
+                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link" href="#">Даты</a></span>
+                  </li>
+                  <li class="companion-form__paragraph-item">
+                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link" href="#">Маршрут</a></span>
+                  </li>
+                  <li class="companion-form__paragraph-item companion-form__paragraph-item--active">
+                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link companion-form__paragraph-link--active" href="#">Развлечения</a></span>
+                  </li>
+                </ul>
+                <fieldset class="companion-form__entertainment-fieldset">
+                  <legend class="visually-hidden companion-form__entertainment-legend">Развлечения в странах</legend>
+                  <div class="companion-form__entertainment-wrapper">
+                    <label class="companion-form__entertainment-label">Босния и Герцеговина</label>
+                    <img src="img/bosnia-and-herzegovina-flag-x1.png" width="35" height="24" alt="Флаг страны">
+                    <textarea class="companion-form__entertainment-input" placeholder="План действий"></textarea>
+                  </div>
+                  <div class="companion-form__entertainment-wrapper companion-form__entertainment-wrapper--czech">
+                    <label class="companion-form__entertainment-label">Чехия</label>
+                    <img src="img/czech-flag-x1.png" width="35" height="24" alt="Флаг страны">
+                    <textarea class="companion-form__entertainment-input">Пить пиво и лазить          по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                  </div>
+                </fieldset>
                 <button class="companion-form_form-button" type="submit">Отправить</button>
                 <a class="companion-form__previous-button" href="#step1">На шаг назад</a>
               </div>
@@ -473,81 +498,82 @@
     <section class="modal-country">
       <h2 class="modal-country__title">Выберите страну</h2>
       <button class="modal-country__close-button"></button>
+      <div class="modal-country__wrapper">
       <ul class="modal-country__alphabet-list alphabet-list">
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter alphabet-list__letter--active">А</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter alphabet-list__letter--active modal-country__alphabet-letter modal-country__alphabet-letter--active">А</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Б</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Б</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">В</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">В</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Г</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Г</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Д</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Д</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Е</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Е</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">З</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">З</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">И</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">И</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">К</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">К</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Л</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Л</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">М</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">М</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Н</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Н</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">О</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">О</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">П</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">П</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Р</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Р</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">С</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">С</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Т</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Т</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">У</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">У</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Ф</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Ф</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Х</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Х</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Ч</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Ч</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Ш</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Ш</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Э</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Э</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Ю</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Ю</a>
         </li>
-        <li class="alphabet-list__item">
-          <a class="alphabet-list__letter">Я</a>
+        <li class="alphabet-list__item modal-country__alphabet-item">
+          <a class="alphabet-list__letter modal-country__alphabet-letter">Я</a>
         </li>
       </ul>
       <ul class="modal-country__letter-list letter-list">
@@ -585,6 +611,7 @@
           <a class="letter-list__country" href="asia/armeniya">Афганистан</a>
         </li>
       </ul>
+      </div>
     </section>
     <script src="js/menu-button.js"></script>
     <script src="js/logo-change.js"></script>

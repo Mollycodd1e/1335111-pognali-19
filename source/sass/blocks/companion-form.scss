@@ -263,7 +263,7 @@
 .companion-form__add-plans {
   position: relative;
   padding-top: 30px;
-  padding-bottom: 150px;
+  padding-bottom: 156px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   margin-top: -40px;
@@ -296,6 +296,11 @@
   padding-bottom: 4px;
 }
 
+.companion-form__step-wrapper--three {
+  padding-bottom: 4px;
+  margin-bottom: 0;
+}
+
 .companion-form__add-step-title {
   margin: 0;
   margin-bottom: 15px;
@@ -320,12 +325,19 @@
   list-style: none;
 }
 
+.companion-form__paragraph-list--step-two {
+  display: none;
+}
+
+.companion-form__paragraph-list--step-three {
+  display: none;
+}
+
 .companion-form__paragraph-item {
   position: relative;
   margin-right: 22px;
-
-  color: rgba(0, 0, 0, 0.6);
 }
+
 
 .companion-form__paragraph-item::before {
   content: "";
@@ -337,8 +349,7 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  opacity: 0.6;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .companion-form__paragraph-item--active {
@@ -352,6 +363,16 @@
 
 .companion-form__paragraph-text {
   display: none;
+}
+
+.companion-form__paragraph-link {
+  text-decoration: none;
+
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.companion-form__paragraph-link--active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .companion-form__fieldset {
@@ -688,6 +709,10 @@
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+}
+
+.companion-form__calendar-day--vacation {
+  color: #ff5c23;
 }
 
 .companion-form__calendar-letter {
@@ -1050,6 +1075,111 @@
   background-color: #ffd74b;
 }
 
+.companion-form__add-entertainment-text {
+  position: relative;
+  margin-bottom: 21px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    top: 118px;
+    left: -13px;
+
+    width: 2px;
+    height: 281px;
+
+    background-color: #1d2e5b;
+  }
+}
+
+.companion-form__entertainment-fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.companion-form__entertainment-label {
+  position: relative;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  padding-left: 12px;
+  margin-bottom: 17px;
+
+  color: #1d2e5b;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    top: 6px;
+    left: -2px;
+
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+    background-color: #1d2e5b;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+
+    top: 8px;
+    left: -13px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #1d2e5b;
+  }
+}
+
+.companion-form__entertainment-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 27px;
+}
+
+.companion-form__entertainment-wrapper--czech {
+  margin-bottom: 21px;
+}
+
+.companion-form__entertainment-wrapper img {
+  display: block;
+  margin-top: -3px;
+  margin-left: auto;
+}
+
+.companion-form__entertainment-input {
+  width: 194px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  padding-left: 14px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  min-height: 198px;
+  border: 1px solid #cbced9;
+  border-radius: 4px;
+  resize: none;
+
+  color: #444444;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
 @media (min-width: $tablet-width) {
   .companion-form__round-diagram {
     width: 98px;
@@ -1268,6 +1398,7 @@
 
   .companion-form__add-plans {
     padding-top: 46px;
+    padding-bottom: 132px;
   }
 
   .companion-form__add-plans-title {
@@ -1294,6 +1425,11 @@
   }
 
   .companion-form__step-wrapper--two {
+    padding-bottom: 52px;
+    margin-bottom: 51px;
+  }
+
+  .companion-form__step-wrapper--three {
     padding-bottom: 52px;
   }
 
@@ -1407,13 +1543,13 @@
     &::before,
     &::after {
       top: 31px;
-      left: 307px;
+      left: 27px;
       width: 20px;
     }
   }
 
   .companion-form__checkbox-wrapper {
-    margin-top: -217px;
+    margin-top: -311px;
   }
 
   .companion-form__children-title {
@@ -1761,6 +1897,100 @@
     background-image: url("../img/triangle-arrow-left.svg");
     background-repeat: no-repeat;
   }
+
+  .companion-form__add-entertainment-text {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 78px;
+
+    &::before {
+      top: 140px;
+      left: 526px;
+      width: 3px;
+      height: 250px;
+    }
+  }
+
+  .companion-form__entertainment-label {
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 0;
+    margin-bottom: 41px;
+
+    &::before {
+      top: 1px;
+      left: 520px;
+      width: 15px;
+      height: 15px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .companion-form__entertainment-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 57px;
+  }
+
+  .companion-form__entertainment-wrapper--czech {
+    margin-bottom: 46px;
+  }
+
+  .companion-form__entertainment-wrapper img {
+    width: 70px;
+    height: 47px;
+    margin-top: -16px;
+    margin-left: auto;
+    margin-right: 32px;
+  }
+
+  .companion-form__entertainment-input {
+    width: 471px;
+    font-size: 20px;
+    line-height: 24px;
+    padding-left: 18px;
+    padding-top: 18px;
+    min-height: 114px;
+    white-space: normal;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 24px;
+
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
+
+  .companion-form_form-button {
+    position: relative;
+    width: 283px;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: none;
+    padding-top: 30px;
+    padding-bottom: 27px;
+    padding-right: 112px;
+    margin-left: 1px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      top: 34px;
+      right: 36px;
+
+      width: 10px;
+      height: 14px;
+
+      background-image: url("../img/triangle-arrow-right.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -1875,6 +2105,7 @@
   .companion-form__my-plans-item {
     margin-bottom: 15px;
     padding-bottom: 22px;
+    padding-right: 38px;
     padding-top: 25px;
   }
 
@@ -1894,20 +2125,24 @@
   }
 
   .companion-form__my-plans-text {
-    margin-left: 342px;
-    margin-right: 37px;
+    margin-left: auto;
+    margin-right: 39px;
     align-self: center;
   }
 
   .companion-form__my-plans-item:nth-child(2) .companion-form__my-plans-text {
-    margin-left: 310px;
-    margin-right: 50px;
+    margin-left: auto;
+    margin-right: 51px;
   }
 
   .companion-form__my-plans-date {
     margin: 0;
-    margin-right: 130px;
+    margin-right: 127px;
     align-self: center;
+  }
+
+  .companion-form__my-plans-item:nth-child(2) .companion-form__my-plans-date {
+    margin-right: 131px;
   }
 
   .companion-form__my-plans-button {
@@ -1919,12 +2154,13 @@
     border-top-right-radius: 60px;
     margin-top: -50px;
     padding-left: 0;
-    padding-top: px;
+    padding-top: 49px;
+    padding-bottom: 137px;
   }
 
   .companion-form__add-plans-title {
     padding-left: 70px;
-    margin-bottom: 52px;
+    margin-bottom: 49px;
   }
 
   .companion-form__add-plans-wrapper {
@@ -1937,19 +2173,20 @@
     padding-left: 160px;
     padding-right: 160px;
     padding-top: 99px;
-    padding-bottom: 20px;
-    margin-bottom: 15px;
+    padding-bottom: 105px;
+    margin-bottom: 44px;
 
     background-color: #ffffff;
   }
 
-  .companion-form__add-plans-title-step {
+  .companion-form__add-step-title {
     white-space: normal;
   }
 
-  .companion-form__add-plans-title-text {
+  .companion-form__add-date-text {
     padding-right: 420px;
     white-space: pre-line;
+    margin-bottom: 111px;
   }
 
   .companion-form__paragraph-list {
@@ -1963,6 +2200,7 @@
   .companion-form__paragraph-item {
     margin: 0;
     margin-bottom: 30px;
+    text-decoration: none;
   }
 
   .companion-form__paragraph-text {
@@ -1981,8 +2219,18 @@
     height: 6px;
   }
 
+  .companion-form__paragraph-list--step-two {
+    display: block;
+    top: 1604px;
+  }
+
+  .companion-form__paragraph-list--step-three {
+    display: block;
+    top: 2549px;
+  }
+
   .companion-form__fieldset {
-    margin-bottom: 245px;
+    margin-bottom: 155px;
   }
 
   .companion-form__input-title {
@@ -1992,31 +2240,36 @@
   }
 
   .companion-form__input-wrapper {
-    margin-bottom: 94px;
+    margin-bottom: 22px;
+    margin-top: -68px;
+    margin-left: 220px;
   }
 
   .companion-form__input-title--people::before {
-    right: -338px;
+    right: -290px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
+  }
+
+  .companion-form__input-title--people::after {
+    top: -56px;
+    width: 1000px;
   }
 
   .companion-form__input-title--days::before {
-    right: -368px;
+    right: -308px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
   }
 
+  .companion-form__input-title--days::after {
+    display: none;
+  }
+
   .companion-form__add-plans-input {
-    width: 530px;
-    font-size: 20px;
-    line-height: 18px;
-    letter-spacing: 2px;
-    padding-top: 24px;
-    padding-bottom: 22px;
-    margin-top: 21px;
+    width: 181px;
     margin-bottom: 18px;
   }
 
@@ -2027,26 +2280,28 @@
 
     &::before {
       top: 31px;
-      left: 22px;
+      left: 20px;
       width: 18px;
     }
   }
 
   .companion-form__plus-button {
     top: 24px;
+    left: 115px;
     width: 60px;
     height: 64px;
 
     &::before,
     &::after {
       top: 31px;
-      left: 307px;
+      left: 27px;
       width: 20px;
     }
   }
 
   .companion-form__checkbox-wrapper {
-    margin-top: -217px;
+    margin-top: -177px;
+    margin-left: 755px;
   }
 
   .companion-form__children-title {
@@ -2073,5 +2328,179 @@
     width: 34px;
     height: 34px;
     background-size: 12px 12px;
+  }
+
+  .companion-form__month-change::before {
+    width: 999px;
+  }
+
+  .companion-form__month-change::after {
+    width: 999px;
+  }
+
+  .companion-form__previous-month-button {
+    margin-left: -10px;
+  }
+
+  .companion-form__previous-month-button::before {
+    left: 9px;
+  }
+
+  .companion-form__previous-month-button::after {
+    top: 35px;
+    left: 8px;
+  }
+
+  .companion-form__next-month-button {
+    margin-right: -10px;
+  }
+
+  .companion-form__next-month-button::before {
+    left: 5px;
+  }
+
+  .companion-form__next-month-button::after {
+    left: 5px;
+  }
+
+  .companion-form__calendar {
+    width: 999px;
+    margin-top: 15px;
+    margin-bottom: 57px;
+  }
+
+  .companion-form__calendar-day {
+    width: 125px;
+    padding-left: 17px;
+    padding-bottom: 12px;
+    text-align: left;
+  }
+
+  .companion-form__calendar-date {
+    width: 142.5px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1.8px;
+    padding-top: 9px;
+    padding-left: 16px;
+    padding-bottom: 31px;
+    text-align: left;
+  }
+
+  .companion-form__add-route-text {
+    padding-right: 600px;
+    margin-bottom: 118px;
+  }
+
+  .companion-form__add-route-text::before {
+    bottom: -55px;
+    width: 997px;
+  }
+
+  .companion-form__add-route-text::after {
+    bottom: -505px;
+    right: 225px;
+    height: 450px;
+
+    background: linear-gradient(#d6d9e6 80%, #ffffff 99%);
+  }
+
+  .companion-form__flag-wrapper {
+    margin-left: 75px;
+  }
+
+  .companion-form__select-list {
+    width: 702px;
+  }
+
+  .companion-form__flag-wrapper::before {
+    top: 16px;
+    left: -10px;
+
+    width: 15px;
+    height: 15px;
+  }
+
+  .companion-form__flag-wrapper--active::before {
+    top: 25px;
+    left: -37px;
+  }
+
+  .companion-form__select-show-button {
+    right: 277px;
+  }
+
+  .companion-form__select-close-button {
+    right: -2px;
+  }
+
+  .companion-form__select-wrapper--new .companion-form__flag-wrapper {
+    &::before {
+      left: -38px;
+    }
+  }
+
+  .companion-form__select-wrapper--new .companion-form__select-list {
+    width: 702px;
+  }
+
+  .companion-form__select-wrapper--new .companion-form__select-show-button {
+    right: 278px;
+  }
+
+  .companion-form__country-add {
+    width: 707px;
+    margin-bottom: 55px;
+  }
+
+  .companion-form__country-add-text::after {
+    right: -566px;
+  }
+
+  .companion-form__previous-button {
+    margin-left: 763px;
+  }
+
+  .companion-form__add-entertainment-text {
+    padding-right: 470px;
+    margin-bottom: 143px;
+
+    &::before {
+      top: 200px;
+      left: 773px;
+      height: 261px;
+    }
+  }
+
+  .companion-form__entertainment-label {
+    margin-left: -2px;
+    margin-bottom: 42px;
+    margin-right: 15px;
+
+    &::before {
+      top: 2px;
+      left: 769px;
+    }
+  }
+
+  .companion-form__entertainment-wrapper {
+    margin-bottom: 57px;
+  }
+
+  .companion-form__entertainment-wrapper--czech {
+    margin-bottom: 54px;
+  }
+
+  .companion-form__entertainment-wrapper img {
+    margin-top: -12px;
+    margin-right: 115px;
+    margin-left: auto;
+  }
+
+  .companion-form__entertainment-input {
+    width: 694px;
+    padding-left: 24px;
+    padding-top: 24px;
+    min-height: 108px;
   }
 }
