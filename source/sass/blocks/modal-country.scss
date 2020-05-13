@@ -112,7 +112,7 @@
 }
 
 .modal-country__letter-list a:active {
-  color:rgba(29, 46, 91, 0.3);
+  color: rgba(29, 46, 91, 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -213,96 +213,49 @@
 
 @media (min-width: $desktop-width) {
   .modal-country {
-    top: 3425px;
-    width: 369px;
-    margin-left: -266px;
-    padding-bottom: 22px;
+    top: 2990px;
+    width: 730px;
+    margin-left: -500px;
+    padding-bottom: 7px;
   }
 
   .modal-country__alphabet-list {
-    width: 285px;
-    margin-left: 27px;
-  }
-
-  .modal-country__title {
-    font-size: 20px;
-    letter-spacing: 2px;
-    padding-top: 26px;
-    padding-bottom: 26px;
-    padding-left: 23px;
-    margin-bottom: 34px;
+    width: 440px;
   }
 
   .modal-country__alphabet-item {
-    font-size: 20px;
-    line-height: 18px;
-    font-weight: 500;
-    letter-spacing: 2px;
-    height: auto;
-    border: 1px solid #cbced9;
-
-    color: #1d2e5b;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    max-height: 70px;
+    padding-bottom: 0;
+    text-align: center;
   }
 
-  .modal-country__alphabet-item:nth-child(5n+1),
-  .modal-country__alphabet-item:nth-child(n+21) {
-    border: 1px solid #cbced9;
+  .modal-country__alphabet-item:nth-child(9) {
+    padding-bottom: 0;
   }
 
-  .modal-country__alphabet-item:nth-child(n+21) {
-    border: 1px solid #cbced9;
+  .modal-country__alphabet-item:nth-child(11) {
+    padding-bottom: 0;
+  }
+
+  .modal-country__alphabet-item:nth-child(16) {
+    padding-bottom: 0;
   }
 
   .modal-country__alphabet-letter {
     opacity: 1;
-    width: 48px;
+    width: 57px;
     padding-left: 2px;
     padding-top: 25px;
     padding-bottom: 25px;
   }
 
-  .modal-country__alphabet-letter--active {
-    color: #ffffff;
-    background-color: #1d2e5b;
-  }
-
-  .modal-country__close-button {
-    top: 20px;
-    right: 30px;
-    width: 30px;
-    height: 30px;
-
-    &::before,
-    &::after {
-      top: 15px;
-      left: 14px;
-      width: 22px;
-      height: 2px;
-    }
-  }
-
   .modal-country__wrapper {
-    width: 573px;
-    display: flex;
+    width: 730px;
   }
 
   .modal-country__letter-list {
-    position: relative;
-    padding-left: 85px;
-    padding-right: 20px;
-    background-color: #ffffff;
-
-    &::before {
-      content: "";
-
-      position: absolute;
-
-      top: -34px;
-      left: 56px;
-      width: 1px;
-      height: 415px;
-
-      background-color: #eaecf2;
-    }
+    margin-right: 52px;
   }
 }

@@ -149,7 +149,7 @@
 
   &::placeholder {
     font-size: 20px;
-    line-height: 24p;
+    line-height: 24px;
     font-weight: 400;
 
     color: rgba(68, 68, 68, 0.6);
@@ -496,6 +496,10 @@
     cursor: pointer;
     border: 1px solid #959bb2;
   }
+
+  &:active {
+    border: 1px solid #161c35;
+  }
 }
 
 .companion-form__minus-button {
@@ -529,6 +533,24 @@
 
 .companion-form__minus-button:active::before {
   opacity: 0.2;
+}
+
+.companion-form__add-plans-input:hover ~ .companion-form__plus-button::after,
+.companion-form__add-plans-input:hover ~ .companion-form__plus-button::before,
+.companion-form__add-plans-input:focus ~ .companion-form__plus-button::after,
+.companion-form__add-plans-input:focus ~ .companion-form__plus-button::before {
+  background-color: #959bb2;
+}
+
+.companion-form__add-plans-input:hover + .companion-form__minus-button::before,
+.companion-form__add-plans-input:focus + .companion-form__minus-button::before {
+  background-color: #959bb2;
+}
+
+.companion-form__add-plans-input:active ~ .companion-form__plus-button::after,
+.companion-form__add-plans-input:active ~ .companion-form__plus-button::before,
+.companion-form__add-plans-input:active + .companion-form__minus-button::before {
+  background-color: #161c35;
 }
 
 .companion-form__plus-button {
@@ -712,7 +734,7 @@
   position: absolute;
 
   top: 11px;
-  left: 0px;
+  left: 0;
   width: 10px;
   height: 2px;
 
@@ -912,7 +934,7 @@
   }
 
   &:active {
-    color: transparentize($color: #161c35, $amount: 0.7)
+    color: transparentize($color: #161c35, $amount: 0.7);
   }
 }
 
@@ -957,6 +979,15 @@
   text-transform: uppercase;
 
   color: #1d2e5b;
+}
+
+.companion-form__select-list:hover {
+  border: 1px solid #959bb2;
+}
+
+.companion-form__select-list:hover + .companion-form__select-show-button::before,
+.companion-form__select-list:hover + .companion-form__select-show-button::after {
+  background-color: #959bb2;
 }
 
 .companion-form__flag-wrapper::before {
@@ -1128,6 +1159,10 @@
   background-color: #edeff6;
 }
 
+.companion-form__country-add:hover {
+  background-color: #dfe3f0;
+}
+
 .companion-form__country-add-text {
   position: relative;
   margin: 0;
@@ -1184,6 +1219,11 @@
   &::after {
     transform: rotate(90deg);
   }
+}
+
+.companion-form__country-add:hover .companion-form__country-add-button::before,
+.companion-form__country-add:hover .companion-form__country-add-button::after {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .companion-form__previous-button {
@@ -1243,11 +1283,11 @@
 
     position: absolute;
 
-    top: 118px;
+    top: 117px;
     left: -13px;
 
     width: 2px;
-    height: 281px;
+    height: 282px;
 
     background-color: #1d2e5b;
   }
