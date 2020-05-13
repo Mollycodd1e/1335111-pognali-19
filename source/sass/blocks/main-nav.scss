@@ -320,7 +320,7 @@
   }
 }
 
-@media (max-width: $tablet-width-only) {
+@media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
@@ -476,7 +476,6 @@
   .main-nav__contact {
     display: none;
   }
-
 
   .main-nav--nojs .main-nav__logo-image {
     display: block;

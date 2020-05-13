@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" style="scroll-behavior: smooth;">
   <head>
     <meta charset="utf-8">
     <title>Погнали</title>
@@ -110,7 +110,7 @@
       </section>
       <section class="companion-plan">
         <h2 class="visually-hidden">Форма поиска попутчика </h2>
-        <form class="companion-plan__companion-form companion-form">
+        <form class="companion-plan__companion-form companion-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="companion-form__change-wrapper container">
             <div class="companion-form__round-diagram-wrapper">
               <p class="companion-form__wrapper-level-title">левел:</p>
@@ -204,13 +204,13 @@
                       вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                 <ul class="companion-form__paragraph-list">
                   <li class="companion-form__paragraph-item companion-form__paragraph-item--active">
-                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link companion-form__paragraph-link--active" href="#">Даты</a></span>
+                    <a class="companion-form__paragraph-link companion-form__paragraph-link--active">Даты</a></span>
                   </li>
                   <li class="companion-form__paragraph-item">
-                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link" href="#">Маршрут</a></span>
+                    <a class="companion-form__paragraph-link" href="#step-two">Маршрут</a>
                   </li>
                   <li class="companion-form__paragraph-item">
-                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link" href="#">Развлечения</a></span>
+                    <a class="companion-form__paragraph-link" href="#step-three">Развлечения</a>
                   </li>
                 </ul>
                 <fieldset class="companion-form__fieldset">
@@ -352,13 +352,12 @@
                 <p class="companion-form__add-route-text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
                 <ul class="companion-form__paragraph-list companion-form__paragraph-list--step-two">
                   <li class="companion-form__paragraph-item">
-                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link" href="#">Даты</a></span>
-                  </li>
+                    <a class="companion-form__paragraph-link" href="#step-one">Даты</a>
                   <li class="companion-form__paragraph-item companion-form__paragraph-item--active">
-                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link companion-form__paragraph-link--active" href="#">Маршрут</a></span>
+                    <a class="companion-form__paragraph-link companion-form__paragraph-link--active">Маршрут</a>
                   </li>
                   <li class="companion-form__paragraph-item">
-                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link" href="#">Развлечения</a></span>
+                    <a class="companion-form__paragraph-link" href="#step-three">Развлечения</a>
                   </li>
                 </ul>
                 <div class="companion-form__select-wrapper">
@@ -398,15 +397,16 @@
                   </button>
                   <p class="companion-form__flag-wrapper">
                   </p>
-                  <button class="companion-form__select-close-button" type="button">
+                  <button class="companion-form__select-close-button companion-form__select-close-button--modal-close" type="button">
                     <span class="visually-hidden">Удалить страну</span>
                   </button>
                 </div>
-                <div class="companion-form__country-add">
-                  <p class="companion-form__country-add-text">Добавить страну</p>
-                  <button  class="companion-form__country-add-button" type="button">
+                <div class="companion-form__select-wrapper companion-form__select-wrapper--add">
+                  <button class="companion-form__country-add-button" type="button">Добавить страну
                     <span class="visually-hidden">Добавить страну</span>
                   </button>
+                  <p class="companion-form__flag-wrapper">
+                  </p>
                 </div>
                 <a class="companion-form__next-button" href="#step-three">Следующий шаг</a>
                 <a class="companion-form__previous-button" href="#step-one">На шаг назад</a>
@@ -418,13 +418,13 @@
                   Можно писать в свободной форме и ставить тэги.</p>
                 <ul class="companion-form__paragraph-list companion-form__paragraph-list--step-three">
                   <li class="companion-form__paragraph-item">
-                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link" href="#">Даты</a></span>
+                    <a class="companion-form__paragraph-link" href="#step-one">Даты</a>
                   </li>
                   <li class="companion-form__paragraph-item">
-                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link" href="#">Маршрут</a></span>
+                    <a class="companion-form__paragraph-link" href="#step-two">Маршрут</a>
                   </li>
                   <li class="companion-form__paragraph-item companion-form__paragraph-item--active">
-                    <span class="companion-form__paragraph-text"><a class="companion-form__paragraph-link companion-form__paragraph-link--active" href="#">Развлечения</a></span>
+                    <a class="companion-form__paragraph-link companion-form__paragraph-link--active">Развлечения</a>
                   </li>
                 </ul>
                 <fieldset class="companion-form__entertainment-fieldset">
@@ -437,7 +437,7 @@
                   <div class="companion-form__entertainment-wrapper companion-form__entertainment-wrapper--czech">
                     <label class="companion-form__entertainment-label">Чехия</label>
                     <img src="img/czech-flag-x1.png" width="35" height="24" alt="Флаг страны">
-                    <textarea class="companion-form__entertainment-input">Пить пиво и лазить          по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+                    <textarea class="companion-form__entertainment-input">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все.</textarea>
                   </div>
                 </fieldset>
                 <button class="companion-form_form-button" type="submit">Отправить</button>

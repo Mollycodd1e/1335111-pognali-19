@@ -109,7 +109,7 @@
           <a href="index.html" class="page-menu__link">На главную</a>
         </div>
       </section>
-      <section class="country-filter country-filter--opened country-filter--nojs">
+      <section class="country-filter country-filter--closed country-filter--nojs">
         <h2>Фильтрация по странам:</h2>
         <a class="country-filter__toggle" href="#">
           <span class="country-filter__toggle--open">Показать все</span>
@@ -781,7 +781,7 @@
         <h2 class="filter__title">Подберите идеального попутчика</h2>
         <form class="filter__form filter-form"  action="https://echo.htmlacademy.ru" method="post">
           <div class="filter-form__wrapper">
-            <fieldset class="filter-form__fieldset filter-form__fieldset--hobby filter-form__fieldset--closed">
+            <fieldset class="filter-form__fieldset filter-form__fieldset--hobby filter-form--nojs filter-form__fieldset--closed">
               <legend class="filter-form__legend">Хобби</legend>
               <button class="filter-form__toggle filter-form__toggle--hobby" type="button"></button>
               <ul class="filter-form__list">
@@ -801,7 +801,7 @@
             </fieldset>
           </div>
           <div class="filter-form__wrapper">
-            <fieldset class="filter-form__fieldset filter-form__fieldset--music filter-form__fieldset--closed">
+            <fieldset class="filter-form__fieldset filter-form__fieldset--music filter-form__fieldset--opened">
               <legend class="filter-form__legend">Музыка</legend>
               <button class="filter-form__toggle filter-form__toggle--music" type="button"></button>
               <ul class="filter-form__list">
@@ -841,7 +841,7 @@
             </fieldset>
           </div>
           <div class="filter-form__wrapper">
-            <fieldset class="filter-form__fieldset filter-form__fieldset--transport filter-form__fieldset--closed">
+            <fieldset class="filter-form__fieldset filter-form__fieldset--transport filter-form__fieldset--opened">
               <legend class="filter-form__legend">Транспорт</legend>
               <button class="filter-form__toggle filter-form__toggle--transport" type="button"></button>
               <ul class="filter-form__transport-list transport-list">
@@ -880,7 +880,7 @@
               </ul>
             </fieldset>
           </div>
-          <div class="filter-form__level filter-form__fieldset--closed filter-range">
+          <div class="filter-form__level filter-form__fieldset--opened filter-range">
             <div class="filter-range__title--wrapper">
               <p class="filter-range__title">Левел</p>
             <button class="filter-form__toggle filter-form__toggle--level" type="button"></button>
@@ -1007,11 +1007,13 @@
             <a class="companion-card__button-card" href="response.html">Позвать!</a>
           </li>
           <li class="catalog__item companion-card">
-            <picture class="companion-card__image">
-              <source srcset="img/demin-desktop@1x.jpg" media="(min-width: 1440px)">
-              <source srcset="img/demin-tablet@1x.jpg" media="(min-width: 768px)">
-              <img class="companion-card__photo" src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика">
-            </picture>
+            <a class="companion-card__img-link" href="#">
+              <picture class="companion-card__image">
+                <source srcset="img/demin-desktop@1x.jpg" media="(min-width: 1440px)">
+                <source srcset="img/demin-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="companion-card__photo" src="img/demin-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика">
+              </picture>
+            </a>
             <div class="companion-card__name-wrapper">
               <span class="companion-card__indicator"></span>
               <h3 class="companion-card__name">
@@ -1092,11 +1094,13 @@
             <a class="companion-card__button-card">Позвать!</a>
           </li>
           <li class="catalog__item companion-card">
-            <picture class="companion-card__image">
-              <source srcset="img/smolov-desktop@1x.jpg" media="(min-width: 1440px)">
-              <source srcset="img/smolov-tablet@1x.jpg" media="(min-width: 768px)">
-              <img class="companion-card__photo" src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика">
-            </picture>
+            <a class="companion-card__img-link" href="#">
+              <picture class="companion-card__image">
+                <source srcset="img/smolov-desktop@1x.jpg" media="(min-width: 1440px)">
+                <source srcset="img/smolov-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="companion-card__photo" src="img/smolov-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика">
+              </picture>
+            </a>
             <div class="companion-card__name-wrapper">
               <span class="companion-card__indicator"></span>
               <h3 class="companion-card__name">
@@ -1180,11 +1184,13 @@
             <a class="companion-card__button-card">Позвать!</a>
           </li>
           <li class="catalog__item companion-card">
-            <picture class="companion-card__image">
-              <source srcset="img/rogovaya-desktop@1x.jpg" media="(min-width: 1440px)">
-              <source srcset="img/rogovaya-tablet@1x.jpg" media="(min-width: 768px)">
-              <img class="companion-card__photo" src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика">
-            </picture>
+            <a class="companion-card__img-link" href="#">
+              <picture class="companion-card__image">
+                <source srcset="img/rogovaya-desktop@1x.jpg" media="(min-width: 1440px)">
+                <source srcset="img/rogovaya-tablet@1x.jpg" media="(min-width: 768px)">
+                <img class="companion-card__photo" src="img/rogovaya-mobile@1x.jpg" width="70" height="70" alt="Фото попутчика">
+              </picture>
+            </a>
             <div class="companion-card__name-wrapper">
               <span class="companion-card__indicator companion-card__indicator--active"></span>
               <h3 class="companion-card__name">

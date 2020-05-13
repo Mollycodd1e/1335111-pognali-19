@@ -140,6 +140,7 @@
   border: none;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 
   color: #161c35;
   background-color: #ffffff;
@@ -225,6 +226,15 @@
 .filter-form__list .filter-form__input-checkbox:checked + label:active::after,
 .filter-form__list .filter-form__input-checkbox:checked + label:active {
   opacity: 0.3;
+}
+
+.filter-form--nojs .filter-form__list,
+.filter-form--nojs .filter-range__wrapper {
+  display: block;
+}
+
+.filter-form--nojs .filter-form__transport-list {
+  display: flex;
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
