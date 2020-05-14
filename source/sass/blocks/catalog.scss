@@ -136,6 +136,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    padding-bottom: 147px;
+  }
+
   .catalog__item {
     margin-bottom: 39px;
   }
@@ -238,7 +242,7 @@
   .catalog {
     padding: 0;
     padding-left: 60px;
-    padding-bottom: 100px;
+    padding-bottom: 93px;
   }
 
   .catalog__button-wrapper {

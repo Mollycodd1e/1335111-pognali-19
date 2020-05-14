@@ -126,7 +126,7 @@
               <input class="companion-form__photo-input" type="file" name="photo" id="id-photo">
               <img class="companion-form__photo" src="img/demin-tablet@1x.jpg" width="99" height="100" alt="Фото попутчика">
             </div>
-            <label class="companion-form__change-photo" for="id-photo">
+            <label class="companion-form__change-photo" for="id-photo" tabindex="0">
               <span class="visually-hidden">Фото пользователя</span>
               <span class="companion-form__change-span">Сменить</span> фото
             </label>
@@ -228,10 +228,10 @@
                   <label class="companion-form__input-title companion-form__input-title--days" for="id-days">Длительность:</label>
                   <div class="companion-form__input-wrapper">
                     <input class="companion-form__add-plans-input" type="text" name="days" id="id-days" value="2">
-                    <button class="companion-form__minus-button">
+                    <button class="companion-form__minus-button" type="button">
                       <span class="visually-hidden">Уменьшение количества дней</span>
                     </button>
-                    <button class="companion-form__plus-button">
+                    <button class="companion-form__plus-button" type="button">
                       <span class="visually-hidden">Увеличение количества дней</span>
                     </button>
                   </div>

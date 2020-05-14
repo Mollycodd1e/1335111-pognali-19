@@ -79,6 +79,11 @@
   height: 99px;
   opacity: 0;
   z-index: 0;
+
+  &:hover,
+  &:focus {
+    background-color: #d1d7e9;
+  }
 }
 
 .companion-form__change-photo {
@@ -624,7 +629,7 @@
 }
 
 .companion-form__add-plans-checkbox:not(:checked) + .companion-form__children-title:hover::before,
-.companion-form__add-plans-checkbox:not(:checked) + .companion-form__children-title:focus::before {
+.companion-form__add-plans-checkbox:not(:checked):focus + .companion-form__children-title::before {
   cursor: pointer;
   border: 1px solid #959bb2;
 }
@@ -655,7 +660,7 @@
 }
 
 .companion-form__add-plans-checkbox:checked + .companion-form__children-title:hover::after,
-.companion-form__add-plans-checkbox:checked + .companion-form__children-title:focus::after {
+.companion-form__add-plans-checkbox:checked:focus + .companion-form__children-title::after {
   cursor: pointer;
   border: 1px solid #959bb2;
 }
@@ -1095,8 +1100,8 @@
 
     position: absolute;
 
-    top: 20px;
-    left: 3px;
+    top: 10px;
+    left: 4px;
 
     width: 14px;
     height: 1px;

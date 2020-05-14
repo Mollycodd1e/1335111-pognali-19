@@ -36,15 +36,15 @@
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.filter-range:hover .filter-range__title,
-.filter-range:focus .filter-range__title,
-.filter-range:hover .filter-form__toggle--level,
-.filter-range:focus .filter-form__toggle--level {
+.filter-range__title:hover,
+.filter-range__title:hover + .filter-form__toggle,
+.filter-range .filter-form__toggle--level:hover,
+.filter-range .filter-form__toggle--level:focus {
   opacity: 0.6;
 }
 
-.filter-range:active .filter-range__title,
-.filter-range:active .filter-form__toggle--level {
+.filter-range .filter-range__title:active,
+.filter-range .filter-form__toggle--level:active {
   opacity: 0.3;
 }
 

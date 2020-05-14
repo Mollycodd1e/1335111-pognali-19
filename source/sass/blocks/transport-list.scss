@@ -68,12 +68,12 @@
 }
 
 .transport-list__input-checkbox:checked + label:hover svg,
-.transport-list__input-checkbox:checked + label:focus svg {
+.transport-list__input-checkbox:checked:focus + label svg {
   fill: rgba(16, 30, 68, 0.7);
 }
 
 .transport-list__input-checkbox:checked + label:hover::after,
-.transport-list__input-checkbox:checked + label:focus::after {
+.transport-list__input-checkbox:checked:focus + label::after {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -86,12 +86,12 @@
 }
 
 .transport-list__input-checkbox:not(:checked) + label:hover svg,
-.transport-list__input-checkbox:not(:checked) + label:focus svg {
+.transport-list__input-checkbox:not(:checked):focus + label svg {
   fill: rgba(0, 0, 0, 0.3);
 }
 
 .transport-list__input-checkbox:not(:checked) + label:hover::before,
-.transport-list__input-checkbox:not(:checked) + label:focus::before {
+.transport-list__input-checkbox:not(:checked):focus + label::before {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
 }
 
