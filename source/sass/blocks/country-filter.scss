@@ -117,7 +117,7 @@
   left: 0;
   top: 105px;
   padding-top: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 27px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   z-index: 10;
@@ -230,7 +230,7 @@
 }
 
 .country-filter--nojs .country-filter__wrapper {
-  display: nlock;
+  display: block;
 }
 
 .country-filter--nojs .country-filter__world-part,
@@ -384,14 +384,14 @@
   }
 
   .country-filter__close {
-    width: 618px;
+    width: 585px;
     font-size: 20px;
     line-height: 30px;
     font-weight: 700;
     padding-top: 35px;
     padding-left: 32px;
     padding-bottom: 35px;
-    border-radius: 30px;
+    border-radius: 20px;
 
     color: #1d2e5b;
 
@@ -401,7 +401,7 @@
 
       position: absolute;
       top: 48px;
-      left: 256px;
+      left: 239px;
 
       width: 24px;
       height: 3px;
