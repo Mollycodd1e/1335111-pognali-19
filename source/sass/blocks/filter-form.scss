@@ -190,7 +190,7 @@
 }
 
 .filter-form__list .filter-form__input-checkbox:not(:checked) + label:hover,
-.filter-form__list .filter-form__input-checkbox:not(:checked):focus + label  {
+.filter-form__list .filter-form__input-checkbox:not(:checked):focus + label {
   opacity: 0.6;
 }
 
@@ -218,7 +218,6 @@
 
 .filter-form__list .filter-form__input-checkbox:checked + label:hover::after,
 .filter-form__list .filter-form__input-checkbox:checked + label:hover,
-.filter-form__list .filter-form__input-checkbox:checked:focus + label,
 .filter-form__list .filter-form__input-checkbox:checked:focus + label {
   color: transparentize($color: #1d2e5b, $amount: 0.6);
 }
