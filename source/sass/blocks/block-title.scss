@@ -5,3 +5,10 @@
 
   color: #ff8d30;
 }
+
+@media (min-width: $tablet-width) {
+  .block-title {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
