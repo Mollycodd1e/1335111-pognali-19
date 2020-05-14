@@ -20,11 +20,6 @@
   box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
 }
 
-.companion-card__image {
-  overflow: hidden;
-  border-radius: 50%;
-}
-
 .companion-card:hover .companion-card__photo,
 .companion-card:focus .companion-card__photo {
   transform: scale(1.1);
@@ -32,11 +27,14 @@
 
 .companion-card__img-link {
   display: block;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .companion-card__photo {
   display: block;
   border-radius: 50%;
+  overflow: hidden;
 }
 
 .companion-card__name-wrapper {
@@ -417,8 +415,7 @@
     padding-bottom: 12px;
   }
 
-  .companion-card__image {
-    overflow: hidden;
+  .companion-card__img-link {
     border-radius: 25px;
   }
 
@@ -655,7 +652,7 @@
     padding: 0;
   }
 
-  .companion-card__image {
+  .companion-card__img-link {
     border-radius: 0;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;

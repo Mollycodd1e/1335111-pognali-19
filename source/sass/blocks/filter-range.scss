@@ -190,7 +190,8 @@
   .filter-range__wrapper {
     width: 148px;
     margin: 0;
-    margin-left: auto;
+    margin-top: -1px;
+    margin-left: 393px;
     padding-right: 10px;
   }
 
@@ -245,6 +246,11 @@
     top: -46px;
     width: 13px;
     height: 13px;
+
+    &:hover,
+    &:focus {
+      top: -50px;
+    }
   }
 
   .filter-range__toggle--min {

@@ -1171,7 +1171,6 @@
   border-radius: 4px;
   padding-left: 12px;
   border: none;
-  text-transform: uppercase;
   text-align: left;
   cursor: pointer;
 
@@ -1204,13 +1203,13 @@
   border: none;
 
   &::before {
-    top:  9px;
+    top: 9px;
     left: -57px;
     background-color: #edeff6;
   }
 
   &::after {
-   display: none;
+    display: none;
   }
 }
 

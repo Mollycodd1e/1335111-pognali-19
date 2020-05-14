@@ -1,7 +1,7 @@
 var foodMain = document.querySelector('.filter-form__fieldset--food');
 var foodToggle = document.querySelector('.filter-form__toggle--food');
 
-  foodMain.classList.remove('filter-form--nojs');
+  foodMain.classList.remove('filter-form__fieldset--nojs');
 
   foodToggle.addEventListener('click', function() {
     if (foodMain.classList.contains('filter-form__fieldset--closed')) {

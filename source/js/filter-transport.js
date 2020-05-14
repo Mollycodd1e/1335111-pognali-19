@@ -1,7 +1,7 @@
 var transportMain = document.querySelector('.filter-form__fieldset--transport');
 var transportToggle = document.querySelector('.filter-form__toggle--transport');
 
-  transportMain.classList.remove('filter-form--nojs');
+  transportMain.classList.remove('filter-form__fieldset--nojs');
 
   transportToggle.addEventListener('click', function() {
     if (transportMain.classList.contains('filter-form__fieldset--closed')) {

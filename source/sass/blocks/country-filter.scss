@@ -153,16 +153,16 @@
   color: #1d2e5b;
 }
 
-.country-filter--closed .alphabet-list__letter-list,
-.country-filter--opened .alphabet-list__letter-list,
-.country-filter--closed .alphabet-list__letter {
-  display: none;
-}
-
 .country-filter__letter-list {
+  display: none;
   padding: 0;
   margin: 0;
+  margin-right: 6%;
   margin-bottom: 30px;
+}
+
+.country-filter--opened .country-filter__letter-list {
+  display: block;
 }
 
 .country-filter__close {
@@ -224,15 +224,25 @@
   opacity: 0.3;
 }
 
+.country-filter--nojs {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .country-filter--nojs .country-filter__wrapper {
-  display: block;
+  display: nlock;
 }
 
 .country-filter--nojs .country-filter__world-part,
 .country-filter--nojs .country-filter__alphabet-list,
-.country-filter--nojs .country-filter__letter-list,
-.country-filter--nojs .country-filter__close {
+.country-filter--nojs .country-filter__close,
+.country-filter--nojs .country-filter__letter-list {
   display: block;
+}
+
+.country-filter--nojs .country-filter__alphabet-list {
+  display: flex;
+  margin-left: 24px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -499,5 +509,19 @@
     &::after {
       left: 590px;
     }
+  }
+
+  .country-filter--nojs .country-filter__world-part {
+    margin-top: -50px;
+    margin-left: 300px;
+    margin-right: 0;
+  }
+
+  .country-filter--nojs {
+    flex-wrap: wrap;
+  }
+
+  .country-filter--nojs .country-filter__letter-list {
+    display: none;
   }
 }

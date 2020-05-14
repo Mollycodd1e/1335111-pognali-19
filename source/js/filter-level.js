@@ -1,7 +1,7 @@
 var levelMain = document.querySelector('.filter-range');
 var levelToggle = document.querySelector('.filter-form__toggle--level');
 
-  levelMain.classList.remove('filter-form--nojs');
+  levelMain.classList.remove('filter-form__level--nojs');
 
   levelToggle.addEventListener('click', function() {
     if (levelMain.classList.contains('filter-form__fieldset--closed')) {

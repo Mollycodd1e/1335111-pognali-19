@@ -34,6 +34,10 @@
   background-color: #1d2e5b;
 }
 
+.alphabet-list__letter-list {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .alphabet-list {
     margin: 0;
@@ -125,6 +129,7 @@
   }
 
   .alphabet-list__letter-list {
+    display: block;
     padding-top: 80px;
   }
 }

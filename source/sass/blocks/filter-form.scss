@@ -228,12 +228,12 @@
   opacity: 0.3;
 }
 
-.filter-form--nojs .filter-form__list,
-.filter-form--nojs .filter-range__wrapper {
+.filter-form__fieldset--nojs .filter-form__list,
+.filter-form__level--nojs .filter-range__wrapper {
   display: block;
 }
 
-.filter-form--nojs .filter-form__transport-list {
+.filter-form__fieldset--nojs .filter-form__transport-list {
   display: flex;
 }
 
