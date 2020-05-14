@@ -135,6 +135,10 @@
   display: none;
 }
 
+.catalog__page-link {
+  text-decoration: none;
+}
+
 @media (min-width: $tablet-width) {
   .catalog {
     padding-bottom: 147px;

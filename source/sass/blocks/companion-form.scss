@@ -18,6 +18,10 @@
   margin-bottom: 85px;
 }
 
+.companion-form__photo-input:focus + .companion-form__photo {
+  outline: 3px dotted orange;
+}
+
 .companion-form__wrapper-level-title {
   display: none;
 }
@@ -874,7 +878,9 @@
   background-color: #edeff6;
   color: #444444;
 
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     cursor: pointer;
     box-shadow: inset 0 0 0 2px #ff5c23;
   }
