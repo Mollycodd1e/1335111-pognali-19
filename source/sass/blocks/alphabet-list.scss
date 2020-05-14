@@ -42,7 +42,6 @@
   .alphabet-list {
     margin: 0;
     width: 440px;
-    font-size: 60px;
     line-height: 24px;
     font-weight: 700;
     padding-left: 14px;
@@ -51,6 +50,7 @@
   .alphabet-list__letter {
     display: block;
     width: 77px;
+    font-size: 60px;
     padding-top: 25px;
     padding-bottom: 34px;
     border: none;

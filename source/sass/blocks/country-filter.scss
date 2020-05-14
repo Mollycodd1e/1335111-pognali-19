@@ -17,6 +17,7 @@
 .country-filter h2 {
   margin: 0;
   padding-left: 27px;
+  margin-right: 40px;
   font-size: 16px;
   font-weight: 700;
 
@@ -117,7 +118,7 @@
   left: 0;
   top: 105px;
   padding-top: 24px;
-  padding-bottom: 20px;
+  padding-bottom: 27px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   z-index: 10;
@@ -230,7 +231,7 @@
 }
 
 .country-filter--nojs .country-filter__wrapper {
-  display: nlock;
+  display: block;
 }
 
 .country-filter--nojs .country-filter__world-part,
@@ -278,7 +279,7 @@
   }
 
   .country-filter__world-part {
-    width: 500px;
+    width: 400px;
     display: flex;
     font-size: 20px;
     line-height: 24px;
@@ -291,6 +292,7 @@
     width: 100%;
     padding-top: 24px;
     padding-left: 34px;
+    margin-right: 300px;
   }
 
   .country-filter--closed .country-filter__world-part {
@@ -384,14 +386,14 @@
   }
 
   .country-filter__close {
-    width: 618px;
+    width: 585px;
     font-size: 20px;
     line-height: 30px;
     font-weight: 700;
     padding-top: 35px;
     padding-left: 32px;
     padding-bottom: 35px;
-    border-radius: 30px;
+    border-radius: 20px;
 
     color: #1d2e5b;
 
@@ -401,7 +403,7 @@
 
       position: absolute;
       top: 48px;
-      left: 256px;
+      left: 239px;
 
       width: 24px;
       height: 3px;
@@ -440,6 +442,7 @@
     width: 350px;
     padding-top: 29px;
     padding-left: 43px;
+    margin-right: 0;
     display: block;
     z-index: 11;
     background-size: 23px 15px;
