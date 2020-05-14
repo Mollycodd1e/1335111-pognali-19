@@ -5,6 +5,7 @@ var filterClose = document.querySelector('.country-filter__close');
   filterMain.classList.remove('country-filter--nojs');
 
   filterToggle.addEventListener('click', function() {
+    evt.preventDefault();
     if (filterMain.classList.contains('country-filter--closed')) {
       filterMain.classList.remove('country-filter--closed');
       filterMain.classList.add('country-filter--opened');
