@@ -50,6 +50,11 @@
     background-image: url("../img/flags-back-tablet-x1.png");
     background-repeat: no-repeat;
     background-position: right 40px top 8px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/flags-back-tablet-x2.png");
+      background-size: 683px 575px;
+    }
   }
 
   .destinations__title {
@@ -90,6 +95,11 @@
     background-image: url("../img/flags-back-desktop-x1.png");
     background-repeat: no-repeat;
     background-position: right 60px top 17px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/flags-back-desktop-x2.png");
+      background-size: 1320px 575px;
+    }
   }
 
   .destinations__list {
