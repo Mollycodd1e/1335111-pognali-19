@@ -61,18 +61,33 @@
   outline: none;
   position: relative;
   width: 108px;
-  height: 30px;
-  font-size: 14px;
+  padding-top: 11px;
+  padding-bottom: 6px;
+  font-size: 15px;
+  line-height: 13.5px;
+  letter-spacing: 1.5px;
+  font-weight: 500;
   border: 1px solid #cbced9;
   text-align: center;
 
+  color: #1d2e5b;
+
   &:hover {
+    cursor: pointer;
     border: 1px solid #959bb2;
   }
 
   &:focus {
     border: 1px solid #161c35;
   }
+}
+
+.filter-range__min-level input {
+  padding-left: 3px;
+}
+
+.filter-range__max-level input {
+  line-height: 15px;
 }
 
 .filter-range__level-control::before {
@@ -201,9 +216,15 @@
 
   .filter-range input {
     width: 72px;
-    height: 41px;
+    padding-top: 13px;
+    padding-bottom: 9px;
     font-size: 20px;
     line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .filter-range__min-level input {
+    padding-left: 2px;
   }
 
   .filter-range__level-control::before {
@@ -276,7 +297,8 @@
 
   .filter-range input {
     width: 93px;
-    height: 43px;
+    padding-top: 14px;
+    padding-bottom: 10px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
