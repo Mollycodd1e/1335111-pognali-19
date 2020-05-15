@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://cdnjs.com/libraries/normalize/8.0.1" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
     <header class="page-header">
@@ -132,7 +136,7 @@
             </label>
             <p class="companion-form__hashtags">
               <label class="companion-form__hashtags-title">Тэги</label>
-              <textarea class="companion-form__hashtags-input" placeholder="Коротко о себе в виде 5-8 хештегов">#бургер #бар #футбол #концерт #крафт
+              <textarea class="companion-form__hashtags-input" placeholder="Коротко о себе в виде 5-8 хештегов" name="hashtags">#бургер #бар #футбол #концерт #крафт
               </textarea>
             </p>
             <fieldset class="companion-form__transport">
@@ -432,12 +436,12 @@
                   <div class="companion-form__entertainment-wrapper companion-form__entertainment-label--bosnia">
                     <label class="companion-form__entertainment-label">Босния и Герцеговина</label>
                     <img src="img/bosnia-and-herzegovina-flag-x1.png" width="35" height="24" alt="Флаг страны">
-                    <textarea class="companion-form__entertainment-input" placeholder="План действий" required></textarea>
+                    <textarea class="companion-form__entertainment-input" placeholder="План действий" name="action-plan-bosnia-and-herzegovina" required></textarea>
                   </div>
                   <div class="companion-form__entertainment-wrapper companion-form__entertainment-wrapper--czech">
                     <label class="companion-form__entertainment-label">Чехия</label>
                     <img src="img/czech-flag-x1.png" width="35" height="24" alt="Флаг страны">
-                    <textarea class="companion-form__entertainment-input">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все.</textarea>
+                    <textarea class="companion-form__entertainment-input" placeholder="План действий" name="action-plan-czech">Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все.</textarea>
                   </div>
                 </fieldset>
                 <button class="companion-form_form-button" type="submit">Отправить</button>
