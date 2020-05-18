@@ -1381,6 +1381,7 @@
 }
 
 .companion-form__entertainment-wrapper--czech {
+  position: relative;
   margin-bottom: 21px;
 }
 
@@ -1422,11 +1423,13 @@
   border: 1px solid #161c35;
 }
 
-.companion-form__entertainment-input--error {
+.companion-form__entertainment-input--error,
+.companion-form__entertainment-input--error-czech {
   border: 1px solid #f47e7e;
 }
 
-.companion-form__error {
+.companion-form__error,
+.companion-form__error-czech {
   display: none;
   width: 194px;
   padding-left: 24px;
@@ -1442,6 +1445,13 @@
 }
 
 .companion-form__error--show {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+}
+
+.companion-form__error--show-czech {
   display: block;
   position: absolute;
   bottom: 1px;
@@ -2278,7 +2288,8 @@
     }
   }
 
-  .companion-form__error {
+  .companion-form__error,
+  .companion-form__error-czech {
     width: 475px;
   }
 }
@@ -2835,7 +2846,8 @@
     min-height: 108px;
   }
 
-  .companion-form__error {
+  .companion-form__error,
+  .companion-form__error-czech {
     width: 704px;
   }
 }
