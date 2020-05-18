@@ -11,5 +11,3 @@ for (var i = 0 ; i < circleForm.length; i++) {
     circleForm[i].setAttribute('cy', '50');
   }
 };
-
-
