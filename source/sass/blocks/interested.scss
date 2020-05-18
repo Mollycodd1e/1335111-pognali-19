@@ -50,10 +50,6 @@
   }
 }
 
-.interested__contact .interested__link:hover path {
-  fill: red;
-}
-
 .interested__form {
   display: flex;
 }
@@ -160,6 +156,10 @@
   vertical-align: middle;
 
   fill: #ffd74b;
+}
+
+.interested__contact a:hover svg {
+  fill: #ffbd30;
 }
 
 .interested__contact li {

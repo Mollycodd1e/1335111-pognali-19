@@ -1,0 +1,9 @@
+var circleCatalog = document.querySelectorAll('.companion-form__round-diagram circle');
+
+for (var i = 0 ; i < circle.length; i++) {
+  if (window.innerwidth < 768) {
+  circleCatalog[i].setAttribute('r', '21.5');
+  } else {
+    circleCatalog[i].setAttribute('r', '28.5');
+  }
+};
