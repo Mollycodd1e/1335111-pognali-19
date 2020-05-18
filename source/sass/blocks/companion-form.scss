@@ -1415,6 +1415,10 @@
 
     color: rgba(68, 68, 68, 0.3);
   }
+
+  :valid {
+    background-color: green;
+  }
 }
 
 .companion-form__entertainment-input:hover {
