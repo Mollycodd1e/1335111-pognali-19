@@ -14,6 +14,8 @@ if (validationForm) {
     var inputWrapper = target.parentElement;
     var errorMessage = inputWrapper.querySelector('.companion-form__error');
 
+    target.setCustomValidity(' ');
+
     target.classList.add('companion-form__entertainment-input--error');
     errorMessage.classList.add('companion-form__error--show');
 
