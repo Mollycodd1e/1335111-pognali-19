@@ -908,6 +908,11 @@
 .companion-form__calendar-date--selected {
   background-color: #101d41;
   color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: #101d41;
+  }
 }
 
 .companion-form__calendar-date--desktop {
@@ -2297,7 +2302,7 @@
     cursor: auto;
     box-shadow: none;
     background-color: transparent;
-    color: rgba(68, 68, 68, .3);
+    color: rgba(68, 68, 68, 0.3);
   }
 }
 
@@ -2708,7 +2713,7 @@
     cursor: auto;
     box-shadow: none;
     background-color: transparent;
-    color: rgba(68, 68, 68, .3);
+    color: rgba(68, 68, 68, 0.3);
   }
 
   .companion-form__calendar-date--desktop {

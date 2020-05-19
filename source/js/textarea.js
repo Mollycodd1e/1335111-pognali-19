@@ -1,22 +1,27 @@
-var formInputBosnia = document.querySelector('.companion-form__entertainment-input--bosnia');
+var validationForm = document.querySelector('.companion-form');
 
-if (document.querySelector('.companion-form__entertainment-input--bosnia')) {
-  var formSubmitButton = document.querySelector('.companion-form__form-button');
-  var showError = document.querySelector('.companion-form__error');
+if (validationForm) {
 
-  formInputBosnia.addEventListener("focus", function () {
-    formInputBosnia.classList.remove('companion-form__entertainment-input--error');
-    showError.classList.remove('companion-form__error--show');
-  }),
+  validationForm.addEventListener('invalid', checkForm, true)
 
-  formSubmitButton.addEventListener("click", function (evt) {
-    if (!formInputBosnia.textContent) {
-      evt.preventDefault();
-      formInputBosnia.classList.add('companion-form__entertainment-input--error');
-      showError.classList.add('companion-form__error--show');
-    } else {
-      formInputBosnia.classList.remove('companion-form__entertainment-input--error');
-      showError.classList.remove('companion-form__error--show');
-    }
-  });
+  target.addEventListener("input", function() {
+    target.classList.remove('companion-form__entertainment-input--error');
+    errorMessage.classList.remove('companion-form__error--show');
+  })
+
+  function checkForm(evt) {
+    var target = evt.target;
+    var inputWrapper = target.parentElement;
+    var errorMessage = inputWrapper.querySelector('.companion-form__error');
+
+    target.classList.add('companion-form__entertainment-input--error');
+    errorMessage.classList.add('companion-form__error--show');
+
+    console.log('невалидно');
+
+    inputWrapper.addEventListener("input", function() {
+      target.classList.remove('companion-form__entertainment-input--error');
+      errorMessage.classList.remove('companion-form__error--show');
+    })
+  }
 }
