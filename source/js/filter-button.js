@@ -1,8 +1,9 @@
 var filterMain = document.querySelector('.country-filter');
-var filterToggle = document.querySelector('.country-filter__toggle');
-var filterClose = document.querySelector('.country-filter__close');
 
+if (document.querySelector('.country-filter')) {
   filterMain.classList.remove('country-filter--nojs');
+  var filterToggle = document.querySelector('.country-filter__toggle');
+  var filterClose = document.querySelector('.country-filter__close');
 
   filterToggle.addEventListener('click', function(evt) {
     evt.preventDefault();
@@ -16,6 +17,7 @@ var filterClose = document.querySelector('.country-filter__close');
   });
 
   filterClose.addEventListener('click',function() {
-    filterMain.classList.remove('country-filter--opened');
-    filterMain.classList.add('country-filter--closed');
+  filterMain.classList.remove('country-filter--opened');
+  filterMain.classList.add('country-filter--closed');
   });
+}

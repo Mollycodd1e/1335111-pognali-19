@@ -289,6 +289,10 @@
     line-height: 30px;
     font-weight: 500;
     padding-left: 46px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .filter-range__wrapper {

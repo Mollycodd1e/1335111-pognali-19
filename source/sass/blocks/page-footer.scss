@@ -49,7 +49,7 @@
 .page-footer__copyright {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   &:hover {
     opacity: 0.6;
@@ -65,6 +65,11 @@
   font-weight: 400;
 
   color: #444444;
+}
+
+.copyright__link {
+  display: block;
+  margin-left: auto;
 }
 
 .copyright__link svg {
