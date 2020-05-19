@@ -78,5 +78,9 @@
     padding-left: 47px;
     padding-right: 28px;
     padding-bottom: 29px;
+
+    &::before {
+      display: none;
+    }
   }
 }

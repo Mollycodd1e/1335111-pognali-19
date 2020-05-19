@@ -96,7 +96,10 @@
     padding-top: 13px;
     padding-bottom: 13px;
     display: flex;
-    justify-content: space-between;
+  }
+
+  .modal__text p:nth-child(2) {
+    margin-left: auto;
   }
 
   .modal__button {

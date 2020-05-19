@@ -1,7 +1,8 @@
 var levelMain = document.querySelector('.filter-range');
-var levelToggle = document.querySelector('.filter-form__toggle--level');
 
+if (document.querySelector('.filter-range')) {
   levelMain.classList.remove('filter-form__level--nojs');
+  var levelToggle = document.querySelector('.filter-form__toggle--level');
 
   levelToggle.addEventListener('click', function() {
     if (levelMain.classList.contains('filter-form__fieldset--closed')) {
@@ -13,3 +14,4 @@ var levelToggle = document.querySelector('.filter-form__toggle--level');
       levelMain.classList.add('filter-form__fieldset--closed');
     }
   });
+}

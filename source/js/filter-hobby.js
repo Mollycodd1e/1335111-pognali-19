@@ -1,7 +1,8 @@
 var hobbyMain = document.querySelector('.filter-form__fieldset--hobby');
-var hobbyToggle = document.querySelector('.filter-form__toggle--hobby');
 
+if (document.querySelector('.filter-form__fieldset--hobby')) {
   hobbyMain.classList.remove('filter-form__fieldset--nojs');
+  var hobbyToggle = document.querySelector('.filter-form__toggle--hobby');
 
   hobbyToggle.addEventListener('click', function() {
     if (hobbyMain.classList.contains('filter-form__fieldset--closed')) {
@@ -13,3 +14,4 @@ var hobbyToggle = document.querySelector('.filter-form__toggle--hobby');
       hobbyMain.classList.add('filter-form__fieldset--closed');
     }
   });
+}

@@ -99,9 +99,6 @@
   position: relative;
   top: 1px;
   left: 1px;
-}
-
-.companion-card__like-button path {
   stroke: #192144;
   width: 15px;
   height: 13px;
@@ -128,12 +125,12 @@
   background-color: #e2e5f2;
 }
 
-.companion-card__like-button:hover path,
-.companion-card__like-button:focus path {
+.companion-card__like-button:hover svg,
+.companion-card__like-button:focus svg {
   stroke-opacity: 0.5;
 }
 
-.companion-card__like-button:active path {
+.companion-card__like-button:active svg {
   stroke-opacity: 0.1;
 }
 
@@ -141,7 +138,7 @@
   background-color: #f9eaea;
 }
 
-.companion-card__like-button--active path {
+.companion-card__like-button--active svg {
   fill: #f02323;
   stroke: none;
 }
@@ -350,7 +347,6 @@
 }
 
 .companion-card__round-diagram circle {
-  r: 21.5px;
   stroke-dasharray: 135.02px;
 }
 
@@ -610,7 +606,6 @@
   }
 
   .companion-card__round-diagram circle {
-    r: 28.5px;
     stroke-dasharray: 178.98px;
   }
 

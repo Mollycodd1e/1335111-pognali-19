@@ -1,7 +1,8 @@
 var musicMain = document.querySelector('.filter-form__fieldset--music');
-var musicToggle = document.querySelector('.filter-form__toggle--music');
 
+if (document.querySelector('.filter-form__fieldset--music')) {
   musicMain.classList.remove('filter-form__fieldset--nojs');
+  var musicToggle = document.querySelector('.filter-form__toggle--music');
 
   musicToggle.addEventListener('click', function() {
     if (musicMain.classList.contains('filter-form__fieldset--closed')) {
@@ -13,3 +14,4 @@ var musicToggle = document.querySelector('.filter-form__toggle--music');
       musicMain.classList.add('filter-form__fieldset--closed');
     }
   });
+}

@@ -151,7 +151,6 @@
   }
 
   .profile__text {
-
     font-size: 28px;
     line-height: 33px;
     padding-top: 19px;
@@ -168,7 +167,14 @@
 
   .profile__list li {
     display: flex;
-    justify-content: space-between;
+  }
+
+  .profile__text p {
+    margin-left: 0;
+  }
+
+  .profile__text p:nth-child(2) {
+    margin-left: auto;
   }
 
   .profile__counter {

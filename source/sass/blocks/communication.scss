@@ -40,10 +40,8 @@
   padding-top: 11px;
 }
 
-.communication__item:active {
-  svg {
-    fill: transparentize($color: #161c35, $amount: 0.5);
-  }
+.communication__item:active svg {
+  opacity: 0.5;
 }
 
 @media (min-width: $desktop-width) {

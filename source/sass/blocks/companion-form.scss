@@ -39,9 +39,6 @@
 }
 
 .companion-form__round-diagram circle {
-  r: 48.5px;
-  cx: 50px;
-  cy: 50px;
   stroke-dasharray: 304.58px;
   stroke-dashoffset: 52px;
 
@@ -330,6 +327,7 @@
 }
 
 .companion-form__step-wrapper {
+  position: relative;
   border-radius: 10px;
   padding-left: 24px;
   padding-right: 25px;
@@ -369,8 +367,8 @@
 .companion-form__paragraph-list {
   position: absolute;
   display: flex;
-  top: 15px;
-  right: 32px;
+  top: -68px;
+  right: 7px;
   list-style: none;
 }
 
@@ -889,6 +887,8 @@
     outline: none;
     cursor: pointer;
     box-shadow: inset 0 0 0 2px #ff5c23;
+    background-color: #1d2e5b;
+    color: #ffffff;
   }
 }
 
@@ -906,15 +906,13 @@
 }
 
 .companion-form__calendar-date--selected {
-  background-color: #1d2e5b;
+  background-color: #101d41;
   color: #ffffff;
-}
 
-.companion-form__calendar-date--started {
-  border: 2px solid #ff5c23;
-
-  background-color: #1d2e5b;
-  color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: #101d41;
+  }
 }
 
 .companion-form__calendar-date--desktop {
@@ -1280,7 +1278,7 @@
   color: transparentize($color: #161c35, $amount: 0.7);
 }
 
-.companion-form_form-button {
+.companion-form__form-button {
   display: block;
   width: 230px;
   margin-left: -4px;
@@ -1385,6 +1383,7 @@
 }
 
 .companion-form__entertainment-wrapper--czech {
+  position: relative;
   margin-bottom: 21px;
 }
 
@@ -1426,6 +1425,41 @@
   border: 1px solid #161c35;
 }
 
+.companion-form__entertainment-input--error,
+.companion-form__entertainment-input--error-czech {
+  border: 1px solid #f47e7e;
+}
+
+.companion-form__error,
+.companion-form__error-czech {
+  display: none;
+  width: 194px;
+  padding-left: 24px;
+  font-size: 20px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  line-height: 24px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+
+  color: #ff0000;
+  background-color: #ffefef;
+}
+
+.companion-form__error--show {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+}
+
+.companion-form__error--show-czech {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+}
+
 @media (min-width: $tablet-width) {
   .companion-form__round-diagram {
     width: 98px;
@@ -1440,9 +1474,6 @@
   }
 
   .companion-form__round-diagram circle {
-    r: 45.5px;
-    cx: 50px;
-    cy: 50px;
     stroke-dasharray: 285.74px;
     stroke-dashoffset: 48px;
 
@@ -1693,8 +1724,8 @@
   }
 
   .companion-form__paragraph-list {
-    top: 41px;
-    right: 49px;
+    top: -104px;
+    right: -25px;
   }
 
   .companion-form__paragraph-item {
@@ -2218,7 +2249,7 @@
     }
   }
 
-  .companion-form_form-button {
+  .companion-form__form-button {
     position: relative;
     width: 283px;
     font-size: 24px;
@@ -2246,17 +2277,32 @@
     }
   }
 
-  .companion-form_form-button:hover,
-  .companion-form_form-button:focus {
+  .companion-form__form-button:hover,
+  .companion-form__form-button:focus {
     background-color: #ffbd30;
   }
 
-  .companion-form_form-button:active {
+  .companion-form__form-button:active {
     color: transparentize($color: #1d2e5b, $amount: 0.3);
 
     &::before {
       opacity: 0.3;
     }
+  }
+
+  .companion-form__error,
+  .companion-form__error-czech {
+    width: 475px;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .companion-form__calendar-date--disabled:focus,
+  .companion-form__calendar-date--disabled:hover {
+    cursor: auto;
+    box-shadow: none;
+    background-color: transparent;
+    color: rgba(68, 68, 68, 0.3);
   }
 }
 
@@ -2460,8 +2506,8 @@
     display: block;
     margin: 0;
     padding: 0;
-    top: 255px;
-    right: 265px;
+    top: 108px;
+    right: 206px;
   }
 
   .companion-form__link-text {
@@ -2493,13 +2539,10 @@
 
   .companion-form__paragraph-list--step-two {
     display: block;
-    top: 1598px;
-    right: 266px;
   }
 
   .companion-form__paragraph-list--step-three {
     display: block;
-    top: 2543px;
   }
 
   .companion-form__fieldset {
@@ -2665,6 +2708,14 @@
     }
   }
 
+  .companion-form__calendar-date--disabled:focus,
+  .companion-form__calendar-date--disabled:hover {
+    cursor: auto;
+    box-shadow: none;
+    background-color: transparent;
+    color: rgba(68, 68, 68, 0.3);
+  }
+
   .companion-form__calendar-date--desktop {
     display: inline;
     padding-left: 5px;
@@ -2799,5 +2850,10 @@
     padding-left: 24px;
     padding-top: 24px;
     min-height: 108px;
+  }
+
+  .companion-form__error,
+  .companion-form__error-czech {
+    width: 704px;
   }
 }
