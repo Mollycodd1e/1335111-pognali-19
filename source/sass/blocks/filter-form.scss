@@ -79,12 +79,12 @@
 
 .filter-form__fieldset--closed .filter-form__list,
 .filter-form__fieldset--closed .filter-form__transport-list,
-.filter-form__level--closed .filter-range__wrapper {
+.filter-form__level--closed .filter-form__range-wrapper {
   display: none;
 }
 
 .filter-form__fieldset--opened .filter-form__list,
-.filter-form__level--opened .filter-range__wrapper {
+.filter-form__level--opened .filter-form__range-wrapper {
   display: block;
 }
 
@@ -113,7 +113,7 @@
     width: 220px;
     height: 1px;
 
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: #f3c72b;
   }
 }
 
@@ -297,7 +297,7 @@
 
   .filter-form__fieldset--closed .filter-form__list,
   .filter-form__fieldset--closed .filter-form__transport-list,
-  .filter-form__level--closed .filter-range__wrapper {
+  .filter-form__level--closed .filter-form__range-wrapper {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -421,7 +421,7 @@
     padding-left: 146px;
   }
 
-  .filter-form__level--closed .filter-range__wrapper {
+  .filter-form__level--closed .filter-form__range-wrapper {
     display: block;
     margin-left: 415px;
   }

@@ -60,22 +60,6 @@
   }
 }
 
-.copyright__text {
-  margin: 0;
-  font-weight: 400;
-
-  color: #444444;
-}
-
-.copyright__link {
-  display: block;
-  margin-left: auto;
-}
-
-.copyright__link svg {
-  fill: #192144;
-}
-
 @media (max-width: $mobile-width-only) {
   .page-footer__copyright::before {
     content: "";
@@ -120,12 +104,6 @@
   .page-footer__logo img {
     width: 166px;
     height: 42px;
-  }
-
-  .copyright__text {
-    font-size: 20px;
-    line-height: 24px;
-    margin-right: 24px;
   }
 
   .page-footer__copyright {

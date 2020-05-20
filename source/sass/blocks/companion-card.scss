@@ -1,6 +1,6 @@
 .companion-card {
   width: 234px;
-  padding-top: 15px;
+  padding-top: 14px;
   padding-left: 18px;
   padding-right: 18px;
   padding-bottom: 22px;
@@ -8,11 +8,11 @@
 }
 
 .companion-card:nth-child(2n) .companion-card__country-list-wrapper {
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 }
 
 .companion-card:nth-child(3) .companion-card__country-list-wrapper {
-  padding-bottom: 8px;
+  padding-bottom: 12px;
 }
 
 .companion-card:hover,
@@ -92,7 +92,7 @@
   display: flex;
   margin-left: 50px;
   margin-top: -30px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .companion-card__like-button svg {
@@ -179,7 +179,7 @@
 .companion-card__country-list-wrapper {
   width: 100%;
   padding-left: 9px;
-  padding-bottom: 5px;
+  padding-bottom: 9px;
 }
 
 .companion-card__country-list {
@@ -214,7 +214,7 @@
   font-size: 15px;
   line-height: 18px;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .companion-card__wrapper-country-title::before {
@@ -291,13 +291,13 @@
   background-color: #edeff6;
 }
 
-.companion-card__country-list .country-list__flag--catalog {
+.companion-card__country-list .companion-card__flag {
   width: 26px;
   height: 18px;
   padding-right: 15px;
 }
 
-.companion-card__country-list .country-list__item--catalog {
+.companion-card__country-list .companion-card__country-item {
   margin-bottom: 2px;
 }
 
@@ -334,8 +334,8 @@
 }
 
 .companion-card__round-diagram {
-  top: 16px;
-  left: 5px;
+  top: 18px;
+  left: 6px;
 
   &::before {
     display: none;
@@ -351,7 +351,7 @@
 }
 
 .companion-card__round-diagram span:nth-child(2) {
-  top: 24px;
+  top: 23px;
   left: 17px;
   line-height: 18px;
 
@@ -489,31 +489,31 @@
     flex-wrap: wrap;
   }
 
-  .companion-card__country-list .country-list__item--catalog {
+  .companion-card__country-list .companion-card__country-item {
     margin-right: 129px;
   }
 
-  .companion-card__country-list .country-list__item--catalog:nth-child(2) {
+  .companion-card__country-list .companion-card__country-item:nth-child(2) {
     margin-right: 105px;
   }
 
-  .companion-card__country-list .country-list__item--catalog:nth-child(3n + 2) {
+  .companion-card__country-list .companion-card__country-item:nth-child(3n + 2) {
     margin-right: 105px;
   }
 
-  .companion-card:nth-child(2) .country-list__item--catalog {
+  .companion-card:nth-child(2) .companion-card__country-item {
     margin-right: 105px;
   }
 
-  .companion-card:nth-child(3) .country-list__item--catalog {
+  .companion-card:nth-child(3) .companion-card__country-item {
     margin-right: 60px;
   }
 
-  .companion-card:nth-child(3) .country-list__item--catalog:nth-child(2) {
+  .companion-card:nth-child(3) .companion-card__country-item:nth-child(2) {
     margin-right: 123px;
   }
 
-  .companion-card:nth-child(4) .country-list__item--catalog {
+  .companion-card:nth-child(4) .companion-card__country-item {
     margin-right: 181px;
   }
 
@@ -531,7 +531,7 @@
     line-height: 30px;
   }
 
-  .companion-card__country-list .country-list__flag--catalog {
+  .companion-card__country-list .companion-card__flag {
     width: 35px;
     height: 24px;
   }
@@ -543,6 +543,22 @@
 
   .companion-card__wrapper-country-title {
     padding-left: 48px;
+  }
+
+  .companion-card:nth-child(2n) .companion-card__wrapper-country-title {
+    margin-bottom: 15px;
+  }
+
+  .companion-card:nth-child(2n) .companion-card__country-list-wrapper {
+    padding-bottom: 10px;
+  }
+
+  .companion-card:nth-child(2n) {
+    margin-bottom: 40px;
+  }
+
+  .companion-card:nth-child(3n) .companion-card__country-list-wrapper {
+    padding-bottom: 9px;
   }
 
   .companion-card__wrapper-country-title::before {
@@ -647,6 +663,10 @@
     padding: 0;
   }
 
+  .companion-card:nth-child(2n) {
+    margin-bottom: 30px;
+  }
+
   .companion-card__img-link {
     border-radius: 0;
     border-top-left-radius: 20px;
@@ -712,11 +732,11 @@
     flex-direction: column;
   }
 
-  .companion-card__country-list .country-list__item--catalog {
+  .companion-card__country-list .companion-card__country-item {
     margin-bottom: 6px;
   }
 
-  .companion-card__country-list .country-list__item--catalog:nth-child(2) {
+  .companion-card__country-list .companion-card__country-item:nth-child(2) {
     margin-bottom: 4px;
   }
 
@@ -746,7 +766,7 @@
     margin-top: -97px;
   }
 
-  .companion-card:nth-child(4) .country-list__item--catalog {
+  .companion-card:nth-child(4) .companion-card__country-item {
     margin-right: 91px;
   }
 }

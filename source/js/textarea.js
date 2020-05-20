@@ -21,7 +21,7 @@ if (validationForm) {
 
     console.log('невалидно');
 
-    inputWrapper.addEventListener("input", function() {
+    inputWrapper.addEventListener("input", function(evt) {
       target.classList.remove('companion-form__entertainment-input--error');
       errorMessage.classList.remove('companion-form__error--show');
     })

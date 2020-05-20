@@ -26,6 +26,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe (rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -36,7 +37,7 @@ gulp.task("css", function () {
 gulp.task("js", function () {
   return gulp.src("source/js/*.js","!source/js/picturefill.min.js","!source/js/svg4everybody.min.js")
     .pipe(concat("main.js"))
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(rename("main.min.js"))
     .pipe(gulp.dest("build/js"))
 })

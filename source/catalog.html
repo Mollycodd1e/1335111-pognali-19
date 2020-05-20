@@ -120,6 +120,7 @@
         </div>
       </section>
       <section class="country-filter country-filter--closed country-filter--nojs">
+        <div class="country-filter__section-wrapper">
         <h2>Фильтрация по странам:</h2>
         <a class="country-filter__toggle" href="#">
           <span class="country-filter__toggle-open">Показать все</span>
@@ -785,6 +786,7 @@
           </ul>
           <a class="country-filter__close">Свернуть</a>
         </div>
+        </div>
       </section>
       <div class="page-main__desktop-wrapper">
       <section class="filter container">
@@ -895,7 +897,7 @@
               <p class="filter-range__title">Левел</p>
             <button class="filter-form__toggle filter-form__toggle--level" type="button"></button>
             <div class="filter-form__wrapper">
-              <div class="filter-range__wrapper">
+              <div class="filter-range__wrapper filter-form__range-wrapper">
                 <div class="filter-range__level-control">
                   <label class="filter-range__min-level" for="id-filter-range__min-level">
                     <input type="text" name="filter-range__min-level" id="id-filter-range__min-level" value="30">
@@ -909,10 +911,10 @@
                     <div class="filter-range__bar">
                     </div>
                   </div>
-                  <div class="filter-range__toggle filter-range__toggle--min">
-                  </div>
-                  <div class="filter-range__toggle filter-range__toggle--max">
-                  </div>
+                  <button class="filter-range__toggle filter-range__toggle--min" type="button">
+                  </button>
+                  <button class="filter-range__toggle filter-range__toggle--max" type="button">
+                  </button>
                 </div>
               </div>
             </div>
@@ -971,36 +973,36 @@
             <div class="companion-card__country-list-wrapper">
               <p class="companion-card__wrapper-country-title">хочет посетить:</p>
               <ul class="companion-card__country-list country-list">
-                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Шри Ланка" aria-label="Шри Ланка">
-                  <img class="country-list__flag country-list__flag--catalog" src="img/sri-lanka-flag-x1.png" width="26" height="18" alt="Шри Ланка">
+                <li class="tooltip country-list__item companion-card__country-item" data-tooltip="Шри Ланка" aria-label="Шри Ланка">
+                  <img class="country-list__flag companion-card__flag" src="img/sri-lanka-flag-x1.png" width="26" height="18" alt="Шри Ланка">
                 </li>
-                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Тайланд" aria-label="Тайланд">
-                  <img class="country-list__flag country-list__flag--catalog" src="img/thailand-flag-x1.png" width="26" height="18" alt="Тайланд">
+                <li class="tooltip country-list__item companion-card__country-item" data-tooltip="Тайланд" aria-label="Тайланд">
+                  <img class="country-list__flag companion-card__flag" src="img/thailand-flag-x1.png" width="26" height="18" alt="Тайланд">
                 </li>
-                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Сейшелы" aria-label="Сейшелы">
-                  <img class="country-list__flag country-list__flag--catalog" src="img/seychelles-flag-x1.png" width="26" height="18" alt="Сейшелы">
+                <li class="tooltip country-list__item companion-card__country-item" data-tooltip="Сейшелы" aria-label="Сейшелы">
+                  <img class="country-list__flag companion-card__flag" src="img/seychelles-flag-x1.png" width="26" height="18" alt="Сейшелы">
                 </li>
               </ul>
             </div>
             <div class="companion-card__way-of-travelling-list-wrapper">
               <p class="companion-card__wrapper-transport-title">транспорт:</p>
               <ul class="companion-card__way-of-travelling-list way-of-travelling-list">
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Авиаперелет" aria-label="Авиаперелет">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item way-of-travelling-list__item--active" data-tooltip="Авиаперелет" aria-label="Авиаперелет">
                   <svg width="14" height="16" viewBox="0 0 19 21">
                     <use xlink:href="#icon-plane"></use>
                   </svg>
                 </li>
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Автотранспорт" aria-label="Автотранспорт">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item" data-tooltip="Автотранспорт" aria-label="Автотранспорт">
                   <svg width="13" height="16" viewBox="0 0 17 21">
                     <use xlink:href="#icon-bus"></use>
                   </svg>
                 </li>
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Велосипед" aria-label="Велосипед">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item" data-tooltip="Велосипед" aria-label="Велосипед">
                   <svg width="19" height="17" viewBox="0 0 24 21">
                     <use xlink:href="#icon-bike"></use>
                   </svg>
                 </li>
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Пешком" aria-label="Пешком">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item" data-tooltip="Пешком" aria-label="Пешком">
                   <svg width="15" height="17" viewBox="0 0 20 21">
                     <use xlink:href="#icon-run"></use>
                   </svg>
@@ -1064,33 +1066,33 @@
             <div class="companion-card__country-list-wrapper">
               <p class="companion-card__wrapper-country-title">хочет посетить:</p>
               <ul class="companion-card__country-list country-list">
-                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Бельгия" aria-label="Бельгия">
-                  <img class="country-list__flag country-list__flag--catalog" src="img/belgium-flag-x1.png" width="26" height="18" alt="Бельгия">
+                <li class="tooltip country-list__item companion-card__country-item" data-tooltip="Бельгия" aria-label="Бельгия">
+                  <img class="country-list__flag companion-card__flag" src="img/belgium-flag-x1.png" width="26" height="18" alt="Бельгия">
                 </li>
-                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Чехия" aria-label="Чехия">
-                  <img class="country-list__flag country-list__flag--catalog" src="img/czech-flag-x1.png" width="26" height="18" alt="Чехия">
+                <li class="tooltip country-list__item companion-card__country-item" data-tooltip="Чехия" aria-label="Чехия">
+                  <img class="country-list__flag companion-card__flag" src="img/czech-flag-x1.png" width="26" height="18" alt="Чехия">
                 </li>
               </ul>
             </div>
             <div class="companion-card__way-of-travelling-list-wrapper">
               <p class="companion-card__wrapper-transport-title">транспорт:</p>
               <ul class="companion-card__way-of-travelling-list way-of-travelling-list">
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Авиаперелет" aria-label="Авиаперелет">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item way-of-travelling-list__item--active" data-tooltip="Авиаперелет" aria-label="Авиаперелет">
                   <svg width="14" height="16" viewBox="0 0 19 21">
                     <use xlink:href="#icon-plane"></use>
                   </svg>
                 </li>
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Автотранспорт" aria-label="Автотранспорт">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item way-of-travelling-list__item--active" data-tooltip="Автотранспорт" aria-label="Автотранспорт">
                   <svg width="13" height="16" viewBox="0 0 17 21">
                     <use xlink:href="#icon-bus"></use>
                   </svg>
                 </li>
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Велосипед" aria-label="Велосипед">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item" data-tooltip="Велосипед" aria-label="Велосипед">
                   <svg width="19" height="17" viewBox="0 0 24 21">
                     <use xlink:href="#icon-bike"></use>
                   </svg>
                 </li>
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Пешком" aria-label="Пешком">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item way-of-travelling-list__item--active" data-tooltip="Пешком" aria-label="Пешком">
                   <svg width="15" height="17" viewBox="0 0 20 21">
                     <use xlink:href="#icon-run"></use>
                   </svg>
@@ -1146,7 +1148,7 @@
               </li>
               <li class="hashtags-list__item">
                 <a class="hashtags-list__link" href="#">#кроссовки</a>
-                <a class="hashtags-list__link hashtags-list__link--tablet" href="#">#сникеры</a>
+                <a class="hashtags-list__link-tablet" href="#">#сникеры</a>
               </li>
               <li class="hashtags-list__item">
                 <a href="#">#суприм</a>
@@ -1155,36 +1157,36 @@
             <div class="companion-card__country-list-wrapper">
               <p class="companion-card__wrapper-country-title">хочет посетить:</p>
               <ul class="companion-card__country-list country-list">
-                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="США" aria-label="США">
-                  <img class="country-list__flag country-list__flag--catalog" src="img/united-states-of-america-flag-x1.png" width="26" height="18" alt="США">
+                <li class="tooltip country-list__item companion-card__country-item" data-tooltip="США" aria-label="США">
+                  <img class="country-list__flag companion-card__flag" src="img/united-states-of-america-flag-x1.png" width="26" height="18" alt="США">
                 </li>
-                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Австралия" aria-label="Австралия">
-                  <img class="country-list__flag country-list__flag--catalog" src="img/australia-flag-x1.png" width="26" height="18" alt="Австралия">
+                <li class="tooltip country-list__item companion-card__country-item" data-tooltip="Австралия" aria-label="Австралия">
+                  <img class="country-list__flag companion-card__flag" src="img/australia-flag-x1.png" width="26" height="18" alt="Австралия">
                 </li>
-                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Доминика" aria-label="Доминика">
-                  <img class="country-list__flag country-list__flag--catalog" src="img/dominica-flag-x1.png" width="26" height="18" alt="Доминика">
+                <li class="tooltip country-list__item companion-card__country-item" data-tooltip="Доминика" aria-label="Доминика">
+                  <img class="country-list__flag companion-card__flag" src="img/dominica-flag-x1.png" width="26" height="18" alt="Доминика">
                 </li>
               </ul>
             </div>
             <div class="companion-card__way-of-travelling-list-wrapper">
               <p class="companion-card__wrapper-transport-title">транспорт:</p>
               <ul class="companion-card__way-of-travelling-list way-of-travelling-list">
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Авиаперелет" aria-label="Авиаперелет">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item way-of-travelling-list__item--active" data-tooltip="Авиаперелет" aria-label="Авиаперелет">
                   <svg width="14" height="16" viewBox="0 0 19 21">
                     <use xlink:href="#icon-plane"></use>
                   </svg>
                 </li>
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Автотранспорт" aria-label="Автотранспорт">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item" data-tooltip="Автотранспорт" aria-label="Автотранспорт">
                   <svg width="13" height="16" viewBox="0 0 17 21">
                     <use xlink:href="#icon-bus"></use>
                   </svg>
                 </li>
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--active way-of-travelling-list__item--catalog" data-tooltip="Велосипед" aria-label="Велосипед">
+                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--active companion-card__way-of-travelling-item" data-tooltip="Велосипед" aria-label="Велосипед">
                   <svg width="19" height="17" viewBox="0 0 24 21">
                     <use xlink:href="#icon-bike"></use>
                   </svg>
                 </li>
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Пешком" aria-label="Пешком">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item" data-tooltip="Пешком" aria-label="Пешком">
                   <svg width="15" height="17" viewBox="0 0 20 21">
                     <use xlink:href="#icon-run"></use>
                   </svg>
@@ -1245,33 +1247,33 @@
             <div class="companion-card__country-list-wrapper">
               <p class="companion-card__wrapper-country-title">хочет посетить:</p>
               <ul class="companion-card__country-list country-list">
-                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Великобритания" aria-label="Великобритания">
-                  <img class="country-list__flag country-list__flag--catalog" src="img/united-kingdom-flag-x1.png" width="26" height="18" alt="Великобритания">
+                <li class="tooltip country-list__item companion-card__country-item" data-tooltip="Великобритания" aria-label="Великобритания">
+                  <img class="country-list__flag companion-card__flag" src="img/united-kingdom-flag-x1.png" width="26" height="18" alt="Великобритания">
                 </li>
-                <li class="tooltip country-list__item country-list__item--catalog" data-tooltip="Германия" aria-label="Германия">
-                  <img class="country-list__flag country-list__flag--catalog" src="img/germany-flag-x1.png" width="26" height="18" alt="Германия">
+                <li class="tooltip country-list__item companion-card__country-item" data-tooltip="Германия" aria-label="Германия">
+                  <img class="country-list__flag companion-card__flag" src="img/germany-flag-x1.png" width="26" height="18" alt="Германия">
                 </li>
               </ul>
             </div>
             <div class="companion-card__way-of-travelling-list-wrapper">
               <p class="companion-card__wrapper-transport-title">транспорт:</p>
               <ul class="companion-card__way-of-travelling-list way-of-travelling-list">
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Авиаперелет" aria-label="Авиаперелет">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item way-of-travelling-list__item--active" data-tooltip="Авиаперелет" aria-label="Авиаперелет">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 19 21">
                     <use xlink:href="#icon-plane"></use>
                   </svg>
                 </li>
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog way-of-travelling-list__item--active" data-tooltip="Автотранспорт" aria-label="Автотранспорт">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item way-of-travelling-list__item--active" data-tooltip="Автотранспорт" aria-label="Автотранспорт">
                   <svg width="13" height="16" viewBox="0 0 17 21">
                     <use xlink:href="#icon-bus"></use>
                   </svg>
                 </li>
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Велосипед" aria-label="Велосипед">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item" data-tooltip="Велосипед" aria-label="Велосипед">
                   <svg width="19" height="17" viewBox="0 0 24 21">
                     <use xlink:href="#icon-bike"></use>
                   </svg>
                 </li>
-                <li class="tooltip way-of-travelling-list__item way-of-travelling-list__item--catalog" data-tooltip="Пешком" aria-label="Пешком">
+                <li class="tooltip way-of-travelling-list__item companion-card__way-of-travelling-item" data-tooltip="Пешком" aria-label="Пешком">
                   <svg width="15" height="17" viewBox="0 0 20 21">
                     <use xlink:href="#icon-run"></use>
                   </svg>

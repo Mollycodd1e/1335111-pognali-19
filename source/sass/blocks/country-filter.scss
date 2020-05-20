@@ -431,6 +431,14 @@
     padding-left: 80px;
   }
 
+  .country-filter--closed .country-filter__section-wrapper {
+    position: relative;
+    width: 1335px;
+    display: flex;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
   .country-filter--closed {
     display: flex;
   }
@@ -454,6 +462,7 @@
   }
 
   .country-filter__toggle {
+    top: 20px;
     right: 123px;
   }
 

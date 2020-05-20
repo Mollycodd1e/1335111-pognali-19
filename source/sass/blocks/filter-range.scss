@@ -33,7 +33,7 @@
   width: 220px;
   height: 1px;
 
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: #f3c72b;
 }
 
 .filter-range__title:hover,
@@ -108,8 +108,8 @@
 
   position: absolute;
 
-  top: 17px;
-  right: 103px;
+  top: 18px;
+  right: 100px;
   width: 14px;
   height: 2px;
   z-index: 1;
@@ -130,7 +130,7 @@
 
 .filter-range__range-control .filter-range__scale {
   height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+  background-color: rgba(29, 46, 91, 0.2);
 }
 
 .filter-range__range-control .filter-range__bar {
@@ -138,6 +138,7 @@
   right: -68px;
   width: 65%;
   height: 2px;
+  z-index: 10;
 
   background-color: #1d2e5b;
 }
@@ -146,11 +147,11 @@
   position: absolute;
   top: -5px;
 
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   background-color: #1d2e5b;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  border: none;
   cursor: pointer;
 
   &:hover,
@@ -229,13 +230,13 @@
 
   .filter-range__level-control::before {
     top: 15px;
-    right: 73px;
+    right: 68px;
     height: 15px;
   }
 
   .filter-range__level-control::after {
     top: 21px;
-    right: 64px;
+    right: 62px;
     width: 20px;
   }
 
@@ -252,7 +253,7 @@
     height: 3px;
     border-radius: 1.5px;
 
-    background: rgba(255, 255, 255, 0.3);
+    background-color: rgba(29, 46, 91, 0.2);
   }
 
   .filter-range__range-control .filter-range__bar {
@@ -317,7 +318,7 @@
 
   .filter-range__level-control::after {
     top: 23px;
-    right: 116px;
+    right: 112px;
     width: 20px;
     height: 2px;
   }

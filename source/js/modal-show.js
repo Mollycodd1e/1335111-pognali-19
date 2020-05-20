@@ -6,10 +6,10 @@ if (document.querySelector('.modal')) {
 
   popup.addEventListener('click', function(evt) {
     evt.preventDefault();
-    popupMain.classList.add("modal-show");
+    popupMain.classList.add("modal--show");
   });
 
   close.addEventListener('click', function() {
-    popupMain.classList.remove("modal-show");
+    popupMain.classList.remove("modal--show");
   });
 }
