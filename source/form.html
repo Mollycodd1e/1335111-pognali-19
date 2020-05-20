@@ -21,9 +21,9 @@
       <nav class="page-header__main-nav main-nav main-nav--closed main-nav--nojs main-nav--catalog">
         <a class="main-nav__logo" href="index.html">
           <picture class="main-nav__logo-image">
-            <source class="main-nav__logo-image--desktop" srcset="img/logo-desktop-white@1x.png" media="(min-width: 1440px)">
-            <source class="main-nav__logo-image--tablet" srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)">
-            <img class="main-nav__logo-image--mobile" src="img/logo-mobile-white@1x.png" width="100" height="19" alt="Логотип «Погнали»">
+            <source class="main-nav__logo-desktop" srcset="img/logo-desktop-white@1x.png" media="(min-width: 1440px)">
+            <source class="main-nav__logo-tablet" srcset="img/logo-tablet-white@1x.png" media="(min-width: 768px)">
+            <img class="main-nav__logo-mobile" src="img/logo-mobile-blue@1x.png" width="100" height="19" alt="Логотип «Погнали»">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button">
@@ -207,10 +207,8 @@
             <div class="companion-form__add-plans-wrapper container">
               <p class="companion-form__add-plans-title">Добавить план:</p>
               <div class="companion-form__step-wrapper">
-                <p class="companion-form__add-step-title" id="step-one">Шаг 1.
-                  Даты пребывания</p>
-                <p class="companion-form__add-date-text">Укажите предпочтительное количество попутчиков, которых
-                      вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+                <p class="companion-form__add-step-title" id="step-one">Шаг 1. Даты&nbsp;пребывания</p>
+                <p class="companion-form__add-date-text">Укажите предпочтительное количество попутчиков, которых вы&nbsp;хотели бы позвать в поездку и ее предполагаемую длительность.</p>
                 <ul class="companion-form__paragraph-list">
                   <li class="companion-form__paragraph-item companion-form__paragraph-item--active">
                     <a class="companion-form__paragraph-link companion-form__paragraph-link--active"><span class="companion-form__link-text">Даты</span></a>
@@ -226,7 +224,7 @@
                   <legend class="visually-hidden companion-form__legend">Выбор количества попутчиков и длительности путешествия</legend>
                   <label class="companion-form__input-title companion-form__input-title--people" for="id-companion">Ищу попутчиков:</label>
                   <div class="companion-form__input-wrapper">
-                    <input class="companion-form__add-plans-input" type="text" name="companion" id="id-companion" value="2">
+                    <input class="companion-form__add-plans-input" type="number" name="companion" id="id-companion" value="2">
                     <button class="companion-form__minus-button" type="button">
                       <span class="visually-hidden">Уменьшение количества попутчиков</span>
                     </button>
@@ -236,7 +234,7 @@
                   </div>
                   <label class="companion-form__input-title companion-form__input-title--days" for="id-days">Длительность:</label>
                   <div class="companion-form__input-wrapper">
-                    <input class="companion-form__add-plans-input" type="text" name="days" id="id-days" value="2">
+                    <input class="companion-form__add-plans-input" type="number" name="days" id="id-days" value="2">
                     <button class="companion-form__minus-button" type="button">
                       <span class="visually-hidden">Уменьшение количества дней</span>
                     </button>
@@ -310,54 +308,53 @@
                   </li>
                   <li class="companion-form__calendar-day companion-form__calendar-day--vacation">В<span class="companion-form__calendar-letter">с</span>
                   </li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">23</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">24</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">25</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">26</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">27</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">28</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">1<span class="companion-form__calendar-date--desktop">мар</span></li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">2</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">3</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">4</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">5</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">6</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">7</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">8</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">9</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">10</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">11</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">12</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">13</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">14</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">15</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">16</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">17</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">18</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">19</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">20</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">21</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">22</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">23</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">24</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled">25</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--selected" tabindex="0">26<p class="companion-form__calendar-arrival">Заезд</p></li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--selected" tabindex="0">27</li>
-                  <li class="companion-form__calendar-date companion-form__calendar-date--selected" tabindex="0">28<p class="companion-form__calendar-departure">Выезд</p></li>
-                  <li class="companion-form__calendar-date" tabindex="0">29</li>
-                  <li class="companion-form__calendar-date" tabindex="0">30</li>
-                  <li class="companion-form__calendar-date" tabindex="0">31</li>
-                  <li class="companion-form__calendar-date" tabindex="0">1<span class="companion-form__calendar-date--desktop">апр</span></li>
-                  <li class="companion-form__calendar-date" tabindex="0">2</li>
-                  <li class="companion-form__calendar-date" tabindex="0">3</li>
-                  <li class="companion-form__calendar-date" tabindex="0">4</li>
-                  <li class="companion-form__calendar-date" tabindex="0">5</li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button  class="companion-form__calendar-button" type="button" disabled>23</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>24</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>25</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>26</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>27</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>28</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>1<span class="companion-form__calendar-date--desktop">мар</span></button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>2</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>3</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>4</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>5</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>6</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>7</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>8</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>9</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>10</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>11</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>12</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>13</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>14</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>15</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>16</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>17</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>18</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>19</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>20</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>21</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>22</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>23</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>24</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--disabled"><button class="companion-form__calendar-button" type="button" disabled>25</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--selected" tabindex="0"><button class="companion-form__calendar-button" type="button">26<p class="companion-form__calendar-arrival">Заезд</p></button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--selected" tabindex="0"><button class="companion-form__calendar-button" type="button">27</button></li>
+                  <li class="companion-form__calendar-date companion-form__calendar-date--selected" tabindex="0"><button class="companion-form__calendar-button" type="button">28<p class="companion-form__calendar-departure">Выезд</p></button></li>
+                  <li class="companion-form__calendar-date" tabindex="0"><button class="companion-form__calendar-button" type="button">29</button></li>
+                  <li class="companion-form__calendar-date" tabindex="0"><button class="companion-form__calendar-button" type="button">30</button></li>
+                  <li class="companion-form__calendar-date" tabindex="0"><button class="companion-form__calendar-button" type="button">31</button></li>
+                  <li class="companion-form__calendar-date" tabindex="0"><button class="companion-form__calendar-button" type="button">1<span class="companion-form__calendar-date--desktop">апр</span></button></li>
+                  <li class="companion-form__calendar-date" tabindex="0"><button class="companion-form__calendar-button" type="button">2</button></li>
+                  <li class="companion-form__calendar-date" tabindex="0"><button class="companion-form__calendar-button" type="button">3</button></li>
+                  <li class="companion-form__calendar-date" tabindex="0"><button class="companion-form__calendar-button" type="button">4</button></li>
+                  <li class="companion-form__calendar-date" tabindex="0"><button class="companion-form__calendar-button" type="button">5</button></li>
                 </ul>
                 <a class="companion-form__next-button" href="form.html#step-two">Следующий шаг</a>
               </div>
               <div class="companion-form__step-wrapper companion-form__step-wrapper--two">
-                <p class="companion-form__add-step-title" id="step-two">Шаг 2.
-                  Маршрут</p>
+                <p class="companion-form__add-step-title" id="step-two">Шаг 2. Маршрут&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
                 <p class="companion-form__add-route-text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
                 <ul class="companion-form__paragraph-list companion-form__paragraph-list--step-two">
                   <li class="companion-form__paragraph-item">
@@ -421,8 +418,7 @@
                 <a class="companion-form__previous-button" href="form.html#step-one">На шаг назад</a>
               </div>
               <div class="companion-form__step-wrapper companion-form__step-wrapper--three">
-                <p class="companion-form__add-step-title" id="step-three">Шаг 3.
-                  Развлечения</p>
+                <p class="companion-form__add-step-title" id="step-three">Шаг 3. Развлечения&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
                 <p class="companion-form__add-entertainment-text">Наконец, расскажите о своих планах времяпровождения.
                   Можно писать в свободной форме и ставить тэги.</p>
                 <ul class="companion-form__paragraph-list companion-form__paragraph-list--step-three">
@@ -595,13 +591,13 @@
           <a class="letter-list__country" href="europe/austria">Австрия</a>
         </li>
         <li class="letter-list__item">
-          <a class="letter-list__country" href="asia/azerbaydzhan">Азербайджан</a>
+          <a class="letter-list__country" href="asia/azerbaydzhan">Азербайджан<span class="modal-country__country-letter">м</span></a>
         </li>
         <li class="letter-list__item">
           <a class="letter-list__country" href="europe/albaniya">Албания</a>
         </li>
         <li class="letter-list__item">
-          <a class="letter-list__country" href="afrika/alzhir">Алжир</a>
+          <a class="letter-list__country" href="afrika/alzhir"><span class="letter-list__country-russia modal-country__country-russia">Алжир</span><span class="letter-list__country-english modal-country__country-english">Алгерия</span></a>
         </li>
         <li class="letter-list__item">
           <a class="letter-list__country" href="afrika/angola">Ангола</a>

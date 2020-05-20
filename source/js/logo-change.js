@@ -1,6 +1,6 @@
-var mobileLogo = document.querySelector('.main-nav__logo-image--mobile');
-var tabletLogo = document.querySelector('.main-nav__logo-image--tablet');
-var desktopLogo = document.querySelector('.main-nav__logo-image--desktop');
+var mobileLogo = document.querySelector('.main-nav__logo-mobile');
+var tabletLogo = document.querySelector('.main-nav__logo-tablet');
+var desktopLogo = document.querySelector('.main-nav__logo-desktop');
 
 whiteLogo();
 

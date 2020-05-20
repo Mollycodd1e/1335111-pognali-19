@@ -106,6 +106,14 @@
   color: #444444;
 }
 
+.modal-country__letter-list .modal-country__country-english {
+  display: none;
+}
+
+.modal-country__letter-list .modal-country__country-letter {
+  display: none;
+}
+
 .modal-country__letter-list a:hover,
 .modal-country__letter-list a:focus {
   color: #1d2e5b;
@@ -129,6 +137,12 @@
     width: 285px;
     margin-left: 27px;
     margin-bottom: 0;
+  }
+
+  .modal-country__alphabet-list a {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 18px;
   }
 
   .modal-country__title {
@@ -164,7 +178,7 @@
     width: 48px;
     padding-left: 2px;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
   }
 
   .modal-country__alphabet-letter--active {
@@ -188,10 +202,10 @@
   }
 
   .modal-country__wrapper {
-    width: 573px;
+    width: 574px;
     display: flex;
     padding-top: 34px;
-    padding-bottom: 33px;
+    padding-bottom: 37px;
 
     background-color: #ffffff;
   }
@@ -199,7 +213,8 @@
   .modal-country__letter-list {
     position: relative;
     padding-left: 85px;
-    padding-right: 20px;
+    padding-right: 22px;
+    margin-top: -4px;
 
     &::before {
       content: "";
@@ -263,7 +278,19 @@
   .modal-country__letter-list {
     display: flex;
     flex-direction: column;
-    margin-right: 52px;
+    margin-right: 72px;
+  }
+
+  .modal-country__letter-list .modal-country__country-english {
+    display: inline;
+  }
+
+  .modal-country__letter-list .modal-country__country-russia {
+    display: none;
+  }
+
+  .modal-country__letter-list .modal-country__country-letter {
+    display: inline;
   }
 
   .modal-country__letter-list li:last-child {

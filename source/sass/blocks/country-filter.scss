@@ -106,8 +106,8 @@
   display: none;
 }
 
-.country-filter__toggle--close,
-.country-filter__toggle--open {
+.country-filter__toggle-close,
+.country-filter__toggle-open {
   display: none;
 }
 
@@ -305,21 +305,21 @@
     padding-left: 9px;
   }
 
-  .country-filter--opened .country-filter__toggle--close {
+  .country-filter--opened .country-filter__toggle-close {
     display: block;
     margin-left: -150px;
   }
 
-  .country-filter--opened .country-filter__toggle--open {
+  .country-filter--opened .country-filter__toggle-open {
     display: none;
   }
 
-  .country-filter--closed .country-filter__toggle--close {
+  .country-filter--closed .country-filter__toggle-close {
     display: none;
   }
 
-  .country-filter__toggle--open,
-  .country-filter__toggle--close {
+  .country-filter__toggle-open,
+  .country-filter__toggle-close {
     display: block;
     font-size: 20px;
     line-height: 24px;

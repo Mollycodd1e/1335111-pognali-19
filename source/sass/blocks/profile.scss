@@ -67,7 +67,7 @@
 
 .profile__text {
   position: relative;
-  border-top: 1px solid #f2f2f2;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   padding-top: 13px;
   padding-bottom: 7px;
   color: #717273;
@@ -123,7 +123,7 @@
 .profile__text:nth-child(3) {
   padding-top: 14px;
 
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
   &::after {
     content: "3";
@@ -220,7 +220,7 @@
   .profile__text:nth-child(3) {
     padding-top: 17px;
 
-    border-bottom: 1px solid #e1e3e9;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 
     &::after {
       content: "3";
