@@ -229,6 +229,13 @@
 .country-filter--nojs {
   padding-right: 0;
   padding-left: 0;
+  padding-bottom: 25px;
+}
+
+.country-filter--nojs .country-filter__title-button-wrap {
+  width: 270px;
+  padding-left: 25px;
+  margin-bottom: 31px;
 }
 
 .country-filter--nojs .country-filter__wrapper {
@@ -245,6 +252,10 @@
 .country-filter--nojs .country-filter__alphabet-list {
   display: flex;
   margin-left: 24px;
+}
+
+.country-filter--nojs .country-filter__toggle {
+  display: none;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -425,6 +436,37 @@
       transform: rotate(-45deg);
     }
   }
+
+  .country-filter--nojs {
+    padding-bottom: 77px;
+  }
+
+  .country-filter--nojs .country-filter__world-part {
+    padding-top: 3px;
+    padding-left: 32px;
+    margin-bottom: 44px;
+    width: 100%;
+  }
+
+  .country-filter--nojs .country-filter__alphabet-list {
+    margin-left: 0;
+  }
+
+  .country-filter--nojs .country-filter__title-button-wrap {
+    display: none;
+  }
+
+  .country-filter--nojs .country-filter__wrapper {
+    padding-top: 27px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .country-filter--nojs .country-filter__letter-list {
+    padding-top: 4px;
+    padding-left: 6%;
+    margin-right: 6%;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -538,14 +580,16 @@
     }
   }
 
+  .country-filter--nojs {
+    padding-left: 0;
+    padding-bottom: 75px;
+    margin-bottom: 75px;
+  }
+
   .country-filter--nojs .country-filter__world-part {
     margin-top: -50px;
     margin-left: 300px;
     margin-right: 0;
-  }
-
-  .country-filter--nojs {
-    flex-wrap: wrap;
   }
 
   .country-filter--nojs .country-filter__letter-list {
@@ -556,5 +600,25 @@
     position: relative;
     margin: 0 auto;
     width: 1335px;
+  }
+
+  .country-filter--nojs .country-filter__title-button-wrap {
+    display: block;
+  }
+
+  .country-filter--nojs .country-filter__section-wrapper {
+    display: block;
+  }
+
+  .country-filter--nojs .country-filter__world-part {
+    padding-top: 0;
+    margin-top: -55px;
+    padding-left: 46px;
+  }
+
+  .country-filter--nojs .country-filter__alphabet-list {
+    padding-left: 40px;
+    padding-top: 8px;
+    padding-bottom: 25px;
   }
 }

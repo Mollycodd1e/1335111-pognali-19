@@ -499,6 +499,11 @@
   &:active {
     border: 1px solid #161c35;
   }
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
 }
 
 .companion-form__minus-button {
@@ -892,13 +897,11 @@
 }
 
 .companion-form__calendar-date--selected {
-  background-color: #101d41;
+  background-color: #1d2e5b;
   color: #ffffff;
-
-  &:hover,
-  &:focus {
-    background-color: #101d41;
-  }
+}
+.companion-form__calendar-date--selected .companion-form__calendar-button {
+  color: #ffffff;
 }
 
 .companion-form__calendar-date--desktop {

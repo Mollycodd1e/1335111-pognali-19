@@ -14,10 +14,13 @@
   background-color: #ffd74b;
 }
 
+.filter-form__wrapper {
+  position: relative;
+}
+
 .filter-form__fieldset {
   border: none;
   margin: 0;
-  position: relative;
   padding: 0;
   padding-top: 4px;
   padding-bottom: 12px;
