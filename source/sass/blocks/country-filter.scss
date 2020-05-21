@@ -586,12 +586,6 @@
     margin-bottom: 75px;
   }
 
-  .country-filter--nojs .country-filter__world-part {
-    margin-top: -50px;
-    margin-left: 300px;
-    margin-right: 0;
-  }
-
   .country-filter--nojs .country-filter__letter-list {
     display: none;
   }
@@ -612,6 +606,8 @@
 
   .country-filter--nojs .country-filter__world-part {
     padding-top: 0;
+    margin-left: 300px;
+    margin-right: 0;
     margin-top: -55px;
     padding-left: 46px;
   }
