@@ -8,7 +8,6 @@ if (document.querySelector('.interested__form')) {
     if (!indexInput.value) {
       evt.preventDefault();
       indexInput.classList.add('interested__input--error');
-      indexInput.placeholder = 'Введите e-mail';
     } else {
       indexInput.classList.remove('interested__input--error');
     }
